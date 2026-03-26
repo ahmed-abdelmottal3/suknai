@@ -13,34 +13,34 @@ import {
 const quickLinks = [
   {
     href: "/about",
-    title: "من نحن",
-    description: "تعرف على هوية مجموعة سكناي ورؤيتها وطريقة تنظيم تجربة الضيافة.",
+    title: "عن سكناي",
+    description: "تعرف على رؤيتنا في الضيافة وعلى تنوع العلامات التابعة للمجموعة.",
     icon: Building2,
   },
   {
     href: "/brands",
-    title: "علاماتنا",
-    description: "ادخل مباشرة إلى الفنادق والوجهات التابعة للمجموعة من صفحة مخصصة.",
+    title: "فنادقنا وعلاماتنا",
+    description: "استعرض جميع الوجهات الفندقية والمنتجعات والشقق المخدومة التابعة لنا.",
     icon: BriefcaseBusiness,
   },
   {
     href: "/contact",
-    title: "تواصل معنا",
-    description: "للحجز والاستفسارات والشراكات عبر صفحة تواصل واضحة وسريعة.",
+    title: "الحجز والتواصل",
+    description: "للحجوزات والاستفسارات العامة والتعاون التجاري من خلال صفحة واحدة واضحة.",
     icon: MessageCircleMore,
   },
 ];
 
 const highlights = [
-  "دخول مباشر للوجهات بدون تمرير طويل.",
-  "هيكل أوضح للموبايل والديسكتوب.",
-  "فصل المعلومات العامة عن صفحات الفنادق.",
+  "فنادق ومنتجعات وشقق مخدومة بهوية ضيافة موحدة.",
+  "مواقع متنوعة تناسب الأعمال والترفيه والإقامة العائلية.",
+  "سهولة الوصول إلى كل وجهة عبر صفحات مستقلة وواضحة.",
 ];
 
 const stats = [
-  { value: "5", label: "وجهات ضيافة" },
-  { value: "1", label: "بوابة رئيسية" },
-  { value: "100%", label: "وصول أسرع" },
+  { value: "5", label: "علامات ووجهات" },
+  { value: "متنوع", label: "نمط الإقامة" },
+  { value: "سريع", label: "الوصول للحجز" },
 ];
 
 export default function GroupOverviewSection() {
@@ -57,17 +57,17 @@ export default function GroupOverviewSection() {
           <div className="rounded-[2.5rem] bg-[#0d1b2a] p-8 md:p-10 text-white shadow-[0_30px_80px_rgba(13,27,42,0.24)]">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#c8a951]/30 bg-white/5 px-4 py-2 text-sm text-[#e2c97e]">
               <Sparkles size={16} />
-              بوابة المجموعة
+              تجربة ضيافة متكاملة
             </div>
 
             <h2 className="mt-6 text-4xl md:text-5xl font-black leading-tight text-white">
-              الرئيسية الآن تقدم الانطباع الأول ثم تفتح لك الطريق
+              وجهات ضيافة تجمع بين الجودة والموقع والتجربة
             </h2>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/72">
-              بدل أن يجبر الموقع الزائر على النزول داخل صفحة واحدة طويلة، أصبحت
-              الواجهة الرئيسية مختصرة وراقية وتوجّه كل زائر إلى الصفحة التي
-              يحتاجها مباشرة.
+              تضم مجموعة سكناي باقة من الفنادق والمنتجعات والشقق المخدومة التي
+              تقدم تجارب إقامة متنوعة تناسب المسافر للأعمال، والرحلات العائلية،
+              والباحثين عن الراحة والخصوصية.
             </p>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
@@ -89,24 +89,24 @@ export default function GroupOverviewSection() {
                 href="/brands"
                 className="inline-flex items-center gap-2 rounded-full bg-[#c8a951] px-6 py-3 text-sm font-black text-[#0d1b2a] transition-transform duration-200 hover:scale-105"
               >
-                استعرض العلامات
+                عرض الوجهات
                 <ArrowLeft size={16} />
               </Link>
               <Link
-                href="/about"
+                href="/contact"
                 className="inline-flex items-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/8"
               >
-                تعرف على المجموعة
+                ابدأ الحجز أو الاستفسار
               </Link>
             </div>
           </div>
 
           <div className="rounded-[2.5rem] border border-[#c8a951]/20 bg-white p-8 md:p-10 shadow-[0_24px_60px_rgba(13,27,42,0.08)]">
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#c8a951]">
-              لماذا هذا الهيكل؟
+              ما الذي يميز المجموعة؟
             </p>
             <h3 className="mt-4 text-3xl font-black text-[#0d1b2a]">
-              لأن الزائر يريد أن يصل بسرعة لا أن يضيع في صفحة مزدحمة
+              تنوع في الوجهات مع مستوى خدمة يليق باسم سكناي
             </h3>
 
             <ul className="mt-6 space-y-4 text-[#0d1b2a]/72 leading-8">
@@ -120,11 +120,11 @@ export default function GroupOverviewSection() {
 
             <div className="mt-8 rounded-[1.75rem] bg-[#f6f1ea] p-6">
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#0d1b2a]/45">
-                المسار المقترح
+                مناسبة لـ
               </p>
               <p className="mt-3 text-base leading-8 text-[#0d1b2a]/72">
-                الرئيسية للتوجيه، صفحة العلامات للاستعراض، وصفحات الفنادق
-                للتفاصيل الكاملة، وصفحة التواصل للحجوزات والاستفسارات.
+                رجال الأعمال، العائلات، الرحلات القصيرة، والإقامات الممتدة مع
+                خيارات متعددة تناسب طبيعة كل ضيف.
               </p>
             </div>
           </div>

@@ -60,7 +60,7 @@ export default function Navbar() {
               onMouseLeave={() => setBrandsOpen(false)}
             >
               <button className="flex items-center gap-1 hover:text-[#c8a951] transition-colors duration-200">
-                علاماتنا التجارية
+                فنادقنا وعلاماتنا
                 <ChevronDown
                   size={14}
                   className={`transition-transform duration-200 ${brandsOpen ? "rotate-180" : ""}`}
@@ -94,7 +94,7 @@ export default function Navbar() {
                       href="/brands"
                       className="block px-4 py-3 text-sm font-semibold text-[#c8a951] hover:bg-white/5 transition-colors"
                     >
-                      عرض جميع العلامات
+                      عرض جميع الوجهات
                     </Link>
                   </motion.div>
                 )}
@@ -105,7 +105,7 @@ export default function Navbar() {
               href="/about"
               className="hover:text-[#c8a951] transition-colors duration-200"
             >
-              من نحن
+              عن سكناي
             </Link>
             <Link
               href="/brands"
@@ -117,7 +117,7 @@ export default function Navbar() {
               href="/contact"
               className="hover:text-[#c8a951] transition-colors duration-200"
             >
-              تواصل معنا
+              الحجز والتواصل
             </Link>
           </div>
 
@@ -129,7 +129,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="gradient-gold text-[#0d1b2a] font-bold text-sm px-5 py-2 rounded-full hover:shadow-lg hover:shadow-yellow-500/20 transition-all duration-300 hover:scale-105"
             >
-              واتساب
+              احجز عبر واتساب
             </a>
           </div>
 
@@ -171,7 +171,7 @@ export default function Navbar() {
 
               <div>
                 <p className="text-[#c8a951] text-xs font-semibold tracking-widest uppercase mb-3">
-                  علاماتنا التجارية
+                  فنادقنا وعلاماتنا
                 </p>
                 {BRANDS.map((brand) => (
                   <Link
@@ -194,7 +194,7 @@ export default function Navbar() {
                   onClick={() => setMenuOpen(false)}
                   className="block pt-4 text-base font-semibold text-[#c8a951]"
                 >
-                  عرض جميع العلامات
+                  عرض جميع الوجهات
                 </Link>
               </div>
 
@@ -203,7 +203,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className="text-xl text-white/80"
               >
-                من نحن
+                عن سكناي
               </Link>
               <Link
                 href="/brands"
@@ -217,7 +217,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className="text-xl text-white/80"
               >
-                تواصل معنا
+                الحجز والتواصل
               </Link>
               <a
                 href={GROUP.whatsapp}
@@ -225,7 +225,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="gradient-gold text-[#0d1b2a] font-bold text-center py-4 rounded-2xl text-xl"
               >
-                واتساب
+                احجز عبر واتساب
               </a>
             </div>
           </motion.div>

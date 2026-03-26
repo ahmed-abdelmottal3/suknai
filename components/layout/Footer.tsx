@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
@@ -27,20 +28,19 @@ const TikTokIcon = () => (
 export default function Footer() {
   return (
     <footer className="bg-[#0d1b2a] text-white">
-      {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-        {/* Brand */}
         <div>
           <div className="mb-5">
-            <h2 className="text-3xl font-black gradient-text-gold mb-1">سكناي</h2>
+            <h2 className="text-3xl font-black gradient-text-gold mb-1">
+              سكناي
+            </h2>
             <p className="text-white/40 text-xs tracking-widest uppercase">
               Suknai Group
             </p>
           </div>
           <p className="text-white/60 text-sm leading-relaxed mb-6">
-            {GROUP.taglineAr}
+            تجارب ضيافة متنوعة في فنادق ومنتجعات وشقق مخدومة بهوية خدمة واحدة.
           </p>
-          {/* Social Media */}
           <div className="flex items-center gap-3">
             {[
               { Icon: Instagram, href: GROUP.social.instagram, label: "Instagram" },
@@ -65,10 +65,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Our Brands */}
         <div>
           <h3 className="text-[#c8a951] font-bold text-sm tracking-widest uppercase mb-5">
-            علاماتنا التجارية
+            الوجهات
           </h3>
           <ul className="space-y-3">
             {BRANDS.map((brand) => (
@@ -88,41 +87,49 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Media & Links */}
         <div>
           <h3 className="text-[#c8a951] font-bold text-sm tracking-widest uppercase mb-5">
-            الصحـف والمجـلات
+            روابط مهمة
           </h3>
-          <ul className="space-y-3">
-            {GROUP.saudiMedia.map((media) => (
-              <li key={media.name}>
-                <a
-                  href={media.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-white/60 hover:text-[#c8a951] transition-colors text-sm"
-                >
-                  <ExternalLink size={12} className="flex-shrink-0" />
-                  {media.name}
-                </a>
-              </li>
-            ))}
+          <ul className="space-y-3 text-sm">
+            <li>
+              <Link
+                href="/about"
+                className="text-white/60 hover:text-[#c8a951] transition-colors"
+              >
+                عن سكناي
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/brands"
+                className="text-white/60 hover:text-[#c8a951] transition-colors"
+              >
+                فنادقنا وعلاماتنا
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="text-white/60 hover:text-[#c8a951] transition-colors"
+              >
+                الحجز والتواصل
+              </Link>
+            </li>
             <li>
               <a
                 href={GROUP.roohAlSaudia}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-[#c8a951] hover:text-[#e2c97e] transition-colors text-sm font-semibold mt-2"
+                className="inline-flex items-center gap-2 text-white/60 hover:text-[#c8a951] transition-colors"
               >
-                <span>🇸🇦</span>
-                روح السعودية
+                Visit Saudi
                 <ExternalLink size={12} />
               </a>
             </li>
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
           <h3 className="text-[#c8a951] font-bold text-sm tracking-widest uppercase mb-5">
             تواصل معنا
@@ -145,7 +152,7 @@ export default function Footer() {
                 className="flex items-start gap-3 text-white/60 hover:text-[#c8a951] transition-colors text-sm"
               >
                 <span className="text-base flex-shrink-0">💬</span>
-                واتساب
+                واتساب للحجوزات
               </a>
             </li>
             <li>
@@ -165,7 +172,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-white/40 text-xs">
           <p>© {new Date().getFullYear()} مجموعة سكناي. جميع الحقوق محفوظة.</p>

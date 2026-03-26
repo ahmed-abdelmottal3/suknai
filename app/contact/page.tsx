@@ -21,21 +21,21 @@ const contactMethods = [
   {
     label: "واتساب",
     value: "تواصل مباشر عبر واتساب",
-    note: "الأسرع للحجز والردود المختصرة.",
+    note: "للحجوزات السريعة وطلبات المتابعة الفورية.",
     href: `https://wa.me/${GROUP.whatsapp.replace("+", "")}`,
   },
   {
     label: "البريد الإلكتروني",
     value: GROUP.email,
-    note: "مناسب للطلبات الرسمية والتعاون التجاري.",
+    note: "للطلبات الرسمية والتعاون التجاري والتواصل الإداري.",
     href: `mailto:${GROUP.email}`,
   },
 ];
 
 const requestTypes = [
-  "حجز أو استفسار عن فندق محدد.",
-  "استفسارات عامة عن المجموعة.",
-  "طلبات شراكة أو تعاون.",
+  "حجوزات واستفسارات عن الفنادق والوجهات.",
+  "استفسارات عامة عن المجموعة والخدمات.",
+  "طلبات الشراكات والتعاون التجاري.",
 ];
 
 export default function ContactPage() {
@@ -51,17 +51,17 @@ export default function ContactPage() {
               تواصل معنا
             </span>
             <h1 className="mt-5 max-w-3xl text-5xl font-black leading-tight text-white md:text-6xl">
-              صفحة واحدة واضحة لكل طرق التواصل
+              نحن هنا لخدمتكم في الحجز والاستفسار والتعاون
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-              للحجوزات، الاستفسارات العامة، أو التواصل التجاري يمكنك اختيار
-              القناة الأنسب مباشرة دون الرجوع إلى الصفحة الرئيسية.
+              اختر وسيلة التواصل الأنسب لك، وسنعمل على خدمتك في ما يتعلق
+              بالحجوزات، والاستفسارات العامة، أو طلبات التعاون مع المجموعة.
             </p>
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/6 p-7 backdrop-blur-sm">
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#e2c97e]">
-              مناسب لـ
+              هذه الصفحة مخصصة لـ
             </p>
             <ul className="mt-5 space-y-3 text-white/72 leading-8">
               {requestTypes.map((item) => (
@@ -105,25 +105,24 @@ export default function ContactPage() {
         <div className="mx-auto mt-10 grid max-w-6xl gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="rounded-[2rem] border border-[#c8a951]/20 bg-white p-8 shadow-[0_14px_40px_rgba(13,27,42,0.08)] md:p-10">
             <h2 className="text-3xl font-black text-[#0d1b2a]">
-              لماذا صفحة مستقلة؟
+              للحجز الأسرع
             </h2>
             <p className="mt-4 text-base leading-8 text-[#0d1b2a]/70">
-              حتى تبقى الصفحة الرئيسية مخصصة للتوجيه فقط، بينما يجد الزائر هنا
-              كل بيانات الاتصال في مكان واحد بدون تشتيت.
+              إذا كنت تعرف الفندق أو الوجهة التي تريدها، يمكنك الانتقال إلى
+              صفحتها مباشرة للاطلاع على التفاصيل والوصول إلى الحجز بشكل أسرع.
             </p>
           </div>
 
           <div className="rounded-[2rem] bg-[#0d1b2a] p-8 text-white shadow-[0_18px_50px_rgba(13,27,42,0.2)] md:p-10">
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#e2c97e]">
-              توصية سريعة
+              خدمة واضحة
             </p>
             <h2 className="mt-4 text-3xl font-black text-white">
-              إذا كان الطلب يتعلق بفندق محدد
+              فريقنا جاهز لمساعدتك في اختيار الوجهة المناسبة
             </h2>
             <p className="mt-4 text-base leading-8 text-white/72">
-              من الأفضل الدخول أولاً إلى صفحة الفندق أو العلامة المطلوبة، ثم
-              استخدام أزرار الحجز أو التواصل الخاصة بها للحصول على مسار أسرع
-              وأكثر دقة.
+              سواء كنت تبحث عن فندق للأعمال، أو منتجع للراحة، أو شقق مخدومة
+              للإقامة الأطول، سنساعدك في الوصول إلى الخيار الأنسب.
             </p>
           </div>
         </div>

@@ -51,16 +51,17 @@ export default function GroupHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6 }}
-          className="text-xl md:text-2xl text-white/70 font-light mb-4 max-w-2xl mx-auto"
+          className="text-xl md:text-2xl text-white/75 font-light mb-4 max-w-3xl mx-auto"
         >
-          حيث تلتقي الفخامة بالضيافة السعودية
+          تجارب ضيافة متنوعة تجمع بين الفخامة والراحة والموقع المميز في وجهات
+          مختارة داخل المملكة
         </motion.p>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-white/40 text-lg mb-12"
+          className="text-white/45 text-lg mb-12"
           dir="ltr"
         >
           Where luxury meets Saudi hospitality
@@ -76,13 +77,13 @@ export default function GroupHero() {
             href="/brands"
             className="gradient-gold text-[#0d1b2a] font-black px-10 py-4 rounded-2xl text-lg hover:shadow-2xl hover:shadow-yellow-500/25 hover:scale-105 transition-all duration-300"
           >
-            استكشف علاماتنا
+            استكشف وجهاتنا
           </Link>
           <Link
             href="/contact"
             className="glass text-white font-semibold px-10 py-4 rounded-2xl text-lg hover:bg-white/20 transition-all"
           >
-            تواصل معنا
+            احجز أو تواصل معنا
           </Link>
         </motion.div>
       </div>

@@ -5,7 +5,7 @@
 export const GROUP = {
   nameAr: "مجموعة سكناي",
   nameEn: "Suknai Group",
-  taglineAr: "حيث تلتقي الفخامة بالضيافة السعودية",
+  taglineAr: "تجارب ضيافة تجمع بين الفخامة والراحة والهوية السعودية",
   taglineEn: "Where luxury meets Saudi hospitality",
   phone: "+966500000000",
   whatsapp: "+966500000000",
