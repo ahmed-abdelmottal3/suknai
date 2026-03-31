@@ -6,6 +6,7 @@ import WhatsAppButton from "@/components/widgets/WhatsAppButton";
 import GroupHero from "@/components/home/GroupHero";
 import GroupOverviewSection from "@/components/home/GroupOverviewSection";
 import BrandsSection from "@/components/home/BrandsSection";
+import PressSection from "@/components/sections/PressSection";
 
 export default function HomePage() {
   return (
@@ -13,8 +14,9 @@ export default function HomePage() {
       <Navbar />
       <LocationPopup />
       <GroupHero />
-      <GroupOverviewSection />
       <BrandsSection />
+      <GroupOverviewSection />
+      <PressSection />
       <Footer />
       <WhatsAppButton />
       <SalemAI />

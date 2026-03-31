@@ -31,20 +31,33 @@ export default function ReviewsSection({ brand }: { brand: Brand }) {
           </h2>
           <div className="divider-gold mx-auto mb-6" />
 
-          {/* Overall Rating Badge */}
-          <div className="inline-flex items-center gap-4 bg-white rounded-2xl px-8 py-4 shadow-sm border border-[#ede8e1]">
-            <div className="text-center">
-              <p className="text-5xl font-black" style={{ color: brand.color }}>
-                {avgRating}
-              </p>
-              <p className="text-[#c8a951] text-lg">★★★★★</p>
-              <p className="text-[#4a4a4a] text-xs">{REVIEWS.length} تقييم</p>
+          {/* Overall Rating Badge and Google Review Button */}
+          <div className="flex flex-col md:flex-row items-center gap-6 justify-center mt-4">
+            <div className="inline-flex items-center gap-4 bg-white rounded-2xl px-8 py-4 shadow-sm border border-[#ede8e1]">
+              <div className="text-center">
+                <p className="text-5xl font-black" style={{ color: brand.color }}>
+                  {avgRating}
+                </p>
+                <p className="text-[#c8a951] text-lg">★★★★★</p>
+                <p className="text-[#4a4a4a] text-xs">{REVIEWS.length} تقييم</p>
+              </div>
+              <div className="w-px h-16 bg-[#ede8e1]" />
+              <div className="text-right">
+                <p className="text-[#0d1b2a] font-bold">ممتاز</p>
+                <p className="text-[#4a4a4a] text-sm">بناءً على آراء الضيوف</p>
+              </div>
             </div>
-            <div className="w-px h-16 bg-[#ede8e1]" />
-            <div className="text-right">
-              <p className="text-[#0d1b2a] font-bold">ممتاز</p>
-              <p className="text-[#4a4a4a] text-sm">بناءً على آراء الضيوف</p>
-            </div>
+
+            <a
+              href={brand.reviewUrl || "https://search.google.com/local/writereview?placeid=PLACEHOLDER_ID"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#0d1b2a] text-[#c8a951] font-bold px-8 py-4 rounded-full hover-lift shadow-lg group transition-all"
+              style={{ border: `2px solid ${brand.color}` }}
+            >
+              <span className="group-hover:text-white transition-colors">أضف تقييمك في جوجل</span>
+              <span className="text-xl">⭐️</span>
+            </a>
           </div>
         </motion.div>
 

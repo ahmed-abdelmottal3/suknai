@@ -16,9 +16,9 @@ import { BRANDS, GROUP } from "@/lib/constants";
 const BUSINESS_LINKS = [
   { label: "الفنادق", href: "/brands" },
   { label: "الحجوزات الكوربريت", href: "/contact" },
-  { label: "الشراكات", href: "/contact" },
+  { label: "الشراكات", href: "/partnerships" },
   { label: "العقارات", href: "/about" },
-  { label: "المسؤولية الاجتماعية", href: "/about" },
+  { label: "المسؤولية الاجتماعية", href: "/social-responsibility" },
 ];
 
 const SnapchatIcon = () => (

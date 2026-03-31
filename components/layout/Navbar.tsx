@@ -21,12 +21,15 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navClass = `fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
+  const navClass = `fixed top-8 inset-x-0 z-50 transition-all duration-500 ${
     scrolled || !isHome ? "glass-dark shadow-lg py-3" : "bg-transparent py-5"
   }`;
 
   return (
     <>
+      <div className="fixed top-0 inset-x-0 z-[60] bg-[#c8a951] text-[#0d1b2a] text-xs md:text-sm py-1.5 px-4 text-center font-bold shadow-md">
+        تنويه: هذه الصفحة مخصصة للعروض الداخلية. للعودة إلى الموقع الرسمي لمجموعة سكناي، <a href="https://suknai.com" target="_blank" rel="noreferrer" className="underline font-black hover:text-white transition-colors">اضغط هنا</a>
+      </div>
       <motion.nav
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

@@ -7,8 +7,8 @@ export const GROUP = {
   nameEn: "Suknai Group",
   taglineAr: "تجارب ضيافة تجمع بين الفخامة والراحة والهوية السعودية",
   taglineEn: "Where luxury meets Saudi hospitality",
-  phone: "+966500000000",
-  whatsapp: "+966500000000",
+  phone: "+966920031010",
+  whatsapp: "+966920031010",
   email: "info@suknai.com",
   website: "https://www.suknai.com",
   social: {
@@ -68,6 +68,7 @@ export interface Brand {
   importantNumbers: ImportantNumber[];
   dutyManager: { nameAr: string; phone: string };
   menuCategories: MenuCategory[];
+  reviewUrl?: string;
 }
 
 export interface RoomType {
@@ -114,12 +115,13 @@ export const BRANDS: Brand[] = [
     nameAr: "فندق سكناي رويال",
     nameEn: "Suknai Royal Hotel",
     taglineAr: "تجربة ملكية لا تُنسى",
-    cityAr: "الرياض",
-    cityEn: "Riyadh",
+    cityAr: "حائل",
+    cityEn: "Hail",
+    reviewUrl: "https://maps.app.goo.gl/CLmLJQo7noEVaZrZ8",
     descriptionAr:
       "فندق سكناي رويال يجمع بين الفخامة المعاصرة والضيافة السعودية الأصيلة في قلب الرياض. يقدم الفندق تجربة إقامة استثنائية بتصميم راقٍ وخدمات عالمية المستوى.",
-    phone: "+966112345678",
-    whatsapp: "+966512345678",
+    phone: "+966920031010",
+    whatsapp: "+966920031010",
     email: "royal@suknai.com",
     reservationUrl: "https://booking.suknai.com/royal",
     website: "https://royal.suknai.com",
@@ -258,8 +260,8 @@ export const BRANDS: Brand[] = [
     cityEn: "Madinah",
     descriptionAr:
       "فندق سكناي العقيق يقع في موقع استراتيجي بالمدينة المنورة، يوفر ضيافة استثنائية للزوار والمعتمرين بمرافق حديثة وخدمات متميزة.",
-    phone: "+966148765432",
-    whatsapp: "+966548765432",
+    phone: "+966920031010",
+    whatsapp: "+966920031010",
     email: "aqiq@suknai.com",
     reservationUrl: "https://booking.suknai.com/aqiq",
     website: "https://aqiq.suknai.com",
@@ -375,12 +377,13 @@ export const BRANDS: Brand[] = [
     nameAr: "منتجع سكناي",
     nameEn: "Suknai Resort",
     taglineAr: "اهرب إلى جنة الطبيعة",
-    cityAr: "أبها",
-    cityEn: "Abha",
+    cityAr: "الرياض",
+    cityEn: "Riyadh",
+    reviewUrl: "https://www.google.com/maps/place/منتجع+سكناي",
     descriptionAr:
       "منتجع سكناي في أبها يمنحك تجربة استجمام فريدة وسط طبيعة خلابة وهواء نقي. استمتع بالسكون والراحة بعيداً عن ضجيج المدينة.",
-    phone: "+966172222222",
-    whatsapp: "+966572222222",
+    phone: "+966920031010",
+    whatsapp: "+966920031010",
     email: "resort@suknai.com",
     reservationUrl: "https://booking.suknai.com/resort",
     website: "https://resort.suknai.com",
@@ -496,12 +499,13 @@ export const BRANDS: Brand[] = [
     nameAr: "فندق أياس",
     nameEn: "Aya Hotel",
     taglineAr: "تصميم معاصر وأجواء استثنائية",
-    cityAr: "جدة",
-    cityEn: "Jeddah",
+    cityAr: "حائل",
+    cityEn: "Hail",
+    reviewUrl: "https://maps.app.goo.gl/xCHKd26Xp7ut62yh7",
     descriptionAr:
       "فندق أياس في جدة وجهة فريدة تجمع بين التصميم المعاصر والموقع المتميز على الكورنيش، يقدم تجربة إقامة مميزة في مدينة العروس.",
-    phone: "+966122233445",
-    whatsapp: "+966522233445",
+    phone: "+966920031010",
+    whatsapp: "+966920031010",
     email: "aya@suknai.com",
     reservationUrl: "https://booking.suknai.com/aya",
     website: "https://aya.suknai.com",
@@ -628,8 +632,8 @@ export const BRANDS: Brand[] = [
     cityEn: "Riyadh",
     descriptionAr:
       "غادي للشقق المخدومة توفر لك منزلاً بعيداً عن المنزل بمرافق كاملة وخدمات احترافية. مثالية للإقامات الطويلة والعائلات.",
-    phone: "+966114455667",
-    whatsapp: "+966544455667",
+    phone: "+966920031010",
+    whatsapp: "+966920031010",
     email: "ghadi@suknai.com",
     reservationUrl: "https://booking.suknai.com/ghadi",
     website: "https://ghadi.suknai.com",
@@ -733,6 +737,141 @@ export const BRANDS: Brand[] = [
       },
     ],
   },
+
+  {
+    id: "aya-jouf",
+    slug: "aya-jouf",
+    nameAr: "فندق أياس - الجوف",
+    nameEn: "Aya Hotel - Al Jouf",
+    taglineAr: "تصميم معاصر وأجواء استثنائية",
+    cityAr: "الجوف",
+    cityEn: "Al Jouf",
+    descriptionAr: "فندق أياس في الجوف وجهة فريدة تجمع بين التصميم المعاصر والموقع المتميز، يقدم تجربة إقامة مميزة.",
+    phone: "+966920031010",
+    whatsapp: "+966920031010",
+    email: "ayajouf@suknai.com",
+    reservationUrl: "https://booking.suknai.com/aya-jouf",
+    website: "https://aya-jouf.suknai.com",
+    heroImage: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1600&q=85",
+    galleryImages: [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+    ],
+    coordinates: { lat: 29.9697, lng: 40.2000 },
+    social: {},
+    stars: 4,
+    color: "#2a6fa8",
+    roomTypes: [
+      {
+        nameAr: "غرفة قياسية",
+        nameEn: "Standard Room",
+        size: "32 م²",
+        capacity: "2 أشخاص",
+        features: ["إطلالة المدينة", "سرير كينج"],
+        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80"
+      }
+    ],
+    facilities: [
+      { nameAr: "مقهى", icon: "☕" },
+      { nameAr: "واي فاي مجاني", icon: "📶" }
+    ],
+    landmarks: [],
+    breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
+    importantNumbers: [
+      { labelAr: "الاستقبال", number: "9", icon: "📞" }
+    ],
+    dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
+    menuCategories: []
+  },
+  {
+    id: "aya-unaizah",
+    slug: "aya-unaizah",
+    nameAr: "فندق أياس - عنيزة",
+    nameEn: "Aya Hotel - Unaizah",
+    taglineAr: "تصميم معاصر وأجواء استثنائية",
+    cityAr: "عنيزة",
+    cityEn: "Unaizah",
+    descriptionAr: "فندق أياس في عنيزة وجهة فريدة تجمع بين التصميم المعاصر والموقع المتميز، يقدم تجربة إقامة مميزة.",
+    phone: "+966920031010",
+    whatsapp: "+966920031010",
+    email: "aya-unaizah@suknai.com",
+    reservationUrl: "https://booking.suknai.com/aya-unaizah",
+    website: "https://aya-unaizah.suknai.com",
+    heroImage: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1600&q=85",
+    galleryImages: [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+    ],
+    coordinates: { lat: 26.0941, lng: 43.9734 },
+    social: {},
+    stars: 4,
+    color: "#2a6fa8",
+    roomTypes: [
+      {
+        nameAr: "غرفة قياسية",
+        nameEn: "Standard Room",
+        size: "32 م²",
+        capacity: "2 أشخاص",
+        features: ["إطلالة المدينة", "سرير كينج"],
+        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80"
+      }
+    ],
+    facilities: [
+      { nameAr: "مقهى", icon: "☕" },
+      { nameAr: "واي فاي مجاني", icon: "📶" }
+    ],
+    landmarks: [],
+    breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
+    importantNumbers: [
+      { labelAr: "الاستقبال", number: "9", icon: "📞" }
+    ],
+    dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
+    menuCategories: []
+  },
+  {
+    id: "suknai-jouf",
+    slug: "suknai-jouf",
+    nameAr: "فندق سكناي - الجوف",
+    nameEn: "Suknai Hotel - Al Jouf",
+    taglineAr: "تجربة ضيافة مميزة في قلب الجوف",
+    cityAr: "الجوف",
+    cityEn: "Al Jouf",
+    descriptionAr: "فندق سكناي في الجوف يمنحك تجربة مريحة وممتعة.",
+    phone: "+966920031010",
+    whatsapp: "+966920031010",
+    email: "suknaijouf@suknai.com",
+    reservationUrl: "https://booking.suknai.com/suknai-jouf",
+    website: "https://suknai-jouf.suknai.com",
+    heroImage: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1600&q=85",
+    galleryImages: [
+      "https://images.unsplash.com/photo-1562133567-b6a0a9c7e6eb?w=800&q=80",
+    ],
+    coordinates: { lat: 29.9697, lng: 40.2000 },
+    social: {},
+    stars: 4,
+    color: "#c8a951",
+    roomTypes: [
+      {
+        nameAr: "غرفة ديلوكس",
+        nameEn: "Deluxe Room",
+        size: "35 م²",
+        capacity: "2 أشخاص",
+        features: ["سرير كينج"],
+        image: "https://images.unsplash.com/photo-1562133567-b6a0a9c7e6eb?w=600&q=80"
+      }
+    ],
+    facilities: [
+      { nameAr: "مطعم", icon: "🍽️" },
+      { nameAr: "واي فاي مجاني", icon: "📶" }
+    ],
+    landmarks: [],
+    breakfastTimes: { weekday: "6:30 ص – 10:30 ص", weekend: "7:00 ص – 11:30 ص" },
+    importantNumbers: [
+      { labelAr: "الاستقبال", number: "9", icon: "📞" }
+    ],
+    dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
+    menuCategories: []
+  }
 ];
 
 export const getBrandBySlug = (slug: string): Brand | undefined =>
