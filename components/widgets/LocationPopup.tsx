@@ -91,7 +91,8 @@ export default function LocationPopup() {
               {/* Close */}
               <button
                 onClick={dismiss}
-                className="absolute top-4 left-4 w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white/60"
+                aria-label="إغلاق"
+                className="absolute top-4 left-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white/70"
               >
                 <X size={16} />
               </button>
@@ -102,7 +103,7 @@ export default function LocationPopup() {
               <h2 className="text-xl font-bold text-white mb-2">
                 مرحباً بك في مجموعة سكناي 🌟
               </h2>
-              <p className="text-white/60 text-sm mb-6">
+              <p className="text-white/70 text-sm mb-6">
                 حدد موقعك لنرشدك إلى أقرب فرع وتجربة مميزة
               </p>
 

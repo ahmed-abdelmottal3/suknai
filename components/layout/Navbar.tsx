@@ -21,9 +21,8 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navClass = `fixed top-8 inset-x-0 z-50 transition-all duration-500 ${
-    scrolled || !isHome ? "glass-dark shadow-lg py-3" : "bg-transparent py-5"
-  }`;
+  const navClass = `fixed top-8 inset-x-0 z-50 transition-all duration-500 ${scrolled || !isHome ? "glass-dark shadow-lg py-3" : "bg-transparent py-5"
+    }`;
 
   return (
     <>
@@ -37,16 +36,13 @@ export default function Navbar() {
         className={navClass}
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between gap-4">
-          <Link href="/" className="flex flex-col leading-none group">
-            <span
-              className="text-2xl font-black tracking-wide gradient-text-gold"
-              style={{ fontFamily: "Cairo, sans-serif" }}
-            >
-              سكناي
-            </span>
-            <span className="text-[10px] text-white/60 tracking-[0.2em] uppercase">
-              SUKNAI GROUP
-            </span>
+          <Link href="/" className="flex items-center group">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/Screenshot_2026-04-01_101437-removebg-preview.png"
+              alt="شعار مجموعة سكناي"
+              className="h-12 md:h-14 w-auto object-contain scale-[2] md:scale-[2.5] origin-right transition-transform duration-300 group-hover:scale-[2.1] md:group-hover:scale-[2.6] filter drop-shadow hover:drop-shadow-lg"
+            />
           </Link>
 
           <div className="hidden md:flex items-center gap-8 text-white/90 text-sm font-medium">
@@ -127,7 +123,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <WeatherWidget compact />
             <a
-              href={GROUP.whatsapp}
+              href={`https://wa.me/${GROUP.whatsapp.replace(/\+/g, "")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="gradient-gold text-[#0d1b2a] font-bold text-sm px-5 py-2 rounded-full hover:shadow-lg hover:shadow-yellow-500/20 transition-all duration-300 hover:scale-105"
@@ -137,7 +133,7 @@ export default function Navbar() {
           </div>
 
           <button
-            className="md:hidden text-white p-2"
+            className="md:hidden text-white p-3 min-w-[44px] min-h-[44px] flex items-center justify-center"
             onClick={() => setMenuOpen((open) => !open)}
             aria-label="فتح القائمة"
           >
@@ -156,7 +152,7 @@ export default function Navbar() {
             className="fixed inset-0 z-40 glass-dark flex flex-col pt-24 px-6 pb-8 overflow-y-auto"
           >
             <button
-              className="absolute top-5 left-5 text-white/60"
+              className="absolute top-5 left-5 text-white/70 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center"
               onClick={() => setMenuOpen(false)}
               aria-label="إغلاق القائمة"
             >
@@ -223,7 +219,7 @@ export default function Navbar() {
                 الحجز والتواصل
               </Link>
               <a
-                href={GROUP.whatsapp}
+                href={`https://wa.me/${GROUP.whatsapp.replace(/\+/g, "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gradient-gold text-[#0d1b2a] font-bold text-center py-4 rounded-2xl text-xl"

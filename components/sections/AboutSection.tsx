@@ -75,6 +75,7 @@ export default function AboutSection({ brand }: { brand: Brand }) {
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
             />
             {/* Decorative frame */}
             <div

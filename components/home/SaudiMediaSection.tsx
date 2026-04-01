@@ -71,8 +71,17 @@ export default function SaudiMediaSection() {
               whileHover={{ y: -5, scale: 1.05 }}
               className="bg-white rounded-2xl p-5 text-center shadow-sm border border-[#ede8e1] hover:border-[#c8a951]/40 transition-all group"
             >
-              <div className="text-3xl mb-2">{media.icon}</div>
-              <p className="text-[#0d1b2a] font-bold text-xs leading-tight">{media.name}</p>
+              <div className="h-8 mb-2 flex items-center justify-center">
+                {"logo" in media ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={(media as any).logo} alt={media.name} className="max-h-full max-w-full object-contain" />
+                ) : (
+                  <span className="text-2xl">📰</span>
+                )}
+              </div>
+              <p className="text-[#0d1b2a] font-bold text-xs leading-tight">
+                {media.name}
+              </p>
               <ExternalLink
                 size={10}
                 className="mx-auto mt-1 text-[#c8a951] opacity-0 group-hover:opacity-100 transition-opacity"

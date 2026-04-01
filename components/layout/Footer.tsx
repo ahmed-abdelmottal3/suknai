@@ -39,12 +39,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
         <div>
           <div className="mb-5">
-            <h2 className="text-3xl font-black gradient-text-gold mb-1">سكناي</h2>
+            <h2 className="text-3xl font-black text-gold mb-1">سكناي</h2>
             <p className="text-white/40 text-xs tracking-widest uppercase">
               SUKNAI GROUP
             </p>
           </div>
-          <p className="text-white/60 text-sm leading-relaxed mb-6">
+          <p className="text-white/70 text-sm leading-relaxed mb-6">
             تجارب ضيافة متنوعة في فنادق ومنتجعات وشقق مخدومة بهوية خدمة واحدة.
           </p>
           <div className="flex items-center gap-3">
@@ -63,7 +63,7 @@ export default function Footer() {
                 aria-label={label}
                 whileHover={{ scale: 1.15, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-9 h-9 rounded-full glass flex items-center justify-center text-white/70 hover:text-[#c8a951] transition-colors"
+                className="w-11 h-11 rounded-full glass flex items-center justify-center text-white/70 hover:text-gold transition-colors"
               >
                 <Icon />
               </motion.a>
@@ -80,7 +80,7 @@ export default function Footer() {
               <li key={brand.id}>
                 <Link
                   href={`/${brand.slug}`}
-                  className="flex items-center gap-2 text-white/60 hover:text-[#c8a951] transition-colors text-sm group"
+                  className="flex items-center gap-2 text-white/70 hover:text-[#c8a951] transition-colors text-sm group"
                 >
                   <span
                     className="w-1.5 h-1.5 rounded-full flex-shrink-0 transition-transform group-hover:scale-150"
@@ -102,7 +102,7 @@ export default function Footer() {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="text-white/60 hover:text-[#c8a951] transition-colors"
+                  className="text-white/70 hover:text-[#c8a951] transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -121,7 +121,7 @@ export default function Footer() {
                 href={GROUP.roohAlSaudia}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white/60 hover:text-[#c8a951] transition-colors"
+                className="inline-flex items-center gap-2 text-white/70 hover:text-[#c8a951] transition-colors"
               >
                 <span>روح السعودية</span>
                 <ExternalLink size={12} />
@@ -133,7 +133,7 @@ export default function Footer() {
                   href={media.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-white/60 hover:text-[#c8a951] transition-colors"
+                  className="inline-flex items-center gap-2 text-white/70 hover:text-[#c8a951] transition-colors"
                 >
                   <span>{media.name}</span>
                   <ExternalLink size={12} />
@@ -151,7 +151,7 @@ export default function Footer() {
             <li>
               <a
                 href={`tel:${GROUP.phone}`}
-                className="flex items-start gap-3 text-white/60 hover:text-[#c8a951] transition-colors text-sm"
+                className="flex items-start gap-3 text-white/70 hover:text-[#c8a951] transition-colors text-sm"
               >
                 <Phone size={15} className="mt-0.5 flex-shrink-0" />
                 <span dir="ltr">{GROUP.phone}</span>
@@ -162,7 +162,7 @@ export default function Footer() {
                 href={`https://wa.me/${GROUP.whatsapp.replace("+", "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start gap-3 text-white/60 hover:text-[#c8a951] transition-colors text-sm"
+                className="flex items-start gap-3 text-white/70 hover:text-[#c8a951] transition-colors text-sm"
               >
                 <span className="text-base flex-shrink-0">💬</span>
                 واتساب للحجوزات
@@ -171,13 +171,13 @@ export default function Footer() {
             <li>
               <a
                 href={`mailto:${GROUP.email}`}
-                className="flex items-start gap-3 text-white/60 hover:text-[#c8a951] transition-colors text-sm"
+                className="flex items-start gap-3 text-white/70 hover:text-[#c8a951] transition-colors text-sm"
               >
                 <Mail size={15} className="mt-0.5 flex-shrink-0" />
                 {GROUP.email}
               </a>
             </li>
-            <li className="flex items-start gap-3 text-white/60 text-sm">
+            <li className="flex items-start gap-3 text-white/70 text-sm">
               <MapPin size={15} className="mt-0.5 flex-shrink-0" />
               المملكة العربية السعودية
             </li>

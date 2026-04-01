@@ -4,10 +4,11 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   ArrowLeft,
-  Building2,
-  BriefcaseBusiness,
-  MessageCircleMore,
+  Gem,
+  Compass,
+  Headphones,
   Sparkles,
+  Mail,
 } from "lucide-react";
 
 const quickLinks = [
@@ -15,19 +16,19 @@ const quickLinks = [
     href: "/about",
     title: "عن سكناي",
     description: "تعرف على رؤيتنا في الضيافة وعلى تنوع العلامات التابعة للمجموعة.",
-    icon: Building2,
+    icon: Gem,
   },
   {
     href: "/brands",
     title: "فنادقنا وعلاماتنا",
-    description: "استعرض جميع الوجهات الفندقية والمنتجعات والشقق المخدومة التابعة لنا.",
-    icon: BriefcaseBusiness,
+    description: "استعرض جميع الوجهات الفندقية والمنتجعات والشقق التابعة لنا.",
+    icon: Compass,
   },
   {
     href: "/contact",
     title: "الحجز والتواصل",
-    description: "للحجوزات والاستفسارات العامة والتعاون التجاري من خلال صفحة واحدة واضحة.",
-    icon: MessageCircleMore,
+    description: "للحجوزات والاستفسارات العامة والتعاون التجاري عبر صفحة واضحة.",
+    icon: Mail,
   },
 ];
 
@@ -141,19 +142,29 @@ export default function GroupOverviewSection() {
             >
               <Link
                 href={href}
-                className="group block h-full rounded-[2rem] border border-[#0d1b2a]/8 bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#c8a951]/40 hover:shadow-[0_18px_45px_rgba(13,27,42,0.12)]"
+                className="group relative flex flex-col items-center text-center h-full rounded-[2.5rem] border border-[#ede8e1] bg-white p-8 transition-all duration-500 hover:-translate-y-2 hover:border-[#c8a951]/50 hover:shadow-2xl overflow-hidden"
               >
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0d1b2a] text-[#c8a951]">
-                  <Icon size={24} />
+                {/* Background glow effect on hover */}
+                <div className="absolute inset-0 bg-gradient-to-b from-[#c8a951]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+                <div className="relative mb-6 flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-3xl bg-[#f8f4ef] text-[#c8a951] group-hover:bg-[#c8a951] group-hover:text-white transition-colors duration-500 border border-[#ede8e1] group-hover:border-transparent group-hover:rotate-3">
+                  <Icon size={32} strokeWidth={1.5} className="transition-transform duration-500 group-hover:scale-110" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#0d1b2a]">{title}</h3>
-                <p className="mt-3 text-sm leading-7 text-[#0d1b2a]/65">
+
+                <h3 className="text-2xl font-black text-[#0d1b2a] mb-3 relative z-10 transition-colors group-hover:text-[#c8a951]">
+                  {title}
+                </h3>
+
+                <p className="text-sm leading-relaxed text-[#4a4a4a] mb-8 relative z-10">
                   {description}
                 </p>
-                <span className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#0d1b2a] transition-colors duration-200 group-hover:text-[#c8a951]">
-                  دخول الصفحة
-                  <ArrowLeft size={16} />
-                </span>
+
+                <div className="mt-auto relative z-10">
+                  <span className="inline-flex items-center gap-2 text-sm font-bold text-[#c8a951] bg-[#c8a951]/10 px-6 py-2.5 rounded-full transition-all duration-300 group-hover:bg-[#0d1b2a] group-hover:text-white group-hover:shadow-lg">
+                    استكشف المزيد
+                    <ArrowLeft size={16} />
+                  </span>
+                </div>
               </Link>
             </motion.div>
           ))}

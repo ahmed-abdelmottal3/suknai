@@ -30,7 +30,7 @@ export default function LandmarksSection({ brand }: { brand: Brand }) {
           <div className="divider-gold mx-auto mb-8" />
 
           {/* Tabs */}
-          <div className="inline-flex glass rounded-2xl p-1 gap-1">
+          <div className="inline-flex bg-white/5 rounded-2xl p-1 gap-1 border border-white/10">
             {(["nearby", "city"] as const).map((t) => (
               <button
                 key={t}
@@ -54,7 +54,7 @@ export default function LandmarksSection({ brand }: { brand: Brand }) {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group rounded-2xl overflow-hidden glass hover-lift shine"
+              className="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover-lift"
             >
               <div className="relative h-44 overflow-hidden">
                 <Image
@@ -63,6 +63,7 @@ export default function LandmarksSection({ brand }: { brand: Brand }) {
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                   sizes="(max-width: 768px) 100vw, 33vw"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/70 to-transparent" />
               </div>

@@ -33,11 +33,11 @@ export default function PressSection() {
             التغطية الإعلامية
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-[#0d1b2a] mb-4">
-            سكناي في الصحافة
+            الصحافة بين يدك
           </h2>
           <div className="divider-gold mx-auto" />
           <p className="mt-6 text-[#4a4a4a] text-lg max-w-2xl mx-auto">
-            نفخر بتغطية وسائل الإعلام لرحلتنا في رسم مفهوم جديد للضيافة الفاخرة الممزوجة بالأصالة السعودية.
+            تصفح الآن الصحف والمجلات المفضلة لديك .. وكن على اطلاع بجديد الأحداث
           </p>
         </motion.div>
 
@@ -57,14 +57,19 @@ export default function PressSection() {
               <div className="absolute top-6 left-6 text-[#c8a951] opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all">
                 <ExternalLink size={20} />
               </div>
-              <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
-                {media.icon}
+              <div className="w-20 h-20 bg-white rounded-2xl shadow-sm flex items-center justify-center p-3 mb-6 group-hover:scale-110 transition-transform relative overflow-hidden">
+                {"logo" in media ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={(media as any).logo} alt={media.name} className="w-full h-full object-contain" />
+                ) : (
+                  <span className="text-xl">📰</span>
+                )}
               </div>
               <h3 className="text-xl font-bold text-[#0d1b2a] mb-2 group-hover:text-[#c8a951] transition-colors">
                 {media.name}
               </h3>
               <p className="text-[#4a4a4a]/70 text-sm">
-                اقرأ المزيد عن إنجازات مجموعة سكناي في {media.name}
+                تصفح أخبار {media.name}
               </p>
               
               {/* Shine effect */}

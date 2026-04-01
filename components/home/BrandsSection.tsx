@@ -27,7 +27,7 @@ export default function BrandsSection() {
             وجهات سكناي
           </h2>
           <div className="divider-gold mx-auto mb-4" />
-          <p className="text-white/55 max-w-2xl mx-auto leading-8">
+          <p className="text-white/70 max-w-2xl mx-auto leading-8">
             مجموعة من الفنادق والمنتجعات والشقق المخدومة، لكل منها طابعها الخاص
             وتجربتها المميزة لتناسب أنماط إقامة مختلفة.
           </p>
@@ -35,17 +35,17 @@ export default function BrandsSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {BRANDS.map((brand, i) => (
-            <motion.div
-              key={brand.id}
-              initial={{ opacity: 0, y: 50 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="group"
-            >
-              <div
-                className="relative h-72 rounded-3xl overflow-hidden cursor-pointer hover-lift shine"
+              <motion.button
+                key={brand.id}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+                className="group w-full text-right"
                 onClick={() => router.push(`/${brand.slug}`)}
               >
+                <div
+                  className="relative h-72 rounded-3xl overflow-hidden cursor-pointer hover-lift"
+                >
                 <Image
                   src={brand.heroImage}
                   alt={brand.nameAr}
@@ -79,7 +79,7 @@ export default function BrandsSection() {
                   <h3 className="text-white text-xl font-black mb-1">
                     {brand.nameAr}
                   </h3>
-                  <p className="text-white/55 text-sm mb-4 line-clamp-2">
+                  <p className="text-white/70 text-sm mb-4 line-clamp-2">
                     {brand.taglineAr}
                   </p>
                   <div className="flex items-center justify-between">
@@ -108,10 +108,10 @@ export default function BrandsSection() {
                       <span className="text-xs">عرض التفاصيل</span>
                       <ArrowLeft size={14} />
                     </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.button>
           ))}
         </div>
       </div>

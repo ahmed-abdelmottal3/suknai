@@ -8,11 +8,40 @@ import { Heart, CheckCircle } from "lucide-react";
 
 export default function CSRPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
-    // TODO: Connect to backend API or email service
+    setLoading(true);
+    setError(null);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name"),
+      organization: formData.get("organization"),
+      phone: formData.get("phone"),
+      email: formData.get("email"),
+      initiativeType: formData.get("initiativeType"),
+      description: formData.get("description"),
+    };
+
+    try {
+      const response = await fetch("/api/csr", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) throw new Error("Failed to submit");
+
+      setSubmitted(true);
+    } catch (err) {
+      setError("حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.");
+      console.error("[CSR] Submit error:", err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -48,28 +77,39 @@ export default function CSRPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
+              {error && (
+                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl text-sm">
+                  {error}
+                </div>
+              )}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-[#0d1b2a]">الاسم الكامل</label>
+                  <label htmlFor="name" className="text-sm font-bold text-[#0d1b2a]">الاسم الكامل</label>
                   <input
                     required
+                    id="name"
+                    name="name"
                     type="text"
                     className="w-full bg-[#f8f4ef] border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors"
                     placeholder="الاسم الثلاثي"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-[#0d1b2a]">الجهة (إن وجدت)</label>
+                  <label htmlFor="organization" className="text-sm font-bold text-[#0d1b2a]">الجهة (إن وجدت)</label>
                   <input
+                    id="organization"
+                    name="organization"
                     type="text"
                     className="w-full bg-[#f8f4ef] border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors"
                     placeholder="اسم الجهة التطوعية/الخيرية"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-[#0d1b2a]">رقم الجوال</label>
+                  <label htmlFor="phone" className="text-sm font-bold text-[#0d1b2a]">رقم الجوال</label>
                   <input
                     required
+                    id="phone"
+                    name="phone"
                     type="tel"
                     dir="ltr"
                     className="w-full bg-[#f8f4ef] text-left border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors"
@@ -77,9 +117,11 @@ export default function CSRPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-[#0d1b2a]">البريد الإلكتروني</label>
+                  <label htmlFor="email" className="text-sm font-bold text-[#0d1b2a]">البريد الإلكتروني</label>
                   <input
                     required
+                    id="email"
+                    name="email"
                     type="email"
                     dir="ltr"
                     className="w-full bg-[#f8f4ef] text-left border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors"
@@ -89,8 +131,12 @@ export default function CSRPage() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-bold text-[#0d1b2a]">نوع المبادرة المقترحة</label>
-                <select className="w-full bg-[#f8f4ef] border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors cursor-pointer">
+                <label htmlFor="initiativeType" className="text-sm font-bold text-[#0d1b2a]">نوع المبادرة المقترحة</label>
+                <select 
+                  id="initiativeType"
+                  name="initiativeType"
+                  className="w-full bg-[#f8f4ef] border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors cursor-pointer"
+                >
                   <option>استضافة منسوبي الجمعيات الخيرية</option>
                   <option>رعاية فعاليات ومناشط اجتماعية</option>
                   <option>تطوير مهارات الشباب ودعم الكفاءات</option>
@@ -100,9 +146,11 @@ export default function CSRPage() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-bold text-[#0d1b2a]">وصف المبادرة / الطلب</label>
+                <label htmlFor="description" className="text-sm font-bold text-[#0d1b2a]">وصف المبادرة / الطلب</label>
                 <textarea
                   required
+                  id="description"
+                  name="description"
                   rows={5}
                   className="w-full bg-[#f8f4ef] border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors resize-none"
                   placeholder="نرجو توضيح أهداف المبادرة وكيف يمكننا مساندتكم لدعم هذا العمل الخيري والمجتمعي..."
@@ -111,10 +159,17 @@ export default function CSRPage() {
 
               <button
                 type="submit"
-                className="w-full bg-[#0d1b2a] text-[#c8a951] font-bold text-lg py-4 rounded-xl flex items-center justify-center gap-3 hover:-translate-y-1 hover:shadow-xl transition-all"
+                disabled={loading}
+                className="w-full bg-[#0d1b2a] text-[#c8a951] font-bold text-lg py-4 rounded-xl flex items-center justify-center gap-3 hover:-translate-y-1 hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <span>إرسال الطلب</span>
-                <Heart size={20} />
+                {loading ? (
+                  <span>جاري الإرسال...</span>
+                ) : (
+                  <>
+                    <span>إرسال الطلب</span>
+                    <Heart size={20} />
+                  </>
+                )}
               </button>
             </form>
           )}

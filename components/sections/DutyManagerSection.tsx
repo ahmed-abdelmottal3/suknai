@@ -29,7 +29,7 @@ export default function DutyManagerSection({ brand }: { brand: Brand }) {
           <h2 className="text-2xl font-bold text-white mb-1">
             {brand.dutyManager.nameAr}
           </h2>
-          <p className="text-white/50 text-sm mb-6">
+          <p className="text-white/70 text-sm mb-6">
             متاح لمساعدتك في أي وقت
           </p>
 

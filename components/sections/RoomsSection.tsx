@@ -35,7 +35,7 @@ export default function RoomsSection({ brand }: { brand: Brand }) {
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="group glass rounded-3xl overflow-hidden hover-lift shine"
+              className="group bg-white/5 rounded-3xl overflow-hidden hover-lift border border-white/10"
             >
               {/* Room Image */}
               <div className="relative h-52 overflow-hidden">

@@ -42,7 +42,7 @@ export default function CorporateSection() {
             الكوربريت
           </h2>
           <div className="divider-gold mx-auto mb-4" />
-          <p className="text-white/50 max-w-xl mx-auto">
+          <p className="text-white/70 max-w-xl mx-auto">
             حلول ضيافة متكاملة للشركات والمؤسسات والجهات الخاصة
           </p>
         </motion.div>
@@ -72,7 +72,7 @@ export default function CorporateSection() {
                     <b.Icon size={22} className="text-[#c8a951]" />
                   </div>
                   <p className="text-white font-bold text-sm mb-1">{b.title}</p>
-                  <p className="text-white/50 text-xs leading-relaxed">{b.desc}</p>
+                  <p className="text-white/70 text-xs leading-relaxed">{b.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -96,7 +96,7 @@ export default function CorporateSection() {
                 >
                   <div className="text-5xl mb-4">✅</div>
                   <p className="text-white font-bold text-xl">تم إرسال طلبك!</p>
-                  <p className="text-white/60 mt-2">
+                  <p className="text-white/70 mt-2">
                     سيتواصل معك فريقنا خلال 24 ساعة
                   </p>
                 </motion.div>
@@ -108,7 +108,7 @@ export default function CorporateSection() {
                     { id: "phone", label: "رقم التواصل", placeholder: "+966 5XX XXX XXX", type: "tel" },
                   ].map((field) => (
                     <div key={field.id}>
-                      <label className="text-white/60 text-sm block mb-1">
+                      <label className="text-white/70 text-sm block mb-1">
                         {field.label}
                       </label>
                       <input
@@ -123,7 +123,7 @@ export default function CorporateSection() {
                     </div>
                   ))}
                   <div>
-                    <label className="text-white/60 text-sm block mb-1">
+                    <label className="text-white/70 text-sm block mb-1">
                       تفاصيل الطلب
                     </label>
                     <textarea

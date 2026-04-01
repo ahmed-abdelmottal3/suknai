@@ -8,11 +8,40 @@ import { Send, CheckCircle } from "lucide-react";
 
 export default function PartnershipsPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
-    // TODO: Connect to backend API or email service
+    setLoading(true);
+    setError(null);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name"),
+      company: formData.get("company"),
+      phone: formData.get("phone"),
+      email: formData.get("email"),
+      partnershipType: formData.get("partnershipType"),
+      description: formData.get("description"),
+    };
+
+    try {
+      const response = await fetch("/api/partnerships", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) throw new Error("Failed to submit");
+
+      setSubmitted(true);
+    } catch (err) {
+      setError("حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.");
+      console.error("[Partnerships] Submit error:", err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -48,29 +77,40 @@ export default function PartnershipsPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
+              {error && (
+                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl text-sm">
+                  {error}
+                </div>
+              )}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-[#0d1b2a]">الاسم الكامل</label>
+                  <label htmlFor="name" className="text-sm font-bold text-[#0d1b2a]">الاسم الكامل</label>
                   <input
                     required
+                    id="name"
+                    name="name"
                     type="text"
                     className="w-full bg-[#f8f4ef] border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors"
                     placeholder="الاسم الثلاثي"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-[#0d1b2a]">اسم الجهة / الشركة</label>
+                  <label htmlFor="company" className="text-sm font-bold text-[#0d1b2a]">اسم الجهة / الشركة</label>
                   <input
                     required
+                    id="company"
+                    name="company"
                     type="text"
                     className="w-full bg-[#f8f4ef] border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors"
                     placeholder="اسم شركتك"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-[#0d1b2a]">رقم الجوال</label>
+                  <label htmlFor="phone" className="text-sm font-bold text-[#0d1b2a]">رقم الجوال</label>
                   <input
                     required
+                    id="phone"
+                    name="phone"
                     type="tel"
                     dir="ltr"
                     className="w-full bg-[#f8f4ef] text-left border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors"
@@ -78,9 +118,11 @@ export default function PartnershipsPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-[#0d1b2a]">البريد الإلكتروني</label>
+                  <label htmlFor="email" className="text-sm font-bold text-[#0d1b2a]">البريد الإلكتروني</label>
                   <input
                     required
+                    id="email"
+                    name="email"
                     type="email"
                     dir="ltr"
                     className="w-full bg-[#f8f4ef] text-left border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors"
@@ -90,8 +132,12 @@ export default function PartnershipsPage() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-bold text-[#0d1b2a]">نوع الشراكة المقترحة</label>
-                <select className="w-full bg-[#f8f4ef] border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors cursor-pointer">
+                <label htmlFor="partnershipType" className="text-sm font-bold text-[#0d1b2a]">نوع الشراكة المقترحة</label>
+                <select 
+                  id="partnershipType"
+                  name="partnershipType"
+                  className="w-full bg-[#f8f4ef] border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors cursor-pointer"
+                >
                   <option>شراكة تجارية وتسويقية</option>
                   <option>توريد خدمات ومشتريات</option>
                   <option>إدارة فندقية واستثمار</option>
@@ -101,9 +147,11 @@ export default function PartnershipsPage() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-bold text-[#0d1b2a]">تفاصيل ومقترح الشراكة</label>
+                <label htmlFor="description" className="text-sm font-bold text-[#0d1b2a]">تفاصيل ومقترح الشراكة</label>
                 <textarea
                   required
+                  id="description"
+                  name="description"
                   rows={5}
                   className="w-full bg-[#f8f4ef] border border-[#ede8e1] rounded-xl px-4 py-3 focus:outline-none focus:border-[#c8a951] transition-colors resize-none"
                   placeholder="نرجو توضيح الفكرة العامة للشراكة وكيف ستفيد الطرفين..."
@@ -112,10 +160,17 @@ export default function PartnershipsPage() {
 
               <button
                 type="submit"
-                className="w-full bg-[#0d1b2a] text-[#c8a951] font-bold text-lg py-4 rounded-xl flex items-center justify-center gap-3 hover:-translate-y-1 hover:shadow-xl transition-all"
+                disabled={loading}
+                className="w-full bg-[#0d1b2a] text-[#c8a951] font-bold text-lg py-4 rounded-xl flex items-center justify-center gap-3 hover:-translate-y-1 hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <span>إرسال الطلب</span>
-                <Send size={20} />
+                {loading ? (
+                  <span>جاري الإرسال...</span>
+                ) : (
+                  <>
+                    <span>إرسال الطلب</span>
+                    <Send size={20} />
+                  </>
+                )}
               </button>
             </form>
           )}

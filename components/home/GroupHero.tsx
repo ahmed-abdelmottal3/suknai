@@ -44,7 +44,7 @@ export default function GroupHero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-6xl md:text-8xl font-black text-white mb-6 leading-none"
         >
-          <span className="gradient-text-gold">سكناي</span>
+          <span className="text-gold">سكناي</span>
         </motion.h1>
 
         <motion.p
