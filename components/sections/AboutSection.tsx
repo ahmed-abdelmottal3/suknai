@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Brand } from "@/lib/constants";
+import { Star } from "lucide-react";
 
 export default function AboutSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
@@ -41,7 +42,7 @@ export default function AboutSection({ brand }: { brand: Brand }) {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-4">
             {[
-              { value: `${brand.stars}★`, label: "تصنيف نجوم" },
+              { value: brand.stars, icon: Star, label: "تصنيف نجوم" },
               { value: brand.roomTypes.length.toString(), label: "فئة غرف" },
               { value: brand.facilities.length.toString(), label: "مرفق" },
             ].map((stat) => (
@@ -49,12 +50,13 @@ export default function AboutSection({ brand }: { brand: Brand }) {
                 key={stat.label}
                 className="bg-white rounded-2xl p-4 text-center shadow-sm border border-[#ede8e1]"
               >
-                <p
-                  className="text-2xl font-black mb-1"
+                <div
+                  className="flex items-center justify-center gap-1 text-2xl font-black mb-1"
                   style={{ color: brand.color }}
                 >
                   {stat.value}
-                </p>
+                  {stat.icon && <stat.icon size={20} fill="currentColor" />}
+                </div>
                 <p className="text-xs text-[#4a4a4a]">{stat.label}</p>
               </div>
             ))}

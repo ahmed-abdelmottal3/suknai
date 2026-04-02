@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { BRANDS } from "@/lib/constants";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Star } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 export default function BrandsSection() {
   const { ref, inView } = useInView({ threshold: 0.05, triggerOnce: true });
@@ -63,9 +64,7 @@ export default function BrandsSection() {
 
                 <div className="absolute top-5 right-5 flex gap-0.5">
                   {Array.from({ length: brand.stars }).map((_, j) => (
-                    <span key={j} className="text-[#c8a951] text-xs">
-                      ★
-                    </span>
+                    <Star key={j} size={12} fill="currentColor" className="text-[#c8a951]" />
                   ))}
                 </div>
 
@@ -99,8 +98,9 @@ export default function BrandsSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="text-xs px-3 py-1.5 rounded-full glass text-white hover:bg-white/20 transition-all"
+                        className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full glass text-white hover:bg-white/20 transition-all cursor-pointer"
                       >
+                        <WhatsAppIcon size={12} />
                         واتساب
                       </a>
                     </div>

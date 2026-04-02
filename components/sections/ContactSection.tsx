@@ -1,8 +1,9 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Instagram, Twitter } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram, Twitter, Building, Ghost } from "lucide-react";
 import { Brand, GROUP } from "@/lib/constants";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 export default function ContactSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
@@ -69,7 +70,7 @@ export default function ContactSection({ brand }: { brand: Brand }) {
               rel="noopener noreferrer"
               className="flex items-center gap-3 gradient-gold text-[#0d1b2a] font-bold px-6 py-4 rounded-2xl hover:shadow-xl hover:shadow-yellow-500/20 hover:scale-[1.02] transition-all w-full justify-center"
             >
-              <span className="text-xl">💬</span>
+              <WhatsAppIcon size={24} />
               تواصل عبر واتساب
             </a>
 
@@ -80,7 +81,7 @@ export default function ContactSection({ brand }: { brand: Brand }) {
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-[#0d1b2a] text-white font-bold px-6 py-4 rounded-2xl hover:bg-[#1a2f45] transition-colors w-full justify-center"
             >
-              <span className="text-xl">🏨</span>
+              <Building size={24} />
               احجز إقامتك الآن
             </a>
 
@@ -112,9 +113,9 @@ export default function ContactSection({ brand }: { brand: Brand }) {
                   href={GROUP.social.snapchat}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-xl bg-white border border-[#ede8e1] flex items-center justify-center text-[#4a4a4a] hover:text-[#c8a951] hover:border-[#c8a951]/30 transition-colors shadow-sm text-sm font-bold"
+                  className="w-10 h-10 rounded-xl bg-white border border-[#ede8e1] flex items-center justify-center text-[#4a4a4a] hover:text-[#c8a951] hover:border-[#c8a951]/30 transition-colors shadow-sm"
                 >
-                  👻
+                  <Ghost size={18} />
                 </a>
               </div>
             </div>

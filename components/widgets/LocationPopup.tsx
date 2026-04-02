@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, MapPin, Navigation } from "lucide-react";
+import { X, MapPin, Navigation, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { BRANDS, Brand } from "@/lib/constants";
 
@@ -100,8 +100,8 @@ export default function LocationPopup() {
               {/* Gold accent */}
               <div className="w-12 h-1 gradient-gold rounded-full mb-6" />
 
-              <h2 className="text-xl font-bold text-white mb-2">
-                مرحباً بك في مجموعة سكناي 🌟
+              <h2 className="text-xl font-bold text-white mb-2 flex items-center gap-1.5">
+                مرحباً بك في مجموعة سكناي <Sparkles size={20} className="text-[#c8a951]" />
               </h2>
               <p className="text-white/70 text-sm mb-6">
                 حدد موقعك لنرشدك إلى أقرب فرع وتجربة مميزة

@@ -12,6 +12,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { BRANDS, GROUP } from "@/lib/constants";
+import WhatsAppIcon from "../icons/WhatsAppIcon";
 
 const BUSINESS_LINKS = [
   { label: "الفنادق", href: "/brands" },
@@ -164,7 +165,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-start gap-3 text-white/70 hover:text-[#c8a951] transition-colors text-sm"
               >
-                <span className="text-base flex-shrink-0">💬</span>
+                <span className="text-base flex-shrink-0 mt-0.5"><WhatsAppIcon size={15} /></span>
                 واتساب للحجوزات
               </a>
             </li>

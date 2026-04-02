@@ -2,8 +2,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Star } from "lucide-react";
 import { Brand } from "@/lib/constants";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 interface HeroSectionProps {
   brand: Brand;
@@ -56,7 +57,7 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
             className="flex items-center justify-center gap-1 mb-4"
           >
             {Array.from({ length: brand.stars }).map((_, i) => (
-              <span key={i} className="text-[#c8a951] text-lg">★</span>
+              <Star key={i} size={18} fill="currentColor" className="text-[#c8a951]" />
             ))}
           </motion.div>
         )}
@@ -102,9 +103,10 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
                 href={`https://wa.me/${brand.whatsapp.replace("+", "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass text-white font-semibold px-8 py-4 rounded-2xl text-lg hover:bg-white/20 transition-all duration-300"
+                className="flex items-center gap-2 glass text-white font-semibold px-8 py-4 rounded-2xl text-lg hover:bg-white/20 transition-all duration-300"
               >
-                💬 واتساب
+                <WhatsAppIcon size={20} />
+                واتساب
               </a>
             </>
           ) : (

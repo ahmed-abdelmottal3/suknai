@@ -1,8 +1,9 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { Phone, Mail, Instagram, Twitter, Youtube } from "lucide-react";
+import { Phone, Mail, Instagram, Twitter, Youtube, Ghost, Music } from "lucide-react";
 import { GROUP, BRANDS } from "@/lib/constants";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 export default function GroupContactSection() {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
@@ -54,10 +55,7 @@ export default function GroupContactSection() {
             <div className="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform"
               style={{ background: "#25D36622" }}
             >
-              <svg viewBox="0 0 32 32" width="28" height="28" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.004 2.667C8.636 2.667 2.667 8.636 2.667 16c0 2.354.63 4.635 1.828 6.635L2.667 29.333l6.865-1.8A13.285 13.285 0 0 0 16.004 29.333C23.369 29.333 29.333 23.364 29.333 16S23.369 2.667 16.004 2.667Zm0 2.4c5.924 0 10.933 5.009 10.933 10.933 0 5.92-5.01 10.933-10.933 10.933a10.9 10.9 0 0 1-5.565
--1.527l-.388-.234-4.08 1.07 1.092-3.973-.256-.4A10.893 10.893 0 0 1 5.07 16c0-5.924 5.01-10.933 10.933-10.933Zm-3.4 5.6c-.213 0-.56.08-.853.4-.293.32-1.12 1.093-1.12 2.667 0 1.573 1.147 3.093 1.307 3.307.16.213 2.24 3.573 5.52 4.88 2.72 1.093 3.28.88 3.867.827.587-.053 1.893-.773 2.16-1.52.267-.747.267-1.387.187-1.52-.08-.133-.293-.213-.613-.373-.32-.16-1.893-.933-2.187-1.04-.293-.107-.507-.16-.72.16-.213.32-.827 1.04-.999 1.253-.16.213-.333.24-.613.08-.293-.16-1.227-.453-2.333-1.44-.867-.773-1.44-1.72-1.613-2.013-.173-.293-.013-.453.12-.6C13 .12 13 .12 13 .12z"/>
-              </svg>
+              <WhatsAppIcon size={28} className="text-[#25D366]" />
             </div>
             <p className="text-[#c8a951] text-sm font-semibold mb-2">واتساب</p>
             <p className="text-white font-bold text-lg" dir="ltr">{GROUP.whatsapp}</p>
@@ -115,9 +113,9 @@ export default function GroupContactSection() {
               aria-label="Snapchat"
               whileHover={{ scale: 1.2, y: -3 }}
               whileTap={{ scale: 0.9 }}
-              className="w-12 h-12 rounded-2xl glass flex items-center justify-center text-white/70 hover:text-[#c8a951] transition-colors text-xl"
+              className="w-12 h-12 rounded-2xl glass flex items-center justify-center text-white/70 hover:text-[#c8a951] transition-colors"
             >
-              👻
+              <Ghost size={22} />
             </motion.a>
             <motion.a
               href={GROUP.social.tiktok}
@@ -126,9 +124,9 @@ export default function GroupContactSection() {
               aria-label="TikTok"
               whileHover={{ scale: 1.2, y: -3 }}
               whileTap={{ scale: 0.9 }}
-              className="w-12 h-12 rounded-2xl glass flex items-center justify-center text-white/70 hover:text-[#c8a951] transition-colors text-xl"
+              className="w-12 h-12 rounded-2xl glass flex items-center justify-center text-white/70 hover:text-[#c8a951] transition-colors"
             >
-              🎵
+              <Music size={22} />
             </motion.a>
           </div>
         </motion.div>

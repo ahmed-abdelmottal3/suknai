@@ -2,7 +2,7 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Users, Maximize } from "lucide-react";
+import { Users, Maximize, Star } from "lucide-react";
 import { Brand } from "@/lib/constants";
 
 export default function RoomsSection({ brand }: { brand: Brand }) {
@@ -48,10 +48,10 @@ export default function RoomsSection({ brand }: { brand: Brand }) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/70 to-transparent" />
                 {/* Stars badge */}
-                <div className="absolute top-4 right-4 glass px-3 py-1 rounded-full">
-                  <span className="text-[#c8a951] text-xs font-bold">
-                    {Array.from({ length: brand.stars }).map(() => "★").join("")}
-                  </span>
+                <div className="absolute top-4 right-4 glass px-3 py-1 rounded-full flex gap-0.5 items-center">
+                  {Array.from({ length: brand.stars }).map((_, j) => (
+                    <Star key={j} size={12} fill="currentColor" className="text-[#c8a951]" />
+                  ))}
                 </div>
               </div>
 

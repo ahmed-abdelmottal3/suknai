@@ -2,6 +2,7 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { Brand } from "@/lib/constants";
+import * as Icons from "lucide-react";
 
 export default function FacilitiesSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
@@ -35,10 +36,13 @@ export default function FacilitiesSection({ brand }: { brand: Brand }) {
               className="bg-white rounded-2xl p-6 text-center shadow-sm border border-[#ede8e1] cursor-default"
             >
               <div
-                className="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-3xl mb-4"
-                style={{ background: brand.color + "18" }}
+                className="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-3xl mb-4 text-[#0d1b2a]"
+                style={{ background: brand.color + "18", color: brand.color }}
               >
-                {facility.icon}
+                {(() => {
+                  const IconComp = (Icons as any)[facility.icon] || Icons.CheckCircle;
+                  return <IconComp size={28} strokeWidth={1.5} />;
+                })()}
               </div>
               <p className="text-[#2c2c2c] font-semibold text-sm">{facility.nameAr}</p>
             </motion.div>

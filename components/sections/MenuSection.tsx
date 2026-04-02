@@ -2,8 +2,9 @@
 import { useInView } from "react-intersection-observer";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
 import { Brand } from "@/lib/constants";
+import * as Icons from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 export default function MenuSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
@@ -41,7 +42,12 @@ export default function MenuSection({ brand }: { brand: Brand }) {
                 className="w-full flex items-center justify-between px-6 py-5 text-right"
               >
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">{cat.icon}</span>
+                  <span className="text-[#0d1b2a]">
+                    {(() => {
+                      const IconComp = (Icons as any)[cat.icon] || Icons.UtensilsCrossed;
+                      return <IconComp size={22} strokeWidth={1.5} />;
+                    })()}
+                  </span>
                   <span className="text-[#0d1b2a] font-bold text-lg">{cat.nameAr}</span>
                 </div>
                 <motion.div

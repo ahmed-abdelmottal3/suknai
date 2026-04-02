@@ -1,7 +1,7 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { Clock } from "lucide-react";
+import { Clock, Sun } from "lucide-react";
 import { Brand } from "@/lib/constants";
 
 export default function BreakfastSection({ brand }: { brand: Brand }) {
@@ -56,7 +56,7 @@ export default function BreakfastSection({ brand }: { brand: Brand }) {
               className="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-5"
               style={{ background: brand.color }}
             >
-              <span className="text-3xl">☀️</span>
+              <Sun size={28} className="text-[#0d1b2a]" />
             </div>
             <p className="text-[#c8a951] text-sm font-semibold tracking-widest uppercase mb-3">
               نهاية الأسبوع

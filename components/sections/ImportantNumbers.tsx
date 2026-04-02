@@ -2,6 +2,7 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { Brand } from "@/lib/constants";
+import * as Icons from "lucide-react";
 
 export default function ImportantNumbers({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
@@ -36,10 +37,13 @@ export default function ImportantNumbers({ brand }: { brand: Brand }) {
               className="bg-white rounded-2xl p-5 text-center shadow-sm border border-[#ede8e1] cursor-pointer hover:border-[#c8a951]/40 transition-colors group"
             >
               <div
-                className="w-12 h-12 mx-auto rounded-xl flex items-center justify-center text-2xl mb-3 transition-all group-hover:scale-110"
-                style={{ background: brand.color + "15" }}
+                className="w-12 h-12 mx-auto rounded-xl flex items-center justify-center mb-3 transition-all group-hover:scale-110"
+                style={{ background: brand.color + "15", color: brand.color }}
               >
-                {num.icon}
+                {(() => {
+                  const IconComp = (Icons as any)[num.icon] || Icons.PhoneCall;
+                  return <IconComp size={24} strokeWidth={1.5} />;
+                })()}
               </div>
               <p className="text-[#0d1b2a] font-bold text-sm mb-1">{num.labelAr}</p>
               <p

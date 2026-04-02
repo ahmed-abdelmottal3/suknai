@@ -166,14 +166,14 @@ export const BRANDS: Brand[] = [
       },
     ],
     facilities: [
-      { nameAr: "مسبح خارجي", icon: "🏊" },
-      { nameAr: "مركز لياقة", icon: "💪" },
-      { nameAr: "مطعم عالمي", icon: "🍽️" },
-      { nameAr: "قاعات اجتماعات", icon: "🏛️" },
-      { nameAr: "موقف سيارات", icon: "🚗" },
-      { nameAr: "خدمة الغرف 24/7", icon: "🛎️" },
-      { nameAr: "سبا وعلاجات", icon: "💆" },
-      { nameAr: "واي فاي مجاني", icon: "📶" },
+      { nameAr: "مسبح خارجي", icon: "Waves" },
+      { nameAr: "مركز لياقة", icon: "Dumbbell" },
+      { nameAr: "مطعم عالمي", icon: "UtensilsCrossed" },
+      { nameAr: "قاعات اجتماعات", icon: "Landmark" },
+      { nameAr: "موقف سيارات", icon: "Car" },
+      { nameAr: "خدمة الغرف 24/7", icon: "BellRing" },
+      { nameAr: "سبا وعلاجات", icon: "HeartPulse" },
+      { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
     landmarks: [
       {
@@ -207,22 +207,22 @@ export const BRANDS: Brand[] = [
     ],
     breakfastTimes: { weekday: "6:30 ص – 10:30 ص", weekend: "7:00 ص – 11:30 ص" },
     importantNumbers: [
-      { labelAr: "الاستقبال", number: "9", icon: "📞" },
-      { labelAr: "خدمة الغرف", number: "55", icon: "🛎️" },
-      { labelAr: "الهاتف الداخلي", number: "0", icon: "☎️" },
-      { labelAr: "الطوارئ", number: "911", icon: "🚨" },
-      { labelAr: "الأمن", number: "33", icon: "🔒" },
+      { labelAr: "الاستقبال", number: "9", icon: "Phone" },
+      { labelAr: "خدمة الغرف", number: "55", icon: "BellRing" },
+      { labelAr: "الهاتف الداخلي", number: "0", icon: "PhoneCall" },
+      { labelAr: "الطوارئ", number: "911", icon: "Siren" },
+      { labelAr: "الأمن", number: "33", icon: "Lock" },
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966512345679" },
     menuCategories: [
       {
         nameAr: "المشروبات",
-        icon: "☕",
+        icon: "Coffee",
         items: ["قهوة عربية", "شاي كرك", "عصير طازج", "مياه معدنية"],
       },
       {
         nameAr: "الإفطار",
-        icon: "🥗",
+        icon: "Salad",
         items: [
           "بيض مقلي/مسلوق",
           "فول مدمس",
@@ -233,12 +233,12 @@ export const BRANDS: Brand[] = [
       },
       {
         nameAr: "الوجبات الرئيسية",
-        icon: "🍖",
+        icon: "Beef",
         items: ["مندي دجاج", "كبسة لحم", "مشوي مشكل", "سمك مشوي"],
       },
       {
         nameAr: "الحلويات",
-        icon: "🍮",
+        icon: "CakeSlice",
         items: ["أم علي", "كنافة", "محلبية", "تمر ومكسرات"],
       },
     ],
@@ -277,13 +277,13 @@ export const BRANDS: Brand[] = [
       }
     ],
     facilities: [
-      { nameAr: "مطعم", icon: "🍽️" },
-      { nameAr: "واي فاي مجاني", icon: "📶" }
+      { nameAr: "مطعم", icon: "UtensilsCrossed" },
+      { nameAr: "واي فاي مجاني", icon: "Wifi" }
     ],
     landmarks: [],
     breakfastTimes: { weekday: "6:30 ص – 10:30 ص", weekend: "7:00 ص – 11:30 ص" },
     importantNumbers: [
-      { labelAr: "الاستقبال", number: "9", icon: "📞" }
+      { labelAr: "الاستقبال", number: "9", icon: "Phone" }
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: []
@@ -353,14 +353,14 @@ export const BRANDS: Brand[] = [
       },
     ],
     facilities: [
-      { nameAr: "مسبح على السطح", icon: "🏊" },
-      { nameAr: "مطعم بحري", icon: "🦞" },
-      { nameAr: "بار الشاي", icon: "🫖" },
-      { nameAr: "مركز لياقة", icon: "💪" },
-      { nameAr: "مسبح أطفال", icon: "🧒" },
-      { nameAr: "خدمة الشاطئ", icon: "🏖️" },
-      { nameAr: "جلسات خارجية", icon: "🌊" },
-      { nameAr: "واي فاي مجاني", icon: "📶" },
+      { nameAr: "مسبح على السطح", icon: "Waves" },
+      { nameAr: "مطعم بحري", icon: "Fish" },
+      { nameAr: "بار الشاي", icon: "Coffee" },
+      { nameAr: "مركز لياقة", icon: "Dumbbell" },
+      { nameAr: "مسبح أطفال", icon: "Smile" },
+      { nameAr: "خدمة الشاطئ", icon: "Umbrella" },
+      { nameAr: "جلسات خارجية", icon: "Waves" },
+      { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
     landmarks: [
       {
@@ -394,26 +394,26 @@ export const BRANDS: Brand[] = [
     ],
     breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
     importantNumbers: [
-      { labelAr: "الاستقبال", number: "9", icon: "📞" },
-      { labelAr: "خدمة الغرف", number: "66", icon: "🛎️" },
-      { labelAr: "الطوارئ", number: "911", icon: "🚨" },
-      { labelAr: "صالة البحر", number: "55", icon: "🏖️" },
+      { labelAr: "الاستقبال", number: "9", icon: "Phone" },
+      { labelAr: "خدمة الغرف", number: "66", icon: "BellRing" },
+      { labelAr: "الطوارئ", number: "911", icon: "Siren" },
+      { labelAr: "صالة البحر", number: "55", icon: "Umbrella" },
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966522233446" },
     menuCategories: [
       {
         nameAr: "الإفطار",
-        icon: "🥗",
+        icon: "Salad",
         items: ["فطور بحري", "بيض بالطماطم", "خبز أبيض وعسل"],
       },
       {
         nameAr: "المشروبات",
-        icon: "🫖",
+        icon: "Coffee",
         items: ["قهوة مختصة", "شاي بالنعناع", "عصير برتقال"],
       },
       {
         nameAr: "المأكولات البحرية",
-        icon: "🦐",
+        icon: "Fish",
         items: ["سمك مشوي", "روبيان محمر", "كابوريا بالثوم"],
       },
     ],
@@ -457,13 +457,13 @@ export const BRANDS: Brand[] = [
       }
     ],
     facilities: [
-      { nameAr: "مقهى", icon: "☕" },
-      { nameAr: "واي فاي مجاني", icon: "📶" }
+      { nameAr: "مقهى", icon: "Coffee" },
+      { nameAr: "واي فاي مجاني", icon: "Wifi" }
     ],
     landmarks: [],
     breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
     importantNumbers: [
-      { labelAr: "الاستقبال", number: "9", icon: "📞" }
+      { labelAr: "الاستقبال", number: "9", icon: "Phone" }
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: []
@@ -506,13 +506,13 @@ export const BRANDS: Brand[] = [
       }
     ],
     facilities: [
-      { nameAr: "مقهى", icon: "☕" },
-      { nameAr: "واي فاي مجاني", icon: "📶" }
+      { nameAr: "مقهى", icon: "Coffee" },
+      { nameAr: "واي فاي مجاني", icon: "Wifi" }
     ],
     landmarks: [],
     breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
     importantNumbers: [
-      { labelAr: "الاستقبال", number: "9", icon: "📞" }
+      { labelAr: "الاستقبال", number: "9", icon: "Phone" }
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: []
@@ -582,14 +582,14 @@ export const BRANDS: Brand[] = [
       },
     ],
     facilities: [
-      { nameAr: "مطعم حلال", icon: "🍽️" },
-      { nameAr: "قاعة صلاة", icon: "🕌" },
-      { nameAr: "خدمة نقل", icon: "🚌" },
-      { nameAr: "صرافة", icon: "💱" },
-      { nameAr: "خدمة الغرف", icon: "🛎️" },
-      { nameAr: "واي فاي مجاني", icon: "📶" },
-      { nameAr: "غسيل ملابس", icon: "👕" },
-      { nameAr: "كونسيرج", icon: "🗺️" },
+      { nameAr: "مطعم حلال", icon: "UtensilsCrossed" },
+      { nameAr: "قاعة صلاة", icon: "Building" },
+      { nameAr: "خدمة نقل", icon: "Bus" },
+      { nameAr: "صرافة", icon: "Banknote" },
+      { nameAr: "خدمة الغرف", icon: "BellRing" },
+      { nameAr: "واي فاي مجاني", icon: "Wifi" },
+      { nameAr: "غسيل ملابس", icon: "Shirt" },
+      { nameAr: "كونسيرج", icon: "Map" },
     ],
     landmarks: [
       {
@@ -616,26 +616,26 @@ export const BRANDS: Brand[] = [
     ],
     breakfastTimes: { weekday: "5:30 ص – 10:00 ص", weekend: "6:00 ص – 11:00 ص" },
     importantNumbers: [
-      { labelAr: "الاستقبال", number: "9", icon: "📞" },
-      { labelAr: "خدمة الغرف", number: "22", icon: "🛎️" },
-      { labelAr: "الطوارئ", number: "911", icon: "🚨" },
-      { labelAr: "خدمة النقل", number: "44", icon: "🚌" },
+      { labelAr: "الاستقبال", number: "9", icon: "Phone" },
+      { labelAr: "خدمة الغرف", number: "22", icon: "BellRing" },
+      { labelAr: "الطوارئ", number: "911", icon: "Siren" },
+      { labelAr: "خدمة النقل", number: "44", icon: "Bus" },
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966548765433" },
     menuCategories: [
       {
         nameAr: "الإفطار",
-        icon: "🥗",
+        icon: "Salad",
         items: ["فطور تقليدي", "بيض بالقشطة", "حليب وعصير", "تمر ومكسرات"],
       },
       {
         nameAr: "المشروبات",
-        icon: "☕",
+        icon: "Coffee",
         items: ["قهوة عربية", "شاي أخضر", "عصائر طازجة"],
       },
       {
         nameAr: "الوجبات",
-        icon: "🍖",
+        icon: "Beef",
         items: ["أرز بخاري", "مرق لحم", "دجاج مشوي"],
       },
     ],
@@ -705,14 +705,14 @@ export const BRANDS: Brand[] = [
       },
     ],
     facilities: [
-      { nameAr: "حمام سباحة لانهائي", icon: "🏊" },
-      { nameAr: "سبا طبيعية", icon: "💆" },
-      { nameAr: "رياضة جبلية", icon: "🧗" },
-      { nameAr: "مطعم طبيعي", icon: "🍽️" },
-      { nameAr: "نزهات مشي", icon: "🥾" },
-      { nameAr: "مراقبة النجوم", icon: "⭐" },
-      { nameAr: "نار مفتوحة", icon: "🔥" },
-      { nameAr: "خدمة كونسيرج", icon: "🎯" },
+      { nameAr: "حمام سباحة لانهائي", icon: "Waves" },
+      { nameAr: "سبا طبيعية", icon: "HeartPulse" },
+      { nameAr: "رياضة جبلية", icon: "Mountain" },
+      { nameAr: "مطعم طبيعي", icon: "UtensilsCrossed" },
+      { nameAr: "نزهات مشي", icon: "Footprints" },
+      { nameAr: "مراقبة النجوم", icon: "Star" },
+      { nameAr: "نار مفتوحة", icon: "Flame" },
+      { nameAr: "خدمة كونسيرج", icon: "Target" },
     ],
     landmarks: [
       {
@@ -739,26 +739,26 @@ export const BRANDS: Brand[] = [
     ],
     breakfastTimes: { weekday: "7:00 ص – 10:30 ص", weekend: "7:30 ص – 11:30 ص" },
     importantNumbers: [
-      { labelAr: "الاستقبال", number: "9", icon: "📞" },
-      { labelAr: "خدمة الفيلا", number: "11", icon: "🛎️" },
-      { labelAr: "الطوارئ", number: "911", icon: "🚨" },
-      { labelAr: "النشاطات", number: "77", icon: "🎯" },
+      { labelAr: "الاستقبال", number: "9", icon: "Phone" },
+      { labelAr: "خدمة الفيلا", number: "11", icon: "BellRing" },
+      { labelAr: "الطوارئ", number: "911", icon: "Siren" },
+      { labelAr: "النشاطات", number: "77", icon: "Target" },
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966572222223" },
     menuCategories: [
       {
         nameAr: "الإفطار الجبلي",
-        icon: "🥗",
+        icon: "Salad",
         items: ["عيش ولبن", "عسل جبلي", "تمر أخضر", "قشدة طازجة"],
       },
       {
         nameAr: "المشروبات الساخنة",
-        icon: "☕",
+        icon: "Coffee",
         items: ["قهوة مختصة", "شاي أعشاب", "كاكاو دافئ"],
       },
       {
         nameAr: "الوجبات",
-        icon: "🍖",
+        icon: "Flame",
         items: ["دجاج مشوي على الفحم", "خروف محمر", "سمك أبها"],
       },
     ],
@@ -828,14 +828,14 @@ export const BRANDS: Brand[] = [
       },
     ],
     facilities: [
-      { nameAr: "مطبخ مجهز", icon: "👨‍🍳" },
-      { nameAr: "غسالة ونشافة", icon: "👕" },
-      { nameAr: "جيم خاص", icon: "💪" },
-      { nameAr: "موقف سيارات", icon: "🚗" },
-      { nameAr: "أمن 24/7", icon: "🔒" },
-      { nameAr: "استقبال متواصل", icon: "🛎️" },
-      { nameAr: "إنترنت فائق", icon: "📶" },
-      { nameAr: "تنظيف يومي", icon: "🧹" },
+      { nameAr: "مطبخ مجهز", icon: "ChefHat" },
+      { nameAr: "غسالة ونشافة", icon: "Shirt" },
+      { nameAr: "جيم خاص", icon: "Dumbbell" },
+      { nameAr: "موقف سيارات", icon: "Car" },
+      { nameAr: "أمن 24/7", icon: "Lock" },
+      { nameAr: "استقبال متواصل", icon: "BellRing" },
+      { nameAr: "إنترنت فائق", icon: "Wifi" },
+      { nameAr: "تنظيف يومي", icon: "Sparkles" },
     ],
     landmarks: [
       {
@@ -862,21 +862,21 @@ export const BRANDS: Brand[] = [
     ],
     breakfastTimes: { weekday: "7:00 ص – 10:00 ص", weekend: "7:30 ص – 11:00 ص" },
     importantNumbers: [
-      { labelAr: "الاستقبال", number: "9", icon: "📞" },
-      { labelAr: "الصيانة", number: "22", icon: "🔧" },
-      { labelAr: "الطوارئ", number: "911", icon: "🚨" },
-      { labelAr: "النظافة", number: "33", icon: "🧹" },
+      { labelAr: "الاستقبال", number: "9", icon: "Phone" },
+      { labelAr: "الصيانة", number: "22", icon: "Wrench" },
+      { labelAr: "الطوارئ", number: "911", icon: "Siren" },
+      { labelAr: "النظافة", number: "33", icon: "Sparkles" },
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966544455668" },
     menuCategories: [
       {
         nameAr: "الإفطار",
-        icon: "🥗",
+        icon: "Salad",
         items: ["بيض صحي", "خبز توست", "عصير برتقال", "فواكه طازجة"],
       },
       {
         nameAr: "المشروبات",
-        icon: "☕",
+        icon: "Coffee",
         items: ["قهوة أمريكية", "شاي أخضر", "عصائر"],
       },
     ],

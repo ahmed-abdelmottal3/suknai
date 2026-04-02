@@ -1,8 +1,9 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { Phone, MessageSquare } from "lucide-react";
+import { Phone, UserRound } from "lucide-react";
 import { Brand } from "@/lib/constants";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 export default function DutyManagerSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
@@ -20,7 +21,7 @@ export default function DutyManagerSection({ brand }: { brand: Brand }) {
             className="w-20 h-20 mx-auto rounded-full flex items-center justify-center text-4xl mb-5 shadow-lg"
             style={{ background: `linear-gradient(135deg, ${brand.color}, ${brand.color}88)` }}
           >
-            👨‍💼
+            <UserRound size={36} className="text-[#0d1b2a]" />
           </div>
 
           <p className="text-[#c8a951] text-sm font-semibold tracking-widest uppercase mb-2">
@@ -47,7 +48,7 @@ export default function DutyManagerSection({ brand }: { brand: Brand }) {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 glass text-white font-semibold px-6 py-3 rounded-2xl hover:bg-white/20 transition-all"
             >
-              <MessageSquare size={18} />
+              <WhatsAppIcon size={18} />
               واتساب
             </a>
           </div>

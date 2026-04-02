@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { BRANDS, GROUP } from "@/lib/constants";
 import WeatherWidget from "@/components/widgets/WeatherWidget";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -27,7 +28,7 @@ export default function Navbar() {
   return (
     <>
       <div className="fixed top-0 inset-x-0 z-[60] bg-[#c8a951] text-[#0d1b2a] text-xs md:text-sm py-1.5 px-4 text-center font-bold shadow-md">
-        تنويه: هذه الصفحة مخصصة للعروض الداخلية. للعودة إلى الموقع الرسمي لمجموعة سكناي، <a href="https://suknai.com" target="_blank" rel="noreferrer" className="underline font-black hover:text-white transition-colors">اضغط هنا</a>
+        تنويه: هذه الصفحة مخصصة للإستخدام الداخلي. للعودة إلى الموقع الرسمي لمجموعة سكناي، <a href="https://suknai.com" target="_blank" rel="noreferrer" className="underline font-black hover:text-white transition-colors">اضغط هنا</a>
       </div>
       <motion.nav
         initial={{ y: -80, opacity: 0 }}
@@ -126,8 +127,9 @@ export default function Navbar() {
               href={`https://wa.me/${GROUP.whatsapp.replace(/\+/g, "")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="gradient-gold text-[#0d1b2a] font-bold text-sm px-5 py-2 rounded-full hover:shadow-lg hover:shadow-yellow-500/20 transition-all duration-300 hover:scale-105"
+              className="gradient-gold text-[#0d1b2a] font-bold text-sm px-5 py-2 rounded-full hover:shadow-lg hover:shadow-yellow-500/20 transition-all duration-300 hover:scale-105 flex items-center gap-2"
             >
+              <WhatsAppIcon size={16} />
               احجز عبر واتساب
             </a>
           </div>
@@ -222,8 +224,9 @@ export default function Navbar() {
                 href={`https://wa.me/${GROUP.whatsapp.replace(/\+/g, "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="gradient-gold text-[#0d1b2a] font-bold text-center py-4 rounded-2xl text-xl"
+                className="gradient-gold text-[#0d1b2a] font-bold text-center py-4 rounded-2xl text-xl flex items-center justify-center gap-2"
               >
+                <WhatsAppIcon size={24} />
                 احجز عبر واتساب
               </a>
             </div>

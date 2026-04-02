@@ -2,6 +2,7 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { Brand } from "@/lib/constants";
+import { Star } from "lucide-react";
 
 const REVIEWS = [
   { name: "أحمد محمد", rating: 5, text: "تجربة رائعة ومميزة! الخدمة استثنائية والموقع مثالي. سأعود بالتأكيد.", city: "الرياض" },
@@ -38,7 +39,9 @@ export default function ReviewsSection({ brand }: { brand: Brand }) {
                 <p className="text-5xl font-black" style={{ color: brand.color }}>
                   {avgRating}
                 </p>
-                <p className="text-[#c8a951] text-lg">★★★★★</p>
+                <div className="flex justify-center gap-0.5 text-[#c8a951]">
+                  {[...Array(5)].map((_, i) => <Star key={i} size={18} fill="currentColor" />)}
+                </div>
                 <p className="text-[#4a4a4a] text-xs">{REVIEWS.length} تقييم</p>
               </div>
               <div className="w-px h-16 bg-[#ede8e1]" />
@@ -56,7 +59,7 @@ export default function ReviewsSection({ brand }: { brand: Brand }) {
               style={{ border: `2px solid ${brand.color}` }}
             >
               <span className="group-hover:text-white transition-colors">أضف تقييمك في جوجل</span>
-              <span className="text-xl">⭐️</span>
+              <Star size={20} fill="currentColor" />
             </a>
           </div>
         </motion.div>
@@ -72,7 +75,7 @@ export default function ReviewsSection({ brand }: { brand: Brand }) {
             >
               <div className="flex items-center gap-1 mb-3">
                 {Array.from({ length: review.rating }).map((_, j) => (
-                  <span key={j} className="text-[#c8a951] text-sm">★</span>
+                  <Star key={j} size={14} fill="currentColor" className="text-[#c8a951]" />
                 ))}
               </div>
               <p className="text-[#4a4a4a] text-sm leading-relaxed mb-5 italic">
