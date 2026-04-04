@@ -11,6 +11,7 @@ import BreakfastSection from "@/components/sections/BreakfastSection";
 import MenuSection from "@/components/sections/MenuSection";
 import RoomsSection from "@/components/sections/RoomsSection";
 import FacilitiesSection from "@/components/sections/FacilitiesSection";
+import RoyalServicesSection from "@/components/sections/RoyalServicesSection";
 import ImportantNumbers from "@/components/sections/ImportantNumbers";
 import DutyManagerSection from "@/components/sections/DutyManagerSection";
 import GallerySection from "@/components/sections/GallerySection";
@@ -28,6 +29,7 @@ export default function BrandPageTemplate({ brand }: { brand: Brand }) {
       <BreakfastSection brand={brand} />
       <MenuSection brand={brand} />
       <RoomsSection brand={brand} />
+      <RoyalServicesSection brand={brand} />
       <FacilitiesSection brand={brand} />
       <ImportantNumbers brand={brand} />
       <GallerySection brand={brand} />

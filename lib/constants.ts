@@ -83,6 +83,7 @@ export interface Landmark {
   type: "city" | "nearby";
   distance?: string;
   image: string;
+  location: string;
 }
 
 export interface ImportantNumber {
@@ -112,21 +113,21 @@ export const BRANDS: Brand[] = [
     cityEn: "Hail",
     reviewUrl: "https://maps.app.goo.gl/CLmLJQo7noEVaZrZ8",
     descriptionAr:
-      "فندق سكناي رويال يجمع بين الفخامة المعاصرة والضيافة السعودية الأصيلة في قلب الرياض. يقدم الفندق تجربة إقامة استثنائية بتصميم راقٍ وخدمات عالمية المستوى.",
+      "فندق سكناي رويال يجمع بين الفخامة المعاصرة والضيافة السعودية الأصيلة في قلب الحائل. يقدم الفندق تجربة إقامة استثنائية بتصميم راقٍ وخدمات عالمية المستوى.",
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "royal@suknai.com",
-    reservationUrl: "https://booking.suknai.com/royal",
+    reservationUrl: "/contact",
     website: "https://royal.suknai.com",
     heroImage:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=85",
+      "/royal.jpg",
     galleryImages: [
-      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80",
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80",
-      "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
-      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
-      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?w=800&q=80",
-      "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80",
+      "/hael.jpg",
+      "/gal1.jpg",
+      "/gal2.jpg",
+      "/gal3.jpeg",
+      "/gal4.jpeg",
+      "/gal5.jpeg",
     ],
     coordinates: { lat: 24.6877, lng: 46.7219 },
     social: {
@@ -166,54 +167,42 @@ export const BRANDS: Brand[] = [
       },
     ],
     facilities: [
-      { nameAr: "مسبح خارجي", icon: "Waves" },
       { nameAr: "مركز لياقة", icon: "Dumbbell" },
       { nameAr: "مطعم عالمي", icon: "UtensilsCrossed" },
       { nameAr: "قاعات اجتماعات", icon: "Landmark" },
       { nameAr: "موقف سيارات", icon: "Car" },
       { nameAr: "خدمة الغرف 24/7", icon: "BellRing" },
-      { nameAr: "سبا وعلاجات", icon: "HeartPulse" },
       { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
     landmarks: [
       {
-        nameAr: "برج المملكة",
+        nameAr: "مسجد الراجحي",
         type: "nearby",
         distance: "2 كم",
         image:
-          "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400&q=80",
+          "/rajhi.jpg",
+        location: "https://maps.app.goo.gl/YWNeFZ6rCDtm77vd6",
       },
       {
-        nameAr: "مركز الملك عبدالله المالي",
-        type: "city",
-        distance: "3 كم",
-        image:
-          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-      },
-      {
-        nameAr: "العليا مول",
+        nameAr: "مركز الامير سلطان الاجتماعي",
         type: "nearby",
         distance: "1 كم",
         image:
-          "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=400&q=80",
-      },
-      {
-        nameAr: "متحف الرياض",
-        type: "city",
-        distance: "5 كم",
-        image:
-          "https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=400&q=80",
+          "/sultan.jpg",
+        location: 'https://maps.app.goo.gl/rJonrnPfda6qwWUd6'
+
       },
     ],
-    breakfastTimes: { weekday: "6:30 ص – 10:30 ص", weekend: "7:00 ص – 11:30 ص" },
+    breakfastTimes: { weekday: "6:00 ص - 10:00 ص", weekend: "7:00 ص - 11:30 ص" },
     importantNumbers: [
-      { labelAr: "الاستقبال", number: "9", icon: "Phone" },
-      { labelAr: "خدمة الغرف", number: "55", icon: "BellRing" },
-      { labelAr: "الهاتف الداخلي", number: "0", icon: "PhoneCall" },
-      { labelAr: "الطوارئ", number: "911", icon: "Siren" },
-      { labelAr: "الأمن", number: "33", icon: "Lock" },
+      { labelAr: "الاستقبال", number: "0", icon: "Phone" },
+      { labelAr: "المطعم", number: "333", icon: "UtensilsCrossed" },
+      { labelAr: "الكوفي", number: "333", icon: "Coffee" },
+      { labelAr: "العمليات الموحدة", number: "911", icon: "Siren" },
+      { labelAr: "الدفاع المدني", number: "998", icon: "Lock" },
+      { labelAr: "الاسعاف", number: "997", icon: "Heart" },
     ],
-    dutyManager: { nameAr: "المدير المناوب", phone: "+966512345679" },
+    dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: [
       {
         nameAr: "المشروبات",
@@ -258,7 +247,7 @@ export const BRANDS: Brand[] = [
     email: "suknaijouf@suknai.com",
     reservationUrl: "https://booking.suknai.com/suknai-jouf",
     website: "https://suknai-jouf.suknai.com",
-    heroImage: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1600&q=85",
+    heroImage: "/royal2.jpg",
     galleryImages: [
       "https://images.unsplash.com/photo-1562133567-b6a0a9c7e6eb?w=800&q=80",
     ],
@@ -277,8 +266,12 @@ export const BRANDS: Brand[] = [
       }
     ],
     facilities: [
-      { nameAr: "مطعم", icon: "UtensilsCrossed" },
-      { nameAr: "واي فاي مجاني", icon: "Wifi" }
+      { nameAr: "مركز لياقة", icon: "Dumbbell" },
+      { nameAr: "مطعم عالمي", icon: "UtensilsCrossed" },
+      { nameAr: "قاعات اجتماعات", icon: "Landmark" },
+      { nameAr: "موقف سيارات", icon: "Car" },
+      { nameAr: "خدمة الغرف 24/7", icon: "BellRing" },
+      { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
     landmarks: [],
     breakfastTimes: { weekday: "6:30 ص – 10:30 ص", weekend: "7:00 ص – 11:30 ص" },
@@ -306,7 +299,7 @@ export const BRANDS: Brand[] = [
     reservationUrl: "https://booking.suknai.com/aya",
     website: "https://aya.suknai.com",
     heroImage:
-      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1600&q=85",
+      "/ayas.jpg",
     galleryImages: [
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
@@ -353,13 +346,11 @@ export const BRANDS: Brand[] = [
       },
     ],
     facilities: [
-      { nameAr: "مسبح على السطح", icon: "Waves" },
-      { nameAr: "مطعم بحري", icon: "Fish" },
-      { nameAr: "بار الشاي", icon: "Coffee" },
       { nameAr: "مركز لياقة", icon: "Dumbbell" },
-      { nameAr: "مسبح أطفال", icon: "Smile" },
-      { nameAr: "خدمة الشاطئ", icon: "Umbrella" },
-      { nameAr: "جلسات خارجية", icon: "Waves" },
+      { nameAr: "مطعم عالمي", icon: "UtensilsCrossed" },
+      { nameAr: "قاعات اجتماعات", icon: "Landmark" },
+      { nameAr: "موقف سيارات", icon: "Car" },
+      { nameAr: "خدمة الغرف 24/7", icon: "BellRing" },
       { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
     landmarks: [
@@ -369,6 +360,7 @@ export const BRANDS: Brand[] = [
         distance: "50 م",
         image:
           "https://images.unsplash.com/photo-1603199506016-b9a594b593c0?w=400&q=80",
+        location: ''
       },
       {
         nameAr: "نافورة الملك فهد",
@@ -376,6 +368,7 @@ export const BRANDS: Brand[] = [
         distance: "2 كم",
         image:
           "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=400&q=80",
+        location: ''
       },
       {
         nameAr: "البلد التاريخي",
@@ -383,6 +376,7 @@ export const BRANDS: Brand[] = [
         distance: "5 كم",
         image:
           "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=400&q=80",
+        location: ''
       },
       {
         nameAr: "مول النخيل",
@@ -390,6 +384,7 @@ export const BRANDS: Brand[] = [
         distance: "1.5 كم",
         image:
           "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=400&q=80",
+        location: ''
       },
     ],
     breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
@@ -399,7 +394,7 @@ export const BRANDS: Brand[] = [
       { labelAr: "الطوارئ", number: "911", icon: "Siren" },
       { labelAr: "صالة البحر", number: "55", icon: "Umbrella" },
     ],
-    dutyManager: { nameAr: "المدير المناوب", phone: "+966522233446" },
+    dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: [
       {
         nameAr: "الإفطار",
@@ -433,7 +428,7 @@ export const BRANDS: Brand[] = [
     email: "ayajouf@suknai.com",
     reservationUrl: "https://booking.suknai.com/aya-jouf",
     website: "https://aya-jouf.suknai.com",
-    heroImage: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1600&q=85",
+    heroImage: "/gof.jpg",
     galleryImages: [
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
@@ -457,8 +452,12 @@ export const BRANDS: Brand[] = [
       }
     ],
     facilities: [
-      { nameAr: "مقهى", icon: "Coffee" },
-      { nameAr: "واي فاي مجاني", icon: "Wifi" }
+      { nameAr: "مركز لياقة", icon: "Dumbbell" },
+      { nameAr: "مطعم عالمي", icon: "UtensilsCrossed" },
+      { nameAr: "قاعات اجتماعات", icon: "Landmark" },
+      { nameAr: "موقف سيارات", icon: "Car" },
+      { nameAr: "خدمة الغرف 24/7", icon: "BellRing" },
+      { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
     landmarks: [],
     breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
@@ -468,6 +467,7 @@ export const BRANDS: Brand[] = [
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: []
   },
+
   {
     id: "aya-unaizah",
     slug: "aya-unaizah",
@@ -506,8 +506,12 @@ export const BRANDS: Brand[] = [
       }
     ],
     facilities: [
-      { nameAr: "مقهى", icon: "Coffee" },
-      { nameAr: "واي فاي مجاني", icon: "Wifi" }
+      { nameAr: "مركز لياقة", icon: "Dumbbell" },
+      { nameAr: "مطعم عالمي", icon: "UtensilsCrossed" },
+      { nameAr: "قاعات اجتماعات", icon: "Landmark" },
+      { nameAr: "موقف سيارات", icon: "Car" },
+      { nameAr: "خدمة الغرف 24/7", icon: "BellRing" },
+      { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
     landmarks: [],
     breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
@@ -518,15 +522,14 @@ export const BRANDS: Brand[] = [
     menuCategories: []
   },
 
-
   {
     id: "aqiq",
     slug: "suknai-aqiq",
     nameAr: "فندق سكناي العقيق",
     nameEn: "Suknai Al-Aqiq Hotel",
     taglineAr: "أناقة وراحة في قلب المدينة",
-    cityAr: "المدينة المنورة",
-    cityEn: "Madinah",
+    cityAr: "الرياض",
+    cityEn: "Riyadh",
     descriptionAr:
       "فندق سكناي العقيق يقع في موقع استراتيجي بالمدينة المنورة، يوفر ضيافة استثنائية للزوار والمعتمرين بمرافق حديثة وخدمات متميزة.",
     phone: "+966920031010",
@@ -535,7 +538,7 @@ export const BRANDS: Brand[] = [
     reservationUrl: "https://booking.suknai.com/aqiq",
     website: "https://aqiq.suknai.com",
     heroImage:
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1600&q=85",
+      "/aqeq.jpg",
     galleryImages: [
       "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
       "https://images.unsplash.com/photo-1600011689032-8b628b8a8747?w=800&q=80",
@@ -582,14 +585,12 @@ export const BRANDS: Brand[] = [
       },
     ],
     facilities: [
-      { nameAr: "مطعم حلال", icon: "UtensilsCrossed" },
-      { nameAr: "قاعة صلاة", icon: "Building" },
-      { nameAr: "خدمة نقل", icon: "Bus" },
-      { nameAr: "صرافة", icon: "Banknote" },
-      { nameAr: "خدمة الغرف", icon: "BellRing" },
+      { nameAr: "مركز لياقة", icon: "Dumbbell" },
+      { nameAr: "مطعم عالمي", icon: "UtensilsCrossed" },
+      { nameAr: "قاعات اجتماعات", icon: "Landmark" },
+      { nameAr: "موقف سيارات", icon: "Car" },
+      { nameAr: "خدمة الغرف 24/7", icon: "BellRing" },
       { nameAr: "واي فاي مجاني", icon: "Wifi" },
-      { nameAr: "غسيل ملابس", icon: "Shirt" },
-      { nameAr: "كونسيرج", icon: "Map" },
     ],
     landmarks: [
       {
@@ -598,6 +599,7 @@ export const BRANDS: Brand[] = [
         distance: "1.5 كم",
         image:
           "https://images.unsplash.com/photo-1564508360428-a2b5b3c0b1e2?w=400&q=80",
+        location: ''
       },
       {
         nameAr: "مسجد قباء",
@@ -605,6 +607,7 @@ export const BRANDS: Brand[] = [
         distance: "4 كم",
         image:
           "https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?w=400&q=80",
+        location: ''
       },
       {
         nameAr: "مركز البلد التجاري",
@@ -612,6 +615,7 @@ export const BRANDS: Brand[] = [
         distance: "0.5 كم",
         image:
           "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=400&q=80",
+        location: ''
       },
     ],
     breakfastTimes: { weekday: "5:30 ص – 10:00 ص", weekend: "6:00 ص – 11:00 ص" },
@@ -621,7 +625,7 @@ export const BRANDS: Brand[] = [
       { labelAr: "الطوارئ", number: "911", icon: "Siren" },
       { labelAr: "خدمة النقل", number: "44", icon: "Bus" },
     ],
-    dutyManager: { nameAr: "المدير المناوب", phone: "+966548765433" },
+    dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: [
       {
         nameAr: "الإفطار",
@@ -705,14 +709,12 @@ export const BRANDS: Brand[] = [
       },
     ],
     facilities: [
-      { nameAr: "حمام سباحة لانهائي", icon: "Waves" },
-      { nameAr: "سبا طبيعية", icon: "HeartPulse" },
-      { nameAr: "رياضة جبلية", icon: "Mountain" },
-      { nameAr: "مطعم طبيعي", icon: "UtensilsCrossed" },
-      { nameAr: "نزهات مشي", icon: "Footprints" },
-      { nameAr: "مراقبة النجوم", icon: "Star" },
-      { nameAr: "نار مفتوحة", icon: "Flame" },
-      { nameAr: "خدمة كونسيرج", icon: "Target" },
+      { nameAr: "مركز لياقة", icon: "Dumbbell" },
+      { nameAr: "مطعم عالمي", icon: "UtensilsCrossed" },
+      { nameAr: "قاعات اجتماعات", icon: "Landmark" },
+      { nameAr: "موقف سيارات", icon: "Car" },
+      { nameAr: "خدمة الغرف 24/7", icon: "BellRing" },
+      { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
     landmarks: [
       {
@@ -721,6 +723,7 @@ export const BRANDS: Brand[] = [
         distance: "8 كم",
         image:
           "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80",
+        location: ''
       },
       {
         nameAr: "منتزه عسير الوطني",
@@ -728,6 +731,7 @@ export const BRANDS: Brand[] = [
         distance: "5 كم",
         image:
           "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=400&q=80",
+        location: ''
       },
       {
         nameAr: "بحيرة الملك فهد",
@@ -735,6 +739,7 @@ export const BRANDS: Brand[] = [
         distance: "3 كم",
         image:
           "https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=400&q=80",
+        location: ''
       },
     ],
     breakfastTimes: { weekday: "7:00 ص – 10:30 ص", weekend: "7:30 ص – 11:30 ص" },
@@ -744,7 +749,7 @@ export const BRANDS: Brand[] = [
       { labelAr: "الطوارئ", number: "911", icon: "Siren" },
       { labelAr: "النشاطات", number: "77", icon: "Target" },
     ],
-    dutyManager: { nameAr: "المدير المناوب", phone: "+966572222223" },
+    dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: [
       {
         nameAr: "الإفطار الجبلي",
@@ -763,7 +768,6 @@ export const BRANDS: Brand[] = [
       },
     ],
   },
-
 
   {
     id: "ghadi",
@@ -828,14 +832,12 @@ export const BRANDS: Brand[] = [
       },
     ],
     facilities: [
-      { nameAr: "مطبخ مجهز", icon: "ChefHat" },
-      { nameAr: "غسالة ونشافة", icon: "Shirt" },
-      { nameAr: "جيم خاص", icon: "Dumbbell" },
+      { nameAr: "مركز لياقة", icon: "Dumbbell" },
+      { nameAr: "مطعم عالمي", icon: "UtensilsCrossed" },
+      { nameAr: "قاعات اجتماعات", icon: "Landmark" },
       { nameAr: "موقف سيارات", icon: "Car" },
-      { nameAr: "أمن 24/7", icon: "Lock" },
-      { nameAr: "استقبال متواصل", icon: "BellRing" },
-      { nameAr: "إنترنت فائق", icon: "Wifi" },
-      { nameAr: "تنظيف يومي", icon: "Sparkles" },
+      { nameAr: "خدمة الغرف 24/7", icon: "BellRing" },
+      { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
     landmarks: [
       {
@@ -844,6 +846,7 @@ export const BRANDS: Brand[] = [
         distance: "1 كم",
         image:
           "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=400&q=80",
+        location: ''
       },
       {
         nameAr: "حديقة السلام",
@@ -851,6 +854,7 @@ export const BRANDS: Brand[] = [
         distance: "0.5 كم",
         image:
           "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&q=80",
+        location: ''
       },
       {
         nameAr: "سوق منافسي",
@@ -858,6 +862,7 @@ export const BRANDS: Brand[] = [
         distance: "2 كم",
         image:
           "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=400&q=80",
+        location: ''
       },
     ],
     breakfastTimes: { weekday: "7:00 ص – 10:00 ص", weekend: "7:30 ص – 11:00 ص" },
@@ -867,7 +872,7 @@ export const BRANDS: Brand[] = [
       { labelAr: "الطوارئ", number: "911", icon: "Siren" },
       { labelAr: "النظافة", number: "33", icon: "Sparkles" },
     ],
-    dutyManager: { nameAr: "المدير المناوب", phone: "+966544455668" },
+    dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: [
       {
         nameAr: "الإفطار",

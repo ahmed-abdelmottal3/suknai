@@ -9,7 +9,7 @@ export default function GroupHero() {
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=85"
+        src="/hero.jpg"
         alt="مجموعة سكناي"
         fill
         priority
@@ -33,7 +33,7 @@ export default function GroupHero() {
         >
           <span className="w-12 h-px bg-[#c8a951]" />
           <span className="text-[#c8a951] text-sm font-semibold tracking-[0.3em] uppercase">
-            مجموعة سكناي للضيافة
+            مجموعة سكناي
           </span>
           <span className="w-12 h-px bg-[#c8a951]" />
         </motion.div>
@@ -42,9 +42,9 @@ export default function GroupHero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-6xl md:text-8xl font-black text-white mb-6 leading-none"
+          className="text-6xl md:text-8xl text-white mb-6 leading-none"
         >
-          <span className="text-gold">سكناي</span>
+          <span className="text-gold">SUKNAI</span>
         </motion.h1>
 
         <motion.p

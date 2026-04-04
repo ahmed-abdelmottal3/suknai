@@ -5,6 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { MapPin } from "lucide-react";
 import { Brand } from "@/lib/constants";
+import Link from "next/link";
 
 export default function LandmarksSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
@@ -31,15 +32,14 @@ export default function LandmarksSection({ brand }: { brand: Brand }) {
 
           {/* Tabs */}
           <div className="inline-flex bg-white/5 rounded-2xl p-1 gap-1 border border-white/10">
-            {(["nearby", "city"] as const).map((t) => (
+            {(["nearby"] as const).map((t) => (
               <button
                 key={t}
                 onClick={() => setTab(t)}
-                className={`px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                  tab === t
-                    ? "gradient-gold text-[#0d1b2a]"
-                    : "text-white/60 hover:text-white"
-                }`}
+                className={`px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${tab === t
+                  ? "gradient-gold text-[#0d1b2a]"
+                  : "text-white/60 hover:text-white"
+                  }`}
               >
                 {t === "nearby" ? "المعالم القريبة" : "معالم المدينة"}
               </button>
@@ -57,15 +57,17 @@ export default function LandmarksSection({ brand }: { brand: Brand }) {
               className="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover-lift"
             >
               <div className="relative h-44 overflow-hidden">
-                <Image
-                  src={landmark.image}
-                  alt={landmark.nameAr}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/70 to-transparent" />
+                <Link href={landmark.location} target="_blank">
+                  <Image
+                    src={landmark.image}
+                    alt={landmark.nameAr}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/70 to-transparent" />
+                </Link>
               </div>
               <div className="p-5">
                 <div className="flex items-center justify-between">

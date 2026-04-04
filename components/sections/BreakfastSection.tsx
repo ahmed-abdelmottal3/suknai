@@ -25,7 +25,7 @@ export default function BreakfastSection({ brand }: { brand: Brand }) {
           <div className="divider-gold mx-auto" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 gap-8">
           {/* Weekday */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
@@ -37,7 +37,7 @@ export default function BreakfastSection({ brand }: { brand: Brand }) {
               <Clock size={28} className="text-[#0d1b2a]" />
             </div>
             <p className="text-[#c8a951] text-sm font-semibold tracking-widest uppercase mb-3">
-              أيام الأسبوع
+              طيلة  أيام الأسبوع
             </p>
             <p className="text-white text-3xl font-black" dir="ltr">
               {brand.breakfastTimes.weekday}
@@ -45,27 +45,6 @@ export default function BreakfastSection({ brand }: { brand: Brand }) {
             <p className="text-white/40 text-sm mt-2">الأحد – الخميس</p>
           </motion.div>
 
-          {/* Weekend */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="glass rounded-3xl p-8 text-center"
-          >
-            <div
-              className="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-5"
-              style={{ background: brand.color }}
-            >
-              <Sun size={28} className="text-[#0d1b2a]" />
-            </div>
-            <p className="text-[#c8a951] text-sm font-semibold tracking-widest uppercase mb-3">
-              نهاية الأسبوع
-            </p>
-            <p className="text-white text-3xl font-black" dir="ltr">
-              {brand.breakfastTimes.weekend}
-            </p>
-            <p className="text-white/40 text-sm mt-2">الجمعة – السبت</p>
-          </motion.div>
         </div>
 
         {/* Note */}

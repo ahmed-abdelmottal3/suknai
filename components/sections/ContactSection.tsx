@@ -1,9 +1,32 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Instagram, Twitter, Building, Ghost } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram, Building } from "lucide-react";
 import { Brand, GROUP } from "@/lib/constants";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
+
+
+const XIcon = () => (
+  /* eslint-disable-next-line @next/next/no-img-element */
+  <img
+    src="https://cdn.simpleicons.org/x/0d1b2a"
+    alt="X"
+    className="w-4.5 h-4.5"
+    loading="lazy"
+    decoding="async"
+  />
+);
+
+const SnapchatIcon = () => (
+  /* eslint-disable-next-line @next/next/no-img-element */
+  <img
+    src="https://cdn.simpleicons.org/snapchat/0d1b2a"
+    alt="Snapchat"
+    className="w-4.5 h-4.5"
+    loading="lazy"
+    decoding="async"
+  />
+);
 
 export default function ContactSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
@@ -104,18 +127,20 @@ export default function ContactSection({ brand }: { brand: Brand }) {
                     href={brand.social.twitter}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-xl bg-white border border-[#ede8e1] flex items-center justify-center text-[#4a4a4a] hover:text-[#c8a951] hover:border-[#c8a951]/30 transition-colors shadow-sm"
+                    aria-label="X"
+                    className="w-10 h-10 rounded-xl bg-white border border-[#ede8e1] flex items-center justify-center hover:bg-[#fff9ec] hover:border-[#c8a951]/30 transition-colors shadow-sm"
                   >
-                    <Twitter size={18} />
+                    <XIcon />
                   </a>
                 )}
                 <a
                   href={GROUP.social.snapchat}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-xl bg-white border border-[#ede8e1] flex items-center justify-center text-[#4a4a4a] hover:text-[#c8a951] hover:border-[#c8a951]/30 transition-colors shadow-sm"
+                  aria-label="Snapchat"
+                  className="w-10 h-10 rounded-xl bg-white border border-[#ede8e1] flex items-center justify-center hover:bg-[#fff9ec] hover:border-[#c8a951]/30 transition-colors shadow-sm"
                 >
-                  <Ghost size={18} />
+                  <SnapchatIcon />
                 </a>
               </div>
             </div>
@@ -128,16 +153,7 @@ export default function ContactSection({ brand }: { brand: Brand }) {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="rounded-3xl overflow-hidden shadow-lg border border-[#ede8e1] h-[400px]"
           >
-            <iframe
-              title={`خريطة ${brand.nameAr}`}
-              src={`https://maps.google.com/maps?q=${brand.coordinates.lat},${brand.coordinates.lng}&z=14&output=embed`}
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </motion.div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4234.482339825847!2d41.6679273!3d27.5091242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x157641ee45099879%3A0x6df707496496b561!2sSuknai%20Hotel!5e1!3m2!1sen!2seg!4v1775342086526!5m2!1sen!2seg" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>          </motion.div>
         </div>
       </div>
     </section>
