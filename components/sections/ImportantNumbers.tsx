@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { Brand } from "@/lib/constants";
 import * as Icons from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 export default function ImportantNumbers({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
@@ -41,7 +42,8 @@ export default function ImportantNumbers({ brand }: { brand: Brand }) {
                 style={{ background: brand.color + "15", color: brand.color }}
               >
                 {(() => {
-                  const IconComp = (Icons as any)[num.icon] || Icons.PhoneCall;
+                  const iconKey = num.icon as keyof typeof Icons;
+                  const IconComp = (Icons[iconKey] as LucideIcon | undefined) ?? Icons.PhoneCall;
                   return <IconComp size={24} strokeWidth={1.5} />;
                 })()}
               </div>

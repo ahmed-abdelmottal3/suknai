@@ -1,7 +1,7 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { Clock, Sun } from "lucide-react";
+import { Clock } from "lucide-react";
 import { Brand } from "@/lib/constants";
 
 export default function BreakfastSection({ brand }: { brand: Brand }) {

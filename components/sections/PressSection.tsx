@@ -60,7 +60,7 @@ export default function PressSection() {
               <div className="w-20 h-20 bg-white rounded-2xl shadow-sm flex items-center justify-center p-3 mb-6 group-hover:scale-110 transition-transform relative overflow-hidden">
                 {"logo" in media ? (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={(media as any).logo} alt={media.name} className="w-full h-full object-contain" />
+                  <img src={media.logo} alt={media.name} className="w-full h-full object-contain" />
                 ) : (
                   <span className="text-xl">📰</span>
                 )}

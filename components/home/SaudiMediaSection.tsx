@@ -74,7 +74,7 @@ export default function SaudiMediaSection() {
               <div className="h-8 mb-2 flex items-center justify-center">
                 {"logo" in media ? (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={(media as any).logo} alt={media.name} className="max-h-full max-w-full object-contain" />
+                  <img src={media.logo} alt={media.name} className="max-h-full max-w-full object-contain" />
                 ) : (
                   <span className="text-2xl">📰</span>
                 )}

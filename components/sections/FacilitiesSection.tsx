@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { Brand } from "@/lib/constants";
 import * as Icons from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 export default function FacilitiesSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
@@ -40,7 +41,8 @@ export default function FacilitiesSection({ brand }: { brand: Brand }) {
                 style={{ background: brand.color + "18", color: brand.color }}
               >
                 {(() => {
-                  const IconComp = (Icons as any)[facility.icon] || Icons.CheckCircle;
+                  const iconKey = facility.icon as keyof typeof Icons;
+                  const IconComp = (Icons[iconKey] as LucideIcon | undefined) ?? Icons.CheckCircle;
                   return <IconComp size={28} strokeWidth={1.5} />;
                 })()}
               </div>

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import * as Icons from "lucide-react";
-import type { ComponentType } from "react";
+import type { LucideIcon } from "lucide-react";
 import { Brand } from "@/lib/constants";
 
 const ROYAL_SERVICES = [
@@ -23,10 +23,6 @@ const ROYAL_SERVICES = [
 
 export default function RoyalServicesSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.15, triggerOnce: true });
-  const iconsMap = Icons as Record<
-    string,
-    ComponentType<{ size?: number; strokeWidth?: number; className?: string }>
-  >;
 
   if (brand.slug !== "suknai-royal") return null;
 
@@ -58,7 +54,8 @@ export default function RoyalServicesSection({ brand }: { brand: Brand }) {
 
           <div className="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
             {ROYAL_SERVICES.map((service, i) => {
-              const IconComp = iconsMap[service.icon] || Icons.CheckCircle;
+              const iconKey = service.icon as keyof typeof Icons;
+              const IconComp = (Icons[iconKey] as LucideIcon | undefined) ?? Icons.CheckCircle;
               return (
                 <motion.div
                   key={service.en}

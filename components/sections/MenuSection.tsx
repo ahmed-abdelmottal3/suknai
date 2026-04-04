@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Brand } from "@/lib/constants";
 import * as Icons from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { ChevronDown } from "lucide-react";
 
 export default function MenuSection({ brand }: { brand: Brand }) {
@@ -44,7 +45,8 @@ export default function MenuSection({ brand }: { brand: Brand }) {
                 <div className="flex items-center gap-3">
                   <span className="text-[#0d1b2a]">
                     {(() => {
-                      const IconComp = (Icons as any)[cat.icon] || Icons.UtensilsCrossed;
+                      const iconKey = cat.icon as keyof typeof Icons;
+                      const IconComp = (Icons[iconKey] as LucideIcon | undefined) ?? Icons.UtensilsCrossed;
                       return <IconComp size={22} strokeWidth={1.5} />;
                     })()}
                   </span>

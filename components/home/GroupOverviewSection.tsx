@@ -6,7 +6,6 @@ import {
   ArrowLeft,
   Gem,
   Compass,
-  Headphones,
   Sparkles,
   Mail,
 } from "lucide-react";
