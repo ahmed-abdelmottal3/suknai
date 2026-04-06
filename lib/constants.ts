@@ -348,7 +348,29 @@ export const BRANDS: Brand[] = [
       { nameAr: "خدمة الغرف 24/7", icon: "BellRing" },
       { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
-    landmarks: [],
+    landmarks: [
+      {
+        nameAr: "قلعة مارد الأثرية",
+        type: "nearby",
+        distance: "4 كم",
+        image: "/marid_castle.png",
+        location: "https://share.google/jBU6AcyO6Sc6Cryjm"
+      },
+      {
+        nameAr: "قلعة زعبل",
+        type: "city",
+        distance: "6 كم",
+        image: "/zaabal_castle.png",
+        location: "https://share.google/TWCNBzxt0IDjuoh5D"
+      },
+      {
+        nameAr: "دومة الجندل",
+        type: "nearby",
+        distance: "12 كم",
+        image: "/dumat_aljandal.png",
+        location: "https://share.google/yei3sG9pBrJ98EZ5D"
+      }
+    ],
     breakfastTimes: { weekday: "6:30 ص - 10:30 ص", weekend: "7:00 ص - 11:30 ص" },
     importantNumbers: [
       { labelAr: "الاستقبال", number: "9", icon: "Phone" },
@@ -367,14 +389,14 @@ export const BRANDS: Brand[] = [
     cityAr: "الرياض",
     cityEn: "Riyadh",
     descriptionAr:
-      "فندق سكناي العقيق يتميز بموقع استراتيجي في قلب العاصمة الرياض، حيث يقدم تجربة ضيافة استثنائية تمزج بين الفخامة والراحة العصرية.",
+      'منتجع سكناي في الرياض يقدم تجربة إقامة فاخرة تجمع بين الخصوصية والهدوء بأجواء عصرية راقية ،شاليهات فندقية واسعة بمسابح خاصة ، ومساحات مثالية للتجمعات ، تجربة متكاملة لمن يبحث عن الراحة بأسلوب مختلف. ',
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "aqiq@suknai.com",
     website: "https://aqiq.suknai.com",
     heroImage: "/aqeq/aqeq.jpg",
     galleryImages: [
-      "/aqeq/SK-115.jpg",
+      "/aqeq/sk-2-edit.jpg",
       "/aqeq/SK-116.jpg",
       "/aqeq/SK-122.jpg",
       "/aqeq/SK-136.jpg",
@@ -400,7 +422,7 @@ export const BRANDS: Brand[] = [
         size: "45 م²",
         capacity: "3 أشخاص",
         features: ["غرفة نوم وصالة", "ميني بار", "واي فاي مجاني", "تلفزيون ذكي"],
-        image: "/royal/suknai-royal-11.jpg",
+        image: "/aqeq/SK-100.jpg",
       },
       {
         nameAr: "ديلوكس",
@@ -408,7 +430,7 @@ export const BRANDS: Brand[] = [
         size: "32 م²",
         capacity: "2 أشخاص",
         features: ["سرير كينج", "جلسة صغيرة", "مكتب عمل", "حش مطري"],
-        image: "/royal/suknai-royal-12.jpg",
+        image: "/aqeq/SK-101.jpg",
       },
       {
         nameAr: "قياسية بدون إطلالة",
@@ -416,7 +438,7 @@ export const BRANDS: Brand[] = [
         size: "24 م²",
         capacity: "2 أشخاص",
         features: ["سرير كينج", "مكيف", "واي فاي مجاني", "تلفزيون ذكي"],
-        image: "/royal/dsc-1844-hdr.jpg",
+        image: "/aqeq/SK-102.jpg",
       },
       {
         nameAr: "جناح جونيور",
@@ -424,7 +446,7 @@ export const BRANDS: Brand[] = [
         size: "50 م²",
         capacity: "3 أشخاص",
         features: ["تصميم مفتوح", "منطقة جلوس", "إضاءة هادئة", "خدمة ضيافة"],
-        image: "/royal/suknai-royal-13.jpg",
+        image: "/aqeq/SK-60.jpg",
       },
       {
         nameAr: "جناح بغرفتين نوم",
@@ -432,7 +454,7 @@ export const BRANDS: Brand[] = [
         size: "78 م²",
         capacity: "5 أشخاص",
         features: ["غرفتا نوم", "صالة معيشة", "طاولة طعام", "حمامان"],
-        image: "/royal/dsc-2066-hdr.jpg",
+        image: "/aqeq/SK-61.jpg",
       },
       {
         nameAr: "جناح ديلوكس",
@@ -440,7 +462,7 @@ export const BRANDS: Brand[] = [
         size: "58 م²",
         capacity: "3 أشخاص",
         features: ["غرفة نوم وصالة واسعة", "إطلالة أفضل", "خدمة غرف", "آلة قهوة"],
-        image: "/royal/suknai-royal-9.jpg",
+        image: "/aqeq/SK-62.jpg",
       },
       {
         nameAr: "جناح رويال",
@@ -448,7 +470,7 @@ export const BRANDS: Brand[] = [
         size: "95 م²",
         capacity: "4 أشخاص",
         features: ["أرقى جناح", "خدمات ملكية", "إطلالة بانورامية"],
-        image: "/royal/suknai-royal-1.jpg",
+        image: "/aqeq/SK-63.jpg",
       },
       {
         nameAr: "جناح تنفيذي",
@@ -456,7 +478,7 @@ export const BRANDS: Brand[] = [
         size: "65 م²",
         capacity: "3 أشخاص",
         features: ["جناح لرجال الأعمال", "مساحة هادئة", "خدمات سريعة"],
-        image: "/royal/dsc-2104-hdr.jpg",
+        image: "/aqeq/sk-2-edit.jpg",
       },
     ],
     facilities: [
@@ -469,26 +491,18 @@ export const BRANDS: Brand[] = [
     ],
     landmarks: [
       {
-        nameAr: "المسجد النبوي الشريف",
+        nameAr: "مركز الملك عبدالله المالي",
         type: "nearby",
         distance: "1.5 كم",
-        image: "/masjid-an-nabawi-1775434724330.png",
-        location: ''
+        image: "/kafd.png",
+        location: "https://maps.app.goo.gl/3ejsbqnawaLj9CeWA"
       },
       {
-        nameAr: "مسجد قباء",
-        type: "city",
-        distance: "4 كم",
-        image: "/quba-mosque-madinah-1775434774520.png",
-        location: ''
-      },
-      {
-        nameAr: "مركز البلد التجاري",
+        nameAr: "بوليفارد سيتي",
         type: "nearby",
-        distance: "0.5 كم",
-        image:
-          "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=400&q=80",
-        location: ''
+        distance: "6 كم",
+        image: "/boulevard.png",
+        location: "https://maps.app.goo.gl/USR7BSh6mzoDmvd36"
       },
     ],
     breakfastTimes: { weekday: "5:30 ص – 10:00 ص", weekend: "6:00 ص – 11:00 ص" },
@@ -544,7 +558,7 @@ export const BRANDS: Brand[] = [
         size: "45 م²",
         capacity: "3 أشخاص",
         features: ["غرفة نوم وصالة", "ميني بار", "واي فاي مجاني", "تلفزيون ذكي"],
-        image: "/royal/suknai-royal-11.jpg",
+        image: "/montg3/copy-of-resort-1.jpg",
       },
       {
         nameAr: "ديلوكس",
@@ -552,7 +566,7 @@ export const BRANDS: Brand[] = [
         size: "32 م²",
         capacity: "2 أشخاص",
         features: ["سرير كينج", "جلسة صغيرة", "مكتب عمل", "حش مطري"],
-        image: "/royal/suknai-royal-12.jpg",
+        image: "/montg3/copy-of-resort-2.jpg",
       },
       {
         nameAr: "قياسية بدون إطلالة",
@@ -560,7 +574,7 @@ export const BRANDS: Brand[] = [
         size: "24 م²",
         capacity: "2 أشخاص",
         features: ["سرير كينج", "مكيف", "واي فاي مجاني", "تلفزيون ذكي"],
-        image: "/royal/dsc-1844-hdr.jpg",
+        image: "/montg3/copy-of-resort-10.jpg",
       },
       {
         nameAr: "جناح جونيور",
@@ -568,7 +582,7 @@ export const BRANDS: Brand[] = [
         size: "50 م²",
         capacity: "3 أشخاص",
         features: ["تصميم مفتوح", "منطقة جلوس", "إضاءة هادئة", "خدمة ضيافة"],
-        image: "/royal/suknai-royal-13.jpg",
+        image: "/montg3/copy-of-resort-11.jpg",
       },
       {
         nameAr: "جناح بغرفتين نوم",
@@ -576,7 +590,7 @@ export const BRANDS: Brand[] = [
         size: "78 م²",
         capacity: "5 أشخاص",
         features: ["غرفتا نوم", "صالة معيشة", "طاولة طعام", "حمامان"],
-        image: "/royal/dsc-2066-hdr.jpg",
+        image: "/montg3/copy-of-resort-12.jpg",
       },
       {
         nameAr: "جناح ديلوكس",
@@ -584,7 +598,7 @@ export const BRANDS: Brand[] = [
         size: "58 م²",
         capacity: "3 أشخاص",
         features: ["غرفة نوم وصالة واسعة", "إطلالة أفضل", "خدمة غرف", "آلة قهوة"],
-        image: "/royal/suknai-royal-9.jpg",
+        image: "/montg3/copy-of-resort-13.jpg",
       },
       {
         nameAr: "جناح رويال",
@@ -592,7 +606,7 @@ export const BRANDS: Brand[] = [
         size: "95 م²",
         capacity: "4 أشخاص",
         features: ["أرقى جناح", "خدمات ملكية", "إطلالة بانورامية"],
-        image: "/royal/suknai-royal-1.jpg",
+        image: "/montg3/copy-of-resort-15.jpg",
       },
       {
         nameAr: "جناح تنفيذي",
@@ -600,7 +614,7 @@ export const BRANDS: Brand[] = [
         size: "65 م²",
         capacity: "3 أشخاص",
         features: ["جناح لرجال الأعمال", "مساحة هادئة", "خدمات سريعة"],
-        image: "/royal/dsc-2104-hdr.jpg",
+        image: "/montg3/copy-of-resort-16.jpg",
       },
     ],
     facilities: [
@@ -613,28 +627,18 @@ export const BRANDS: Brand[] = [
     ],
     landmarks: [
       {
-        nameAr: "جبل النبي شعيب",
+        nameAr: "مطار الملك خالد الدولي",
         type: "nearby",
-        distance: "8 كم",
-        image:
-          "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80",
-        location: ''
+        distance: "12 كم",
+        image: "/kkia.png",
+        location: "https://maps.app.goo.gl/diQs3ycqHB6yKpbH8"
       },
       {
-        nameAr: "منتزه عسير الوطني",
-        type: "city",
-        distance: "5 كم",
-        image:
-          "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=400&q=80",
-        location: ''
-      },
-      {
-        nameAr: "بحيرة الملك فهد",
+        nameAr: "واجهة روشن",
         type: "nearby",
-        distance: "3 كم",
-        image:
-          "https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=400&q=80",
-        location: ''
+        distance: "18 كم",
+        image: "/roshn_front.png",
+        location: "https://maps.app.goo.gl/2ozLjf7LDTaXGxKP8"
       },
     ],
     breakfastTimes: { weekday: "7:00 ص – 10:30 ص", weekend: "7:30 ص – 11:30 ص" },
@@ -755,6 +759,13 @@ export const BRANDS: Brand[] = [
       { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
     landmarks: [
+      {
+        nameAr: "جامع الراجحي",
+        type: "nearby",
+        distance: "3 كم",
+        image: "/rajhi.jpg",
+        location: "https://maps.app.goo.gl/Xw1z1va7tVQP9Zyr8"
+      },
       {
         nameAr: "قلعة أعيرف التاريخية",
         type: "nearby",
@@ -903,7 +914,29 @@ export const BRANDS: Brand[] = [
       { nameAr: "خدمة الغرف 24/7", icon: "BellRing" },
       { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
-    landmarks: [],
+    landmarks: [
+      {
+        nameAr: "قلعة مارد الأثرية",
+        type: "nearby",
+        distance: "4 كم",
+        image: "/marid_castle.png",
+        location: "https://share.google/jBU6AcyO6Sc6Cryjm"
+      },
+      {
+        nameAr: "قلعة زعبل",
+        type: "city",
+        distance: "6 كم",
+        image: "/zaabal_castle.png",
+        location: "https://share.google/TWCNBzxt0IDjuoh5D"
+      },
+      {
+        nameAr: "دومة الجندل",
+        type: "nearby",
+        distance: "12 كم",
+        image: "/dumat_aljandal.png",
+        location: "https://share.google/yei3sG9pBrJ98EZ5D"
+      }
+    ],
     breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
     importantNumbers: [
       { labelAr: "الاستقبال", number: "9", icon: "Phone" },
@@ -926,10 +959,14 @@ export const BRANDS: Brand[] = [
     whatsapp: "+966920031010",
     email: "aya-unaizah@suknai.com",
     website: "https://aya-unaizah.suknai.com",
-    heroImage: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1600&q=85",
+    heroImage: "/3neza/IMG-20250112-WA0009.jpg",
     galleryImages: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+      "/3neza/IMG-20250112-WA0010.jpg",
+      "/3neza/IMG-20250112-WA0011.jpg",
+      "/3neza/IMG-20250112-WA0012.jpg",
+      "/3neza/IMG-20250112-WA0013.jpg",
+      "/3neza/IMG-20250112-WA0014.jpg",
+      "/3neza/IMG-20250112-WA0015.jpg",
     ],
     coordinates: { lat: 26.0941, lng: 43.9734 },
     social: {
@@ -946,7 +983,7 @@ export const BRANDS: Brand[] = [
         size: "32 م²",
         capacity: "2 أشخاص",
         features: ["إطلالة المدينة", "سرير كينج"],
-        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80"
+        image: "/3neza/IMG-20250112-WA0016.jpg"
       }
     ],
     facilities: [

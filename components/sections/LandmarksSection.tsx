@@ -9,9 +9,6 @@ import Link from "next/link";
 
 export default function LandmarksSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
-  const [tab, setTab] = useState<"city" | "nearby">("nearby");
-
-  const filtered = brand.landmarks.filter((l) => l.type === tab);
 
   return (
     <section ref={ref} className="section-padding bg-[#0d1b2a]">
@@ -29,26 +26,10 @@ export default function LandmarksSection({ brand }: { brand: Brand }) {
             معالم المنطقة
           </h2>
           <div className="divider-gold mx-auto mb-8" />
-
-          {/* Tabs */}
-          <div className="inline-flex bg-white/5 rounded-2xl p-1 gap-1 border border-white/10">
-            {(["nearby"] as const).map((t) => (
-              <button
-                key={t}
-                onClick={() => setTab(t)}
-                className={`px-6 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${tab === t
-                  ? "gradient-gold text-[#0d1b2a]"
-                  : "text-white/60 hover:text-white"
-                  }`}
-              >
-                {t === "nearby" ? "المعالم القريبة" : "معالم المدينة"}
-              </button>
-            ))}
-          </div>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((landmark, i) => (
+          {brand.landmarks.map((landmark, i) => (
             <motion.div
               key={landmark.nameAr}
               initial={{ opacity: 0, y: 30 }}
@@ -83,9 +64,9 @@ export default function LandmarksSection({ brand }: { brand: Brand }) {
               </div>
             </motion.div>
           ))}
-          {filtered.length === 0 && (
+          {brand.landmarks.length === 0 && (
             <div className="col-span-full text-center text-white/40 py-10">
-              لا توجد معالم في هذه الفئة
+              لا توجد معالم مسجلة بعد
             </div>
           )}
         </div>
