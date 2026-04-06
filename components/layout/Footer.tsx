@@ -15,7 +15,6 @@ import WhatsAppIcon from "../icons/WhatsAppIcon";
 
 const BUSINESS_LINKS = [
   { label: "الفنادق", href: "/brands" },
-  { label: "الحجوزات الكوربريت", href: "/contact" },
   { label: "الشراكات", href: "/partnerships" },
   { label: "العقارات", href: "/about" },
   { label: "المسؤولية الاجتماعية", href: "/social-responsibility" },
