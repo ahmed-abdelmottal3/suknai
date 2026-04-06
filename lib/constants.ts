@@ -328,7 +328,7 @@ export const BRANDS: Brand[] = [
   {
     id: "aya",
     slug: "aya-hotel",
-    nameAr: "فندق أياس",
+    nameAr: " فندق أياس - حائل",
     nameEn: "Aya Hotel",
     taglineAr: "تصميم معاصر وأجواء استثنائية",
     cityAr: "حائل",
@@ -603,7 +603,7 @@ export const BRANDS: Brand[] = [
   {
     id: "aqiq",
     slug: "suknai-aqiq",
-    nameAr: "فندق سكناي العقيق",
+    nameAr: "فندق سكناي - العقيق",
     nameEn: "Suknai Al-Aqiq Hotel",
     taglineAr: "أناقة وراحة في قلب المدينة المنورة",
     cityAr: "الرياض",
