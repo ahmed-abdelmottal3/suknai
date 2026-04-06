@@ -26,7 +26,7 @@ export default function ImportantNumbers({ brand }: { brand: Brand }) {
           <div className="divider-gold mx-auto" />
         </motion.div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {brand.importantNumbers.map((num, i) => (
             <motion.a
               key={num.labelAr}
