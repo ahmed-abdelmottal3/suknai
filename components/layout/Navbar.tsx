@@ -60,7 +60,7 @@ export default function Navbar() {
               onMouseLeave={() => setBrandsOpen(false)}
             >
               <button className="flex items-center gap-1 hover:text-[#c8a951] transition-colors duration-200">
-                فنادقنا وعلاماتنا
+                الفنادق
                 <ChevronDown
                   size={14}
                   className={`transition-transform duration-200 ${brandsOpen ? "rotate-180" : ""}`}
@@ -69,33 +69,59 @@ export default function Navbar() {
               <AnimatePresence>
                 {brandsOpen && (
                   <motion.div
-                    initial={{ opacity: 0, y: 8, scale: 0.97 }}
+                    initial={{ opacity: 0, y: 15, scale: 0.95 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: 8, scale: 0.97 }}
-                    transition={{ duration: 0.18 }}
-                    className="absolute top-full right-0 mt-2 w-56 rounded-2xl glass-dark overflow-hidden shadow-2xl"
+                    exit={{ opacity: 0, y: 15, scale: 0.95 }}
+                    transition={{ duration: 0.2, ease: "easeOut" }}
+                    className="absolute top-full right-0 mt-4 w-[480px] rounded-3xl glass-dark overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 p-6"
                   >
-                    {BRANDS.map((brand) => (
-                      <Link
-                        key={brand.id}
-                        href={`/${brand.slug}`}
-                        className="flex items-center gap-3 px-4 py-3 hover:bg-white/5 transition-colors border-b border-white/5"
-                      >
-                        <span
-                          className="w-2 h-2 rounded-full flex-shrink-0"
-                          style={{ background: brand.color }}
-                        />
-                        <span className="text-white/85 text-sm">
-                          {brand.nameAr}
-                        </span>
-                      </Link>
-                    ))}
-                    <Link
-                      href="/brands"
-                      className="block px-4 py-3 text-sm font-semibold text-[#c8a951] hover:bg-white/5 transition-colors"
-                    >
-                      عرض جميع الوجهات
-                    </Link>
+                    <div className="grid grid-cols-2 gap-8">
+                      <div>
+                        <p className="text-[#c8a951] text-[10px] font-black uppercase tracking-[2px] mb-4 opacity-70 border-b border-white/10 pb-2">
+                          فنادق سكناي
+                        </p>
+                        <div className="flex flex-col gap-1">
+                          {BRANDS.filter(b => !b.id.startsWith('aya')).map((brand) => (
+                            <Link
+                              key={brand.id}
+                              href={`/${brand.slug}`}
+                              className="group/item flex items-center justify-between p-2 rounded-xl hover:bg-white/5 transition-all duration-300"
+                            >
+                              <span className="text-white/80 group-hover/item:text-white text-sm font-medium transition-colors">
+                                {brand.nameAr}
+                              </span>
+                              <span
+                                className="w-1.5 h-1.5 rounded-full opacity-40 group-hover/item:opacity-100 transition-opacity shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+                                style={{ background: brand.color }}
+                              />
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div>
+                        <p className="text-[#c8a951] text-[10px] font-black uppercase tracking-[2px] mb-4 opacity-70 border-b border-white/10 pb-2">
+                          فنادق أياس
+                        </p>
+                        <div className="flex flex-col gap-1">
+                          {BRANDS.filter(b => b.id.startsWith('aya')).map((brand) => (
+                            <Link
+                              key={brand.id}
+                              href={`/${brand.slug}`}
+                              className="group/item flex items-center justify-between p-2 rounded-xl hover:bg-white/5 transition-all duration-300"
+                            >
+                              <span className="text-white/80 group-hover/item:text-white text-sm font-medium transition-colors">
+                                {brand.nameAr}
+                              </span>
+                              <span
+                                className="w-1.5 h-1.5 rounded-full opacity-40 group-hover/item:opacity-100 transition-opacity shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+                                style={{ background: brand.color }}
+                              />
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -171,32 +197,58 @@ export default function Navbar() {
               </Link>
 
               <div>
-                <p className="text-[#c8a951] text-xs font-semibold tracking-widest uppercase mb-3">
-                  فنادقنا وعلاماتنا
+                <p className="text-[#c8a951] text-xs font-semibold tracking-widest uppercase mb-4 px-1">
+                  الفنادق
                 </p>
-                {BRANDS.map((brand) => (
-                  <Link
-                    key={brand.id}
-                    href={`/${brand.slug}`}
-                    onClick={() => setMenuOpen(false)}
-                    className="flex items-center gap-3 py-3 border-b border-white/10"
-                  >
-                    <span
-                      className="w-2.5 h-2.5 rounded-full"
-                      style={{ background: brand.color }}
-                    />
-                    <span className="text-white/90 text-lg font-medium">
-                      {brand.nameAr}
-                    </span>
-                  </Link>
-                ))}
-                <Link
-                  href="/brands"
-                  onClick={() => setMenuOpen(false)}
-                  className="block pt-4 text-base font-semibold text-[#c8a951]"
-                >
-                  عرض جميع الوجهات
-                </Link>
+                <div className="flex flex-col gap-8">
+                  <div>
+                    <p className="text-white/40 text-[10px] font-bold uppercase tracking-wider mb-2 px-1 border-r-2 border-[#c8a951] pr-2">
+                      فنادق سكناي
+                    </p>
+                    <div className="flex flex-col gap-1">
+                      {BRANDS.filter(b => !b.id.startsWith('aya')).map((brand) => (
+                        <Link
+                          key={brand.id}
+                          href={`/${brand.slug}`}
+                          onClick={() => setMenuOpen(false)}
+                          className="flex items-center justify-between py-4 border-b border-white/5 px-2 hover:bg-white/5 rounded-xl transition-all"
+                        >
+                          <span className="text-white/90 text-lg font-medium">
+                            {brand.nameAr}
+                          </span>
+                          <span
+                            className="w-2 h-2 rounded-full"
+                            style={{ background: brand.color }}
+                          />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="text-white/40 text-[10px] font-bold uppercase tracking-wider mb-2 px-1 border-r-2 border-[#c8a951] pr-2">
+                      فنادق أياس
+                    </p>
+                    <div className="flex flex-col gap-1">
+                      {BRANDS.filter(b => b.id.startsWith('aya')).map((brand) => (
+                        <Link
+                          key={brand.id}
+                          href={`/${brand.slug}`}
+                          onClick={() => setMenuOpen(false)}
+                          className="flex items-center justify-between py-4 border-b border-white/5 px-2 hover:bg-white/5 rounded-xl transition-all"
+                        >
+                          <span className="text-white/90 text-lg font-medium">
+                            {brand.nameAr}
+                          </span>
+                          <span
+                            className="w-2 h-2 rounded-full"
+                            style={{ background: brand.color }}
+                          />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <Link

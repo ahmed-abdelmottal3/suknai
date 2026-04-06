@@ -16,7 +16,7 @@ export const GROUP = {
     twitter: "https://x.com/suknai_group",
     snapchat: "https://t.snapchat.com/vccErFdb",
     tiktok: "https://www.tiktok.com/@suknai_group",
-    youtube: "https://www.youtube.com/@suknai",
+    youtube: "https://youtube.com/@suknai_sa",
   },
   saudiMedia: [
     { name: "روح السعودية", url: "https://www.visitsaudi.com", logo: "https://unavatar.io/twitter/VisitSaudiAR" },
@@ -241,15 +241,21 @@ export const BRANDS: Brand[] = [
     taglineAr: "تجربة ضيافة مميزة في قلب الجوف",
     cityAr: "الجوف",
     cityEn: "Al Jouf",
-    descriptionAr: "فندق سكناي في الجوف يمنحك تجربة مريحة وممتعة.",
+    descriptionAr: "فندق سكناي الجوف يقدم تجربة ضيافة استثنائية في قلب منطقة الجوف، حيث يجمع بين التصميم العصري والراحة التامة لضمان إقامة لا تُنسى لضيوفنا.",
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "suknaijouf@suknai.com",
     reservationUrl: "https://booking.suknai.com/suknai-jouf",
     website: "https://suknai-jouf.suknai.com",
-    heroImage: "/royal2.jpg",
+    heroImage: "/elgof/RECEPTION (1).jpg.jpeg",
     galleryImages: [
-      "https://images.unsplash.com/photo-1562133567-b6a0a9c7e6eb?w=800&q=80",
+      "/elgof/RECEPTION (1).png",
+      "/elgof/RECEPTION (2).png",
+      "/elgof/RECEPTION (3).jpg.jpeg",
+      "/elgof/CORRIDOR (1).jpg.jpeg",
+      "/elgof/CORRIDOR (2).jpg.jpeg",
+      "/elgof/LOUNG (2).jpg.jpeg",
+      "/elgof/COFFEE SHOP.png",
     ],
     coordinates: { lat: 29.9697, lng: 40.2000 },
     social: {},
@@ -261,11 +267,36 @@ export const BRANDS: Brand[] = [
         nameEn: "Deluxe Room",
         size: "35 م²",
         capacity: "2 أشخاص",
-        features: ["سرير كينج"],
-        image: "https://images.unsplash.com/photo-1562133567-b6a0a9c7e6eb?w=600&q=80"
+        features: ["سرير كينج", "واي فاي"],
+        image: "/elgof/ROOM (1).jpg.jpeg"
+      },
+      {
+        nameAr: "غرفة سوبيريور",
+        nameEn: "Superior Room",
+        size: "42 م²",
+        capacity: "2 أشخاص",
+        features: ["سرير كينج", "إطلالة بانورامية"],
+        image: "/elgof/ROOM (2).jpg.jpeg"
+      },
+      {
+        nameAr: "جناح جونيور",
+        nameEn: "Junior Suite",
+        size: "55 م²",
+        capacity: "3 أشخاص",
+        features: ["صالة جلوس", "منطقة عمل"],
+        image: "/elgof/ROOM (3).jpg.jpeg"
+      },
+      {
+        nameAr: "جناح تنفيذي",
+        nameEn: "Executive Suite",
+        size: "70 م²",
+        capacity: "4 أشخاص",
+        features: ["غرف معيشة منفصلة", "خدمات خاصة"],
+        image: "/elgof/ROOM (5).jpg.jpeg"
       }
     ],
     facilities: [
+      { nameAr: "كوفي شوب", icon: "Coffee" },
       { nameAr: "مركز لياقة", icon: "Dumbbell" },
       { nameAr: "مطعم عالمي", icon: "UtensilsCrossed" },
       { nameAr: "قاعات اجتماعات", icon: "Landmark" },
@@ -276,10 +307,22 @@ export const BRANDS: Brand[] = [
     landmarks: [],
     breakfastTimes: { weekday: "6:30 ص – 10:30 ص", weekend: "7:00 ص – 11:30 ص" },
     importantNumbers: [
-      { labelAr: "الاستقبال", number: "9", icon: "Phone" }
+      { labelAr: "الاستقبال", number: "9", icon: "Phone" },
+      { labelAr: "الكوفي شوب", number: "333", icon: "Coffee" },
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
-    menuCategories: []
+    menuCategories: [
+      {
+        nameAr: "المشروبات",
+        icon: "Coffee",
+        items: ["قهوة مختصة", "شاي مغربي", "عصائر طازجة"],
+      },
+      {
+        nameAr: "الحلويات",
+        icon: "CakeSlice",
+        items: ["تشيز كيك", "مولتن كيك", "كيكة التمر"],
+      }
+    ]
   },
 
   {
@@ -291,24 +334,22 @@ export const BRANDS: Brand[] = [
     cityAr: "حائل",
     cityEn: "Hail",
     reviewUrl: "https://maps.app.goo.gl/xCHKd26Xp7ut62yh7",
-    descriptionAr:
-      "فندق أياس في جدة وجهة فريدة تجمع بين التصميم المعاصر والموقع المتميز على الكورنيش، يقدم تجربة إقامة مميزة في مدينة العروس.",
+    descriptionAr: "فندق أياس حائل يرحب بكم في قلب منطقة حائل، حيث يجتمع التصميم العصري مع كرم الضيافة الشمالية الأصيلة ليوفر لكم إقامة مريحة وهادئة.",
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "aya@suknai.com",
     reservationUrl: "https://booking.suknai.com/aya",
     website: "https://aya.suknai.com",
-    heroImage:
-      "/ayas.jpg",
+    heroImage: "/ayashael/DSC_9416-Enhanced-NR copy.jpeg",
     galleryImages: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?w=800&q=80",
-      "https://images.unsplash.com/photo-1596436889106-be35e843f974?w=800&q=80",
-      "https://images.unsplash.com/photo-1467043237213-65f2da53396f?w=800&q=80",
-      "https://images.unsplash.com/photo-1544124499-58912cbddaad?w=800&q=80",
+      "/ayashael/DSC_6680١٠١٠١٠ copy 2.jpg",
+      "/ayashael/DSC_6701 copy.jpg",
+      "/ayashael/DSC_6704 copy.jpg",
+      "/ayashael/DSC_6709 copy 2.jpg",
+      "/ayashael/DSC_6718٨٨٨٨٨٨ copy 2.jpg",
+      "/ayashael/DSC_6791 copy.jpg",
     ],
-    coordinates: { lat: 21.4858, lng: 39.1925 },
+    coordinates: { lat: 27.5219, lng: 41.6961 },
     social: {
       instagram: "https://www.instagram.com/ayas_hotels/",
       twitter: "https://x.com/ayas_hotels",
@@ -318,32 +359,29 @@ export const BRANDS: Brand[] = [
     color: "#2a6fa8",
     roomTypes: [
       {
-        nameAr: "غرفة الكورنيش",
-        nameEn: "Corniche Room",
+        nameAr: "غرفة قياسية",
+        nameEn: "Standard Room",
         size: "32 م²",
         capacity: "2 أشخاص",
-        features: ["إطلالة البحر", "شرفة", "سرير كينج"],
-        image:
-          "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80",
+        features: ["إطلالة المدينة", "سرير كينج"],
+        image: "/ayashael/DSC_6701 copy.jpg"
       },
       {
-        nameAr: "جناح جدة",
-        nameEn: "Jeddah Suite",
-        size: "60 م²",
-        capacity: "3 أشخاص",
-        features: ["إطلالة بحرية بانورامية", "صالة خاصة", "حوض جاكوزي"],
-        image:
-          "https://images.unsplash.com/photo-1596436889106-be35e843f974?w=600&q=80",
-      },
-      {
-        nameAr: "غرفة ديلوكس",
-        nameEn: "Deluxe Room",
+        nameAr: "غرفة سوبيريور",
+        nameEn: "Superior Room",
         size: "40 م²",
         capacity: "2 أشخاص",
-        features: ["سرير ضخم", "ديكور عصري", "حمام فاخر"],
-        image:
-          "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?w=600&q=80",
+        features: ["مساحة واسعة", "ديكور عصري"],
+        image: "/ayashael/DSC_6718٨٨٨٨٨٨ copy 2.jpg"
       },
+      {
+        nameAr: "جناح أياس الفاخر",
+        nameEn: "Aya Luxury Suite",
+        size: "65 م²",
+        capacity: "3 أشخاص",
+        features: ["صالة جلوس واسعة", "إطلالة بانورامية"],
+        image: "/ayashael/DSC_6680١٠١٠١٠ copy 2.jpg"
+      }
     ],
     facilities: [
       { nameAr: "مركز لياقة", icon: "Dumbbell" },
@@ -355,36 +393,32 @@ export const BRANDS: Brand[] = [
     ],
     landmarks: [
       {
-        nameAr: "كورنيش جدة",
+        nameAr: "قلعة أعيرف التاريخية",
         type: "nearby",
-        distance: "50 م",
-        image:
-          "https://images.unsplash.com/photo-1603199506016-b9a594b593c0?w=400&q=80",
-        location: ''
-      },
-      {
-        nameAr: "نافورة الملك فهد",
-        type: "city",
         distance: "2 كم",
-        image:
-          "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=400&q=80",
-        location: ''
+        image: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?w=400&q=80",
+        location: 'https://maps.app.goo.gl/3N6A6L2x6a3m6b8x7'
       },
       {
-        nameAr: "البلد التاريخي",
+        nameAr: "قلعة القشلة",
         type: "city",
-        distance: "5 كم",
-        image:
-          "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=400&q=80",
-        location: ''
+        distance: "1.5 كم",
+        image: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=400&q=80",
+        location: 'https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7'
       },
       {
-        nameAr: "مول النخيل",
+        nameAr: "منتزه المغواة",
+        type: "city",
+        distance: "4 كم",
+        image: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=400&q=80",
+        location: 'https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7'
+      },
+      {
+        nameAr: "سوق المسوكف الشعبي",
         type: "nearby",
-        distance: "1.5 كم",
-        image:
-          "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=400&q=80",
-        location: ''
+        distance: "1 كم",
+        image: "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=400&q=80",
+        location: 'https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7'
       },
     ],
     breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
@@ -422,16 +456,22 @@ export const BRANDS: Brand[] = [
     taglineAr: "تصميم معاصر وأجواء استثنائية",
     cityAr: "الجوف",
     cityEn: "Al Jouf",
-    descriptionAr: "فندق أياس في الجوف وجهة فريدة تجمع بين التصميم المعاصر والموقع المتميز، يقدم تجربة إقامة مميزة.",
+    descriptionAr: "فندق أياس الجوف يجسد الأناقة المعاصرة في قلب منطقة الجوف. يوفر الفندق تجربة إقامة فاخرة بتصاميم حديثة ومرافق متكاملة تلبي تطلعات المسافرين للعمل أو الترفيه.",
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "ayajouf@suknai.com",
     reservationUrl: "https://booking.suknai.com/aya-jouf",
     website: "https://aya-jouf.suknai.com",
-    heroImage: "/gof.jpg",
+    heroImage: "/ayasgof/gof.jpg",
     galleryImages: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+      "/ayasgof/Image_100.jpg.jpeg",
+      "/ayasgof/Image_101.jpg.jpeg",
+      "/ayasgof/Image_91.jpg.jpeg",
+      "/ayasgof/Image_92.jpg.jpeg",
+      "/ayasgof/Image_93.jpg.jpeg",
+      "/ayasgof/Image_94.jpg.jpeg",
+      "/ayasgof/Image_95.jpg.jpeg",
+      "/ayasgof/Image_96.jpg.jpeg",
     ],
     coordinates: { lat: 29.9697, lng: 40.2000 },
     social: {
@@ -448,7 +488,23 @@ export const BRANDS: Brand[] = [
         size: "32 م²",
         capacity: "2 أشخاص",
         features: ["إطلالة المدينة", "سرير كينج"],
-        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80"
+        image: "/ayasgof/Image_88.jpg.jpeg"
+      },
+      {
+        nameAr: "غرفة سوبيريور",
+        nameEn: "Superior Room",
+        size: "40 م²",
+        capacity: "2 أشخاص",
+        features: ["مساحة واسعة", "ديكور عصري"],
+        image: "/ayasgof/Image_89.jpg.jpeg"
+      },
+      {
+        nameAr: "جناح أياس الفاخر",
+        nameEn: "Aya Luxury Suite",
+        size: "65 م²",
+        capacity: "3 أشخاص",
+        features: ["صالة جلوس واسعة", "إطلالة بانورامية"],
+        image: "/ayasgof/Image_90.jpg.jpeg"
       }
     ],
     facilities: [
@@ -462,10 +518,32 @@ export const BRANDS: Brand[] = [
     landmarks: [],
     breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
     importantNumbers: [
-      { labelAr: "الاستقبال", number: "9", icon: "Phone" }
+      { labelAr: "الاستقبال", number: "9", icon: "Phone" },
+      { labelAr: "خدمة الغرف", number: "100", icon: "BellRing" }
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
-    menuCategories: []
+    menuCategories: [
+      {
+        nameAr: "الإفطار",
+        icon: "Salad",
+        items: ["فطور أياس المميز", "كرويسان طازج", "أومليت بالأعشاب"],
+      },
+      {
+        nameAr: "المشروبات",
+        icon: "Coffee",
+        items: ["قهوة عربية", "قهوة مختصة (V60)", "عصير رمان طازج"],
+      },
+      {
+        nameAr: "الوجبات الرئيسية",
+        icon: "Beef",
+        items: ["كبسة لحم حائلية", "دجاج مشوي بالتتبيلة", "مكرونة فوتشيني"],
+      },
+      {
+        nameAr: "الحلويات",
+        icon: "CakeSlice",
+        items: ["تيراميسو", "كعكة الزعفران", "أم علي بالحليب"],
+      },
+    ]
   },
 
   {
@@ -527,25 +605,26 @@ export const BRANDS: Brand[] = [
     slug: "suknai-aqiq",
     nameAr: "فندق سكناي العقيق",
     nameEn: "Suknai Al-Aqiq Hotel",
-    taglineAr: "أناقة وراحة في قلب المدينة",
+    taglineAr: "أناقة وراحة في قلب المدينة المنورة",
     cityAr: "الرياض",
-    cityEn: "Riyadh",
+    cityEn: "Madinah",
     descriptionAr:
-      "فندق سكناي العقيق يقع في موقع استراتيجي بالمدينة المنورة، يوفر ضيافة استثنائية للزوار والمعتمرين بمرافق حديثة وخدمات متميزة.",
+      "فندق سكناي العقيق يقع في موقع استراتيجي في المدينة المنورة بالقرب من الحرم النبوي الشريف، يوفر ضيافة استثنائية للزوار والمعتمرين بمرافق حديثة وخدمات متميزة.",
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "aqiq@suknai.com",
     reservationUrl: "https://booking.suknai.com/aqiq",
     website: "https://aqiq.suknai.com",
-    heroImage:
-      "/aqeq.jpg",
+    heroImage: "/aqeq/aqeq.jpg",
     galleryImages: [
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
-      "https://images.unsplash.com/photo-1600011689032-8b628b8a8747?w=800&q=80",
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
-      "https://images.unsplash.com/photo-1562133567-b6a0a9c7e6eb?w=800&q=80",
-      "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
-      "https://images.unsplash.com/photo-1568495248636-6432b97bd949?w=800&q=80",
+      "/aqeq/SK-115.jpg",
+      "/aqeq/SK-116.jpg",
+      "/aqeq/SK-122.jpg",
+      "/aqeq/SK-136.jpg",
+      "/aqeq/SK-23.jpg",
+      "/aqeq/SK-24.jpg",
+      "/aqeq/SK-25.jpg",
+      "/aqeq/SK-2 EDIT.jpg",
     ],
     coordinates: { lat: 24.4686, lng: 39.6142 },
     social: {
@@ -553,7 +632,7 @@ export const BRANDS: Brand[] = [
       twitter: "https://x.com/suknai_hotels",
       tiktok: "https://www.tiktok.com/@suknai_hotels",
     },
-    stars: 0,
+    stars: 4,
     color: "#7c9885",
     roomTypes: [
       {
@@ -562,17 +641,15 @@ export const BRANDS: Brand[] = [
         size: "28 م²",
         capacity: "2 أشخاص",
         features: ["سرير كينج", "حمام خاص", "واي فاي", "تلفزيون"],
-        image:
-          "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80",
+        image: "/aqeq/SK-100.jpg",
       },
       {
         nameAr: "غرفة ديلوكس",
         nameEn: "Deluxe Room",
         size: "38 م²",
         capacity: "3 أشخاص",
-        features: ["سرير عائلي", "إطلالة على الحديقة", "حوض استحمام"],
-        image:
-          "https://images.unsplash.com/photo-1562133567-b6a0a9c7e6eb?w=600&q=80",
+        features: ["سرير عائلي", "إطلالة على المدينة", "حوض استحمام"],
+        image: "/aqeq/SK-101.jpg",
       },
       {
         nameAr: "جناح العائلة",
@@ -580,8 +657,7 @@ export const BRANDS: Brand[] = [
         size: "65 م²",
         capacity: "5 أشخاص",
         features: ["غرفتا نوم", "صالة معيشة", "مطبخ مجهز"],
-        image:
-          "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80",
+        image: "/aqeq/SK-102.jpg",
       },
     ],
     facilities: [
@@ -597,16 +673,14 @@ export const BRANDS: Brand[] = [
         nameAr: "المسجد النبوي الشريف",
         type: "nearby",
         distance: "1.5 كم",
-        image:
-          "https://images.unsplash.com/photo-1564508360428-a2b5b3c0b1e2?w=400&q=80",
+        image: "/masjid_an_nabawi_1775434724330.png",
         location: ''
       },
       {
         nameAr: "مسجد قباء",
         type: "city",
         distance: "4 كم",
-        image:
-          "https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?w=400&q=80",
+        image: "/quba_mosque_madinah_1775434774520.png",
         location: ''
       },
       {
@@ -651,25 +725,25 @@ export const BRANDS: Brand[] = [
     nameAr: "منتجع سكناي",
     nameEn: "Suknai Resort",
     taglineAr: "اهرب إلى جنة الطبيعة",
-    cityAr: "الرياض",
-    cityEn: "Riyadh",
+    cityAr: "أبها",
+    cityEn: "Abha",
     reviewUrl: "https://www.google.com/maps/place/منتجع+سكناي",
-    descriptionAr:
-      "منتجع سكناي في أبها يمنحك تجربة استجمام فريدة وسط طبيعة خلابة وهواء نقي. استمتع بالسكون والراحة بعيداً عن ضجيج المدينة.",
+    descriptionAr: "منتجع سكناي في مدينة أبها الساحرة، يمنحك تجربة استجمام استثنائية وخصوصية تامة وسط الطبيعة الجبلية الخلابة والهواء النقي، مما يجعله الوجهة المثالية للباحثين عن الهدوء والراحة بعيداً عن صخب المدينة.",
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "resort@suknai.com",
     reservationUrl: "https://booking.suknai.com/resort",
     website: "https://resort.suknai.com",
-    heroImage:
-      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1600&q=85",
+    heroImage: "/montg3/نسخة من منتجع (1).jpg",
     galleryImages: [
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
-      "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&q=80",
-      "https://images.unsplash.com/photo-1455587734955-081b22074882?w=800&q=80",
-      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
-      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80",
-      "https://images.unsplash.com/photo-1549294413-26f195200c16?w=800&q=80",
+      "/montg3/نسخة من منتجع (2).jpg",
+      "/montg3/نسخة من منتجع (10).jpg",
+      "/montg3/نسخة من منتجع (12).jpg",
+      "/montg3/نسخة من منتجع (13).jpg",
+      "/montg3/نسخة من Reception (1).jpg",
+      "/montg3/منتجع (2).jpg",
+      "/montg3/منتجع (24).jpg",
+      "/montg3/منتجع (36).jpg",
     ],
     coordinates: { lat: 18.2164, lng: 42.5053 },
     social: {
@@ -677,17 +751,16 @@ export const BRANDS: Brand[] = [
       twitter: "https://x.com/suknai_resorts",
       tiktok: "https://www.tiktok.com/@suknai_resorts",
     },
-    stars: 0,
+    stars: 5,
     color: "#4a7c59",
     roomTypes: [
       {
-        nameAr: "كوخ الطبيعة",
+        nameAr: "شاليه الطبيعة",
         nameEn: "Nature Chalet",
         size: "55 م²",
         capacity: "2 أشخاص",
         features: ["شرفة خاصة", "إطلالة على الجبال", "مدفأة", "جاكوزي"],
-        image:
-          "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=600&q=80",
+        image: "/montg3/منتجع (36).jpg"
       },
       {
         nameAr: "فيلا العائلة",
@@ -695,18 +768,16 @@ export const BRANDS: Brand[] = [
         size: "120 م²",
         capacity: "6 أشخاص",
         features: ["3 غرف نوم", "حديقة خاصة", "مطبخ مجهز", "جلسة خارجية"],
-        image:
-          "https://images.unsplash.com/photo-1455587734955-081b22074882?w=600&q=80",
+        image: "/montg3/منتجع (49).jpg"
       },
       {
-        nameAr: "جناح البانوراما",
-        nameEn: "Panorama Suite",
+        nameAr: "جناح البانوراما الفاخر",
+        nameEn: "Panorama Luxury Suite",
         size: "75 م²",
         capacity: "2 أشخاص",
         features: ["نافذة بانورامية كاملة", "حوض مفتوح", "خدمة خاصة"],
-        image:
-          "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80",
-      },
+        image: "/montg3/منتجع (70).jpg"
+      }
     ],
     facilities: [
       { nameAr: "مركز لياقة", icon: "Dumbbell" },
