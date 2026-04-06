@@ -2,7 +2,7 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Users, Maximize, Star } from "lucide-react";
+import { Users, Maximize, Star, ImageIcon } from "lucide-react";
 import { Brand } from "@/lib/constants";
 
 export default function RoomsSection({ brand }: { brand: Brand }) {
@@ -39,21 +39,32 @@ export default function RoomsSection({ brand }: { brand: Brand }) {
               className="group bg-white/5 rounded-3xl overflow-hidden hover-lift border border-white/10"
             >
               {/* Room Image */}
-              <div className="relative h-52 overflow-hidden">
-                <Image
-                  src={room.image}
-                  alt={room.nameAr}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/70 to-transparent" />
+              <div className="relative h-52 overflow-hidden flex items-center justify-center bg-white/5">
+                {room.image && !room.image.includes('placeholder') && !room.image.includes('gallery-icon') ? (
+                  <>
+                    <Image
+                      src={room.image}
+                      alt={room.nameAr}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/70 to-transparent" />
+                  </>
+                ) : (
+                  <div className="flex flex-col items-center gap-3 text-white/20">
+                    <ImageIcon size={48} strokeWidth={1} />
+                    <span className="text-xs font-medium tracking-widest uppercase">قريباً</span>
+                  </div>
+                )}
                 {/* Stars badge */}
-                <div className="absolute top-4 right-4 glass px-3 py-1 rounded-full flex gap-0.5 items-center">
-                  {Array.from({ length: brand.stars }).map((_, j) => (
-                    <Star key={j} size={12} fill="currentColor" className="text-[#c8a951]" />
-                  ))}
-                </div>
+                {brand.stars > 0 && (
+                  <div className="absolute top-4 right-4 glass px-3 py-1 rounded-full flex gap-0.5 items-center">
+                    {Array.from({ length: brand.stars }).map((_, j) => (
+                      <Star key={j} size={12} fill="currentColor" className="text-[#c8a951]" />
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Card Body */}

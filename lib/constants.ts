@@ -280,7 +280,7 @@ export const BRANDS: Brand[] = [
         size: "45 م²",
         capacity: "3 أشخاص",
         features: ["غرفة نوم وصالة", "ميني بار", "واي فاي مجاني", "تلفزيون ذكي"],
-        image: "/royal/suknai-royal-11.jpg",
+        image: "/elgof/room-1.jpg.jpeg",
       },
       {
         nameAr: "ديلوكس",
@@ -288,7 +288,7 @@ export const BRANDS: Brand[] = [
         size: "32 م²",
         capacity: "2 أشخاص",
         features: ["سرير كينج", "جلسة صغيرة", "مكتب عمل", "حش مطري"],
-        image: "/royal/suknai-royal-12.jpg",
+        image: "/elgof/room-2.jpg.jpeg",
       },
       {
         nameAr: "قياسية بدون إطلالة",
@@ -296,7 +296,7 @@ export const BRANDS: Brand[] = [
         size: "24 م²",
         capacity: "2 أشخاص",
         features: ["سرير كينج", "مكيف", "واي فاي مجاني", "تلفزيون ذكي"],
-        image: "/royal/dsc-1844-hdr.jpg",
+        image: "/elgof/room-3.jpg.jpeg",
       },
       {
         nameAr: "جناح جونيور",
@@ -304,7 +304,7 @@ export const BRANDS: Brand[] = [
         size: "50 م²",
         capacity: "3 أشخاص",
         features: ["تصميم مفتوح", "منطقة جلوس", "إضاءة هادئة", "خدمة ضيافة"],
-        image: "/royal/suknai-royal-13.jpg",
+        image: "/elgof/room-5.jpg.jpeg",
       },
       {
         nameAr: "جناح بغرفتين نوم",
@@ -312,7 +312,7 @@ export const BRANDS: Brand[] = [
         size: "78 م²",
         capacity: "5 أشخاص",
         features: ["غرفتا نوم", "صالة معيشة", "طاولة طعام", "حمامان"],
-        image: "/royal/dsc-2066-hdr.jpg",
+        image: "/elgof/room-6.jpg.jpeg",
       },
       {
         nameAr: "جناح ديلوكس",
@@ -320,7 +320,7 @@ export const BRANDS: Brand[] = [
         size: "58 م²",
         capacity: "3 أشخاص",
         features: ["غرفة نوم وصالة واسعة", "إطلالة أفضل", "خدمة غرف", "آلة قهوة"],
-        image: "/royal/suknai-royal-9.jpg",
+        image: "/elgof/corridor-1.jpg.jpeg",
       },
       {
         nameAr: "جناح رويال",
@@ -328,7 +328,7 @@ export const BRANDS: Brand[] = [
         size: "95 م²",
         capacity: "4 أشخاص",
         features: ["أرقى جناح", "خدمات ملكية", "إطلالة بانورامية"],
-        image: "/royal/suknai-royal-1.jpg",
+        image: "/elgof/corridor-2.jpg.jpeg",
       },
       {
         nameAr: "جناح تنفيذي",
@@ -336,7 +336,7 @@ export const BRANDS: Brand[] = [
         size: "65 م²",
         capacity: "3 أشخاص",
         features: ["جناح لرجال الأعمال", "مساحة هادئة", "خدمات سريعة"],
-        image: "/royal/dsc-2104-hdr.jpg",
+        image: "/elgof/corridor-3.jpg.jpeg",
       },
     ],
     facilities: [
@@ -691,7 +691,7 @@ export const BRANDS: Brand[] = [
         size: "45 م²",
         capacity: "3 أشخاص",
         features: ["غرفة نوم وصالة", "ميني بار", "واي فاي مجاني", "تلفزيون ذكي"],
-        image: "/royal/suknai-royal-11.jpg",
+        image: "/ayashael/dsc-6680101010-copy-2.jpg",
       },
       {
         nameAr: "ديلوكس",
@@ -699,7 +699,7 @@ export const BRANDS: Brand[] = [
         size: "32 م²",
         capacity: "2 أشخاص",
         features: ["سرير كينج", "جلسة صغيرة", "مكتب عمل", "حش مطري"],
-        image: "/royal/suknai-royal-12.jpg",
+        image: "/ayashael/dsc-6701-copy.jpg",
       },
       {
         nameAr: "قياسية بدون إطلالة",
@@ -707,7 +707,7 @@ export const BRANDS: Brand[] = [
         size: "24 م²",
         capacity: "2 أشخاص",
         features: ["سرير كينج", "مكيف", "واي فاي مجاني", "تلفزيون ذكي"],
-        image: "/royal/dsc-1844-hdr.jpg",
+        image: "/ayashael/dsc-6704-copy.jpg",
       },
       {
         nameAr: "جناح جونيور",
@@ -715,7 +715,7 @@ export const BRANDS: Brand[] = [
         size: "50 م²",
         capacity: "3 أشخاص",
         features: ["تصميم مفتوح", "منطقة جلوس", "إضاءة هادئة", "خدمة ضيافة"],
-        image: "/royal/suknai-royal-13.jpg",
+        image: "/ayashael/dsc-6709-copy-2.jpg",
       },
       {
         nameAr: "جناح بغرفتين نوم",
@@ -723,7 +723,7 @@ export const BRANDS: Brand[] = [
         size: "78 م²",
         capacity: "5 أشخاص",
         features: ["غرفتا نوم", "صالة معيشة", "طاولة طعام", "حمامان"],
-        image: "/royal/dsc-2066-hdr.jpg",
+        image: "/ayashael/dsc-6718888888-copy-2.jpg",
       },
       {
         nameAr: "جناح ديلوكس",
@@ -731,7 +731,7 @@ export const BRANDS: Brand[] = [
         size: "58 م²",
         capacity: "3 أشخاص",
         features: ["غرفة نوم وصالة واسعة", "إطلالة أفضل", "خدمة غرف", "آلة قهوة"],
-        image: "/royal/suknai-royal-9.jpg",
+        image: "/ayashael/dsc-6791-copy.jpg",
       },
       {
         nameAr: "جناح رويال",
@@ -739,7 +739,7 @@ export const BRANDS: Brand[] = [
         size: "95 م²",
         capacity: "4 أشخاص",
         features: ["أرقى جناح", "خدمات ملكية", "إطلالة بانورامية"],
-        image: "/royal/suknai-royal-1.jpg",
+        image: "/ayashael/dsc-9416-enhanced-nr-copy.jpeg",
       },
       {
         nameAr: "جناح تنفيذي",
@@ -747,7 +747,7 @@ export const BRANDS: Brand[] = [
         size: "65 م²",
         capacity: "3 أشخاص",
         features: ["جناح لرجال الأعمال", "مساحة هادئة", "خدمات سريعة"],
-        image: "/royal/dsc-2104-hdr.jpg",
+        image: "/ayashael/dsc-6680101010-copy-2.jpg",
       },
     ],
     facilities: [
@@ -847,7 +847,7 @@ export const BRANDS: Brand[] = [
         size: "45 م²",
         capacity: "3 أشخاص",
         features: ["غرفة نوم وصالة", "ميني بار", "واي فاي مجاني", "تلفزيون ذكي"],
-        image: "/royal/suknai-royal-11.jpg",
+        image: "/ayasgof/image-88.jpg.jpeg",
       },
       {
         nameAr: "ديلوكس",
@@ -855,7 +855,7 @@ export const BRANDS: Brand[] = [
         size: "32 م²",
         capacity: "2 أشخاص",
         features: ["سرير كينج", "جلسة صغيرة", "مكتب عمل", "حش مطري"],
-        image: "/royal/suknai-royal-12.jpg",
+        image: "/ayasgof/image-89.jpg.jpeg",
       },
       {
         nameAr: "قياسية بدون إطلالة",
@@ -863,7 +863,7 @@ export const BRANDS: Brand[] = [
         size: "24 م²",
         capacity: "2 أشخاص",
         features: ["سرير كينج", "مكيف", "واي فاي مجاني", "تلفزيون ذكي"],
-        image: "/royal/dsc-1844-hdr.jpg",
+        image: "/ayasgof/image-90.jpg.jpeg",
       },
       {
         nameAr: "جناح جونيور",
@@ -871,7 +871,7 @@ export const BRANDS: Brand[] = [
         size: "50 م²",
         capacity: "3 أشخاص",
         features: ["تصميم مفتوح", "منطقة جلوس", "إضاءة هادئة", "خدمة ضيافة"],
-        image: "/royal/suknai-royal-13.jpg",
+        image: "/ayasgof/image-91.jpg.jpeg",
       },
       {
         nameAr: "جناح بغرفتين نوم",
@@ -879,7 +879,7 @@ export const BRANDS: Brand[] = [
         size: "78 م²",
         capacity: "5 أشخاص",
         features: ["غرفتا نوم", "صالة معيشة", "طاولة طعام", "حمامان"],
-        image: "/royal/dsc-2066-hdr.jpg",
+        image: "/ayasgof/image-92.jpg.jpeg",
       },
       {
         nameAr: "جناح ديلوكس",
@@ -887,7 +887,7 @@ export const BRANDS: Brand[] = [
         size: "58 م²",
         capacity: "3 أشخاص",
         features: ["غرفة نوم وصالة واسعة", "إطلالة أفضل", "خدمة غرف", "آلة قهوة"],
-        image: "/royal/suknai-royal-9.jpg",
+        image: "/ayasgof/image-93.jpg.jpeg",
       },
       {
         nameAr: "جناح رويال",
@@ -895,7 +895,7 @@ export const BRANDS: Brand[] = [
         size: "95 م²",
         capacity: "4 أشخاص",
         features: ["أرقى جناح", "خدمات ملكية", "إطلالة بانورامية"],
-        image: "/royal/suknai-royal-1.jpg",
+        image: "/ayasgof/image-94.jpg.jpeg",
       },
       {
         nameAr: "جناح تنفيذي",
@@ -903,7 +903,7 @@ export const BRANDS: Brand[] = [
         size: "65 م²",
         capacity: "3 أشخاص",
         features: ["جناح لرجال الأعمال", "مساحة هادئة", "خدمات سريعة"],
-        image: "/royal/dsc-2104-hdr.jpg",
+        image: "/ayasgof/image-95.jpg.jpeg",
       },
     ],
     facilities: [
@@ -959,7 +959,7 @@ export const BRANDS: Brand[] = [
     whatsapp: "+966920031010",
     email: "aya-unaizah@suknai.com",
     website: "https://aya-unaizah.suknai.com",
-    heroImage: "/3neza/IMG-20250112-WA0009.jpg",
+    heroImage: "/3neza/3neza.jpg",
     galleryImages: [
       "/3neza/IMG-20250112-WA0010.jpg",
       "/3neza/IMG-20250112-WA0011.jpg",
@@ -978,13 +978,69 @@ export const BRANDS: Brand[] = [
     color: "#2a6fa8",
     roomTypes: [
       {
-        nameAr: "غرفة قياسية",
-        nameEn: "Standard Room",
+        nameAr: "جناح قياسية",
+        nameEn: "Standard Suite",
+        size: "45 م²",
+        capacity: "3 أشخاص",
+        features: ["غرفة نوم وصالة", "ميني بار", "واي فاي مجاني", "تلفزيون ذكي"],
+        image: "gallery-icon",
+      },
+      {
+        nameAr: "ديلوكس",
+        nameEn: "Deluxe Room",
         size: "32 م²",
         capacity: "2 أشخاص",
-        features: ["إطلالة المدينة", "سرير كينج"],
-        image: "/3neza/IMG-20250112-WA0016.jpg"
-      }
+        features: ["سرير كينج", "جلسة صغيرة", "مكتب عمل", "حش مطري"],
+        image: "gallery-icon",
+      },
+      {
+        nameAr: "قياسية بدون إطلالة",
+        nameEn: "Standard Room (No View)",
+        size: "24 م²",
+        capacity: "2 أشخاص",
+        features: ["سرير كينج", "مكيف", "واي فاي مجاني", "تلفزيون ذكي"],
+        image: "gallery-icon",
+      },
+      {
+        nameAr: "جناح جونيور",
+        nameEn: "Junior Suite",
+        size: "50 م²",
+        capacity: "3 أشخاص",
+        features: ["تصميم مفتوح", "منطقة جلوس", "إضاءة هادئة", "خدمة ضيافة"],
+        image: "gallery-icon",
+      },
+      {
+        nameAr: "جناح بغرفتين نوم",
+        nameEn: "Two-Bedroom Suite",
+        size: "78 م²",
+        capacity: "5 أشخاص",
+        features: ["غرفتا نوم", "صالة معيشة", "طاولة طعام", "حمامان"],
+        image: "gallery-icon",
+      },
+      {
+        nameAr: "جناح ديلوكس",
+        nameEn: "Deluxe Suite",
+        size: "58 م²",
+        capacity: "3 أشخاص",
+        features: ["غرفة نوم وصالة واسعة", "إطلالة أفضل", "خدمة غرف", "آلة قهوة"],
+        image: "gallery-icon",
+      },
+      {
+        nameAr: "جناح رويال",
+        nameEn: "Royal Suite",
+        size: "95 م²",
+        capacity: "4 أشخاص",
+        features: ["أرقى جناح", "خدمات ملكية", "إطلالة بانورامية"],
+        image: "gallery-icon",
+      },
+      {
+        nameAr: "جناح تنفيذي",
+        nameEn: "Executive Suite",
+        size: "65 م²",
+        capacity: "3 أشخاص",
+        features: ["جناح لرجال الأعمال", "مساحة هادئة", "خدمات سريعة"],
+        image: "gallery-icon",
+      },
     ],
     facilities: [
       { nameAr: "مركز لياقة", icon: "Dumbbell" },
@@ -994,7 +1050,29 @@ export const BRANDS: Brand[] = [
       { nameAr: "خدمة الغرف 24/7", icon: "BellRing" },
       { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
-    landmarks: [],
+    landmarks: [
+      {
+        nameAr: "سوق المسوكف الشعبي",
+        type: "nearby",
+        distance: "3 كم",
+        image: "/musokaf_market.png",
+        location: "https://share.google/a0MDlswdAIpYCxPOL"
+      },
+      {
+        nameAr: "مسجد الجوز التاريخي",
+        type: "nearby",
+        distance: "5 كم",
+        image: "/aljouz_mosque.png",
+        location: "https://share.google/c1TnrKSBRYZRfMvLF"
+      },
+      {
+        nameAr: "منتزهات الحاجب",
+        type: "city",
+        distance: "8 كم",
+        image: "/alhajeb_parks.png",
+        location: "https://share.google/6JGmZlMZtuxAkWT9Z"
+      },
+    ],
     breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
     importantNumbers: [
       { labelAr: "الاستقبال", number: "9", icon: "Phone" }
@@ -1042,7 +1120,7 @@ export const BRANDS: Brand[] = [
         size: "45 م²",
         capacity: "3 أشخاص",
         features: ["غرفة نوم وصالة", "ميني بار", "واي فاي مجاني", "تلفزيون ذكي"],
-        image: "/royal/suknai-royal-11.jpg",
+        image: "",
       },
       {
         nameAr: "ديلوكس",
@@ -1050,7 +1128,7 @@ export const BRANDS: Brand[] = [
         size: "32 م²",
         capacity: "2 أشخاص",
         features: ["سرير كينج", "جلسة صغيرة", "مكتب عمل", "حش مطري"],
-        image: "/royal/suknai-royal-12.jpg",
+        image: "",
       },
       {
         nameAr: "قياسية بدون إطلالة",
@@ -1058,7 +1136,7 @@ export const BRANDS: Brand[] = [
         size: "24 م²",
         capacity: "2 أشخاص",
         features: ["سرير كينج", "مكيف", "واي فاي مجاني", "تلفزيون ذكي"],
-        image: "/royal/dsc-1844-hdr.jpg",
+        image: "",
       },
       {
         nameAr: "جناح جونيور",
@@ -1066,7 +1144,7 @@ export const BRANDS: Brand[] = [
         size: "50 م²",
         capacity: "3 أشخاص",
         features: ["تصميم مفتوح", "منطقة جلوس", "إضاءة هادئة", "خدمة ضيافة"],
-        image: "/royal/suknai-royal-13.jpg",
+        image: "",
       },
       {
         nameAr: "جناح بغرفتين نوم",
@@ -1074,7 +1152,7 @@ export const BRANDS: Brand[] = [
         size: "78 م²",
         capacity: "5 أشخاص",
         features: ["غرفتا نوم", "صالة معيشة", "طاولة طعام", "حمامان"],
-        image: "/royal/dsc-2066-hdr.jpg",
+        image: "",
       },
       {
         nameAr: "جناح ديلوكس",
@@ -1082,7 +1160,7 @@ export const BRANDS: Brand[] = [
         size: "58 م²",
         capacity: "3 أشخاص",
         features: ["غرفة نوم وصالة واسعة", "إطلالة أفضل", "خدمة غرف", "آلة قهوة"],
-        image: "/royal/suknai-royal-9.jpg",
+        image: "",
       },
       {
         nameAr: "جناح رويال",
@@ -1090,7 +1168,7 @@ export const BRANDS: Brand[] = [
         size: "95 م²",
         capacity: "4 أشخاص",
         features: ["أرقى جناح", "خدمات ملكية", "إطلالة بانورامية"],
-        image: "/royal/suknai-royal-1.jpg",
+        image: "",
       },
       {
         nameAr: "جناح تنفيذي",
@@ -1098,7 +1176,7 @@ export const BRANDS: Brand[] = [
         size: "65 م²",
         capacity: "3 أشخاص",
         features: ["جناح لرجال الأعمال", "مساحة هادئة", "خدمات سريعة"],
-        image: "/royal/dsc-2104-hdr.jpg",
+        image: "",
       },
     ],
     facilities: [
