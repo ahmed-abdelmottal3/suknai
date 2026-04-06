@@ -155,15 +155,6 @@ export default function LocationPopup() {
                     >
                       عرض التفاصيل
                     </Link>
-                    <a
-                      href={nearest.reservationUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={dismiss}
-                      className="flex-1 border border-[#c8a951]/40 text-[#c8a951] font-bold py-3 rounded-xl text-center text-sm hover:bg-[#c8a951]/10 transition-all"
-                    >
-                      احجز الآن
-                    </a>
                   </div>
 
                   <button

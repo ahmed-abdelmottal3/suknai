@@ -25,8 +25,8 @@ const quickLinks = [
   },
   {
     href: "/contact",
-    title: "الحجز والتواصل",
-    description: "للحجوزات والاستفسارات العامة والتعاون التجاري عبر صفحة واضحة.",
+    title: "تواصل معنا",
+    description: "للاستفسارات العامة والتعاون التجاري عبر صفحة واضحة.",
     icon: Mail,
   },
 ];
@@ -40,7 +40,7 @@ const highlights = [
 const stats = [
   { value: "5", label: "علامات ووجهات" },
   { value: "متنوع", label: "نمط الإقامة" },
-  { value: "سريع", label: "الوصول للحجز" },
+  { value: "سريع", label: "الوصول للمعلومات" },
 ];
 
 export default function GroupOverviewSection() {
@@ -96,7 +96,7 @@ export default function GroupOverviewSection() {
                 href="/contact"
                 className="inline-flex items-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/8"
               >
-                ابدأ الحجز أو الاستفسار
+                تواصل معنا أو استفسر
               </Link>
             </div>
           </div>

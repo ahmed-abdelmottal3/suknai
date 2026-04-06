@@ -41,7 +41,6 @@ export interface Brand {
   phone: string;
   whatsapp: string;
   email: string;
-  reservationUrl: string;
   website: string;
   heroImage: string;
   galleryImages: string[];
@@ -117,7 +116,6 @@ export const BRANDS: Brand[] = [
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "royal@suknai.com",
-    reservationUrl: "/contact",
     website: "https://royal.suknai.com",
     heroImage:
       "/royal.jpg",
@@ -245,9 +243,8 @@ export const BRANDS: Brand[] = [
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "suknaijouf@suknai.com",
-    reservationUrl: "https://booking.suknai.com/suknai-jouf",
     website: "https://suknai-jouf.suknai.com",
-    heroImage: "/elgof/RECEPTION (1).jpg.jpeg",
+    heroImage: "/elgof/f62a70c5-8a21-46c8-b047-44339c1de059.jpg",
     galleryImages: [
       "/elgof/RECEPTION (1).png",
       "/elgof/RECEPTION (2).png",
@@ -338,7 +335,6 @@ export const BRANDS: Brand[] = [
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "aya@suknai.com",
-    reservationUrl: "https://booking.suknai.com/aya",
     website: "https://aya.suknai.com",
     heroImage: "/ayashael/DSC_9416-Enhanced-NR copy.jpeg",
     galleryImages: [
@@ -460,7 +456,6 @@ export const BRANDS: Brand[] = [
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "ayajouf@suknai.com",
-    reservationUrl: "https://booking.suknai.com/aya-jouf",
     website: "https://aya-jouf.suknai.com",
     heroImage: "/ayasgof/gof.jpg",
     galleryImages: [
@@ -558,7 +553,6 @@ export const BRANDS: Brand[] = [
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "aya-unaizah@suknai.com",
-    reservationUrl: "https://booking.suknai.com/aya-unaizah",
     website: "https://aya-unaizah.suknai.com",
     heroImage: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1600&q=85",
     galleryImages: [
@@ -613,7 +607,6 @@ export const BRANDS: Brand[] = [
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "aqiq@suknai.com",
-    reservationUrl: "https://booking.suknai.com/aqiq",
     website: "https://aqiq.suknai.com",
     heroImage: "/aqeq/aqeq.jpg",
     galleryImages: [
@@ -732,7 +725,6 @@ export const BRANDS: Brand[] = [
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "resort@suknai.com",
-    reservationUrl: "https://booking.suknai.com/resort",
     website: "https://resort.suknai.com",
     heroImage: "/montg3/نسخة من منتجع (1).jpg",
     galleryImages: [
@@ -853,7 +845,6 @@ export const BRANDS: Brand[] = [
     phone: "+966920031010",
     whatsapp: "+966920031010",
     email: "ghadi@suknai.com",
-    reservationUrl: "https://booking.suknai.com/ghadi",
     website: "https://ghadi.suknai.com",
     heroImage:
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1600&q=85",

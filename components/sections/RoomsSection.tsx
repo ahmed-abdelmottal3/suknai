@@ -151,15 +151,6 @@ export default function RoomsSection({ brand }: { brand: Brand }) {
                     </span>
                   ))}
                 </div>
-
-                <a
-                  href={"/contact"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full gradient-gold text-[#0d1b2a] font-bold py-2.5 rounded-xl text-center text-sm hover:shadow-lg transition-all"
-                >
-                  احجز هذه الغرفة
-                </a>
               </div>
             </motion.div>
           ))}

@@ -32,8 +32,8 @@ export default function GroupHero() {
           className="inline-flex items-center gap-3 mb-6"
         >
           <span className="w-12 h-px bg-[#c8a951]" />
-          <span className="text-[#c8a951] text-sm font-semibold tracking-[0.3em] uppercase">
-            مجموعة سكناي
+          <span className="text-[#c8a951] text-sm md:text-base font-semibold tracking-wide">
+            مرحباً بك ضيفنا العزيز
           </span>
           <span className="w-12 h-px bg-[#c8a951]" />
         </motion.div>
@@ -42,29 +42,18 @@ export default function GroupHero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-6xl md:text-8xl text-white mb-6 leading-none"
+          className="text-5xl md:text-7xl lg:text-8xl text-white mb-8 leading-tight font-black"
         >
-          <span className="text-gold">SUKNAI</span>
+          في تجربة <span className="text-gold">تحتفي بكل لحظة</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6 }}
-          className="text-xl md:text-2xl text-white/75 font-light mb-4 max-w-3xl mx-auto"
+          className="text-lg md:text-xl text-white/60 font-light mb-12 max-w-2xl mx-auto border-t border-white/10 pt-6"
         >
-          تجارب ضيافة متنوعة تجمع بين الفخامة والراحة والموقع المميز في وجهات
-          مختارة داخل المملكة
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-white/45 text-lg mb-12"
-          dir="ltr"
-        >
-          Where luxury meets Saudi hospitality
+          مجموعة سكناي أرقى تجارب الضيافة السعودية التي تجمع بين الأصالة والحداثة في وجهات مختارة.
         </motion.p>
 
         <motion.div
@@ -81,9 +70,9 @@ export default function GroupHero() {
           </Link>
           <Link
             href="/contact"
-            className="glass text-white font-semibold px-10 py-4 rounded-2xl text-lg hover:bg-white/20 transition-all"
+            className="glass text-white font-semibold px-10 py-4 rounded-2xl text-lg hover:bg-white/20 transition-all border border-white/10"
           >
-            احجز أو تواصل معنا
+            تواصل معنا
           </Link>
         </motion.div>
       </div>

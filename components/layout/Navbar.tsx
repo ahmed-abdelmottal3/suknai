@@ -143,7 +143,7 @@ export default function Navbar() {
               href="/contact"
               className="hover:text-[#c8a951] transition-colors duration-200"
             >
-              الحجز والتواصل
+              تواصل معنا
             </Link>
           </div>
 
@@ -156,7 +156,7 @@ export default function Navbar() {
               className="gradient-gold text-[#0d1b2a] font-bold text-sm px-5 py-2 rounded-full hover:shadow-lg hover:shadow-yellow-500/20 transition-all duration-300 hover:scale-105 flex items-center gap-2"
             >
               <WhatsAppIcon size={16} />
-              احجز عبر واتساب
+              تواصل عبر واتساب
             </a>
           </div>
 
@@ -270,7 +270,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className="text-xl text-white/80"
               >
-                الحجز والتواصل
+                تواصل معنا
               </Link>
               <a
                 href={`https://wa.me/${GROUP.whatsapp.replace(/\+/g, "")}`}
@@ -279,7 +279,7 @@ export default function Navbar() {
                 className="gradient-gold text-[#0d1b2a] font-bold text-center py-4 rounded-2xl text-xl flex items-center justify-center gap-2"
               >
                 <WhatsAppIcon size={24} />
-                احجز عبر واتساب
+                تواصل عبر واتساب
               </a>
             </div>
           </motion.div>

@@ -84,24 +84,14 @@ export default function BrandsSection() {
                   <div className="flex items-center justify-between">
                     <div className="flex gap-2">
                       <a
-                        href={brand.reservationUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="text-xs px-3 py-1.5 rounded-full font-semibold text-[#0d1b2a] hover:shadow-md transition-all"
-                        style={{ background: brand.color }}
-                      >
-                        احجز الآن
-                      </a>
-                      <a
                         href={`https://wa.me/${brand.whatsapp.replace("+", "")}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full glass text-white hover:bg-white/20 transition-all cursor-pointer"
+                        className="flex items-center gap-1.5 text-xs px-3 py-2.5 rounded-full gradient-gold text-[#0d1b2a] font-bold hover:shadow-md transition-all cursor-pointer"
                       >
                         <WhatsAppIcon size={12} />
-                        واتساب
+                        تواصل عبر واتساب
                       </a>
                     </div>
                     <div className="flex items-center gap-1 text-[#c8a951] text-sm group-hover:gap-2 transition-all">

@@ -1,7 +1,7 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Instagram, Building } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram } from "lucide-react";
 import { Brand, GROUP } from "@/lib/constants";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
@@ -95,17 +95,6 @@ export default function ContactSection({ brand }: { brand: Brand }) {
             >
               <WhatsAppIcon size={24} />
               تواصل عبر واتساب
-            </a>
-
-            {/* Reservation */}
-            <a
-              href={brand.reservationUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 bg-[#0d1b2a] text-white font-bold px-6 py-4 rounded-2xl hover:bg-[#1a2f45] transition-colors w-full justify-center"
-            >
-              <Building size={24} />
-              احجز إقامتك الآن
             </a>
 
             {/* Social */}

@@ -2,7 +2,7 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { Phone, Mail, Instagram, Twitter, Youtube, Ghost, Music } from "lucide-react";
-import { GROUP, BRANDS } from "@/lib/constants";
+import { GROUP } from "@/lib/constants";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 export default function GroupContactSection() {
@@ -128,31 +128,6 @@ export default function GroupContactSection() {
             >
               <Music size={22} />
             </motion.a>
-          </div>
-        </motion.div>
-
-        {/* Brands Reservations Quick Links */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ delay: 0.6 }}
-          className="border-t border-white/10 pt-10"
-        >
-          <p className="text-center text-[#c8a951] text-sm font-semibold tracking-widest uppercase mb-6">
-            روابط الحجز المباشر
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {BRANDS.map((brand) => (
-              <a
-                key={brand.id}
-                href={brand.reservationUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-5 py-2.5 rounded-2xl glass text-white/70 hover:text-white text-sm border border-white/10 hover:border-white/20 transition-all font-medium"
-              >
-                {brand.nameAr}
-              </a>
-            ))}
           </div>
         </motion.div>
       </div>
