@@ -39,10 +39,9 @@ export default function BreakfastSection({ brand }: { brand: Brand }) {
             <p className="text-[#c8a951] text-sm font-semibold tracking-widest uppercase mb-3">
               طيلة  أيام الأسبوع
             </p>
-            <p className="text-white text-3xl font-black" dir="ltr">
+            <p className="text-white text-3xl font-black">
               {brand.breakfastTimes.weekday}
             </p>
-            <p className="text-white/40 text-sm mt-2">الأحد – الخميس</p>
           </motion.div>
 
         </div>

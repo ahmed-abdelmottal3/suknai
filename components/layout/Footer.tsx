@@ -58,7 +58,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center group">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/Screenshot_2026-04-01_101437-removebg-preview.png"
+                src="/screenshot-2026-04-01-101437-removebg-preview.png"
                 alt="شعار مجموعة سكناي"
                 className="h-12 md:h-14 w-auto object-contain scale-[2] md:scale-[2.5] origin-right transition-transform duration-300 group-hover:scale-[2.1] md:group-hover:scale-[2.6] filter drop-shadow hover:drop-shadow-lg"
               />

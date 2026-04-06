@@ -95,7 +95,7 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
                 href={`https://wa.me/${brand.whatsapp.replace("+", "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="gradient-gold text-[#0d1b2a] font-bold px-8 py-4 rounded-2xl text-lg hover:shadow-xl hover:shadow-yellow-500/20 hover:scale-105 transition-all duration-300"
+                className="gradient-gold text-[#0d1b2a] font-bold px-8 py-4 rounded-2xl text-lg hover:shadow-xl hover:shadow-yellow-500/20 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
               >
                 <WhatsAppIcon size={24} />
                 تواصل عبر واتساب

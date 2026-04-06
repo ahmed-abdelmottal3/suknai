@@ -32,7 +32,7 @@ export default function GroupHero() {
           className="inline-flex items-center gap-3 mb-6"
         >
           <span className="w-12 h-px bg-[#c8a951]" />
-          <span className="text-[#c8a951] text-sm md:text-base font-semibold tracking-wide">
+          <span className="text-[#c8a951] text-2xl md:text-3xl font-semibold tracking-wide">
             مرحباً بك ضيفنا العزيز
           </span>
           <span className="w-12 h-px bg-[#c8a951]" />
@@ -42,9 +42,9 @@ export default function GroupHero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-5xl md:text-7xl lg:text-8xl text-white mb-8 leading-tight font-black"
+          className="text-4xl md:text-6xl lg:text-7xl text-white mb-8 leading-tight font-black"
         >
-          في تجربة <span className="text-gold">تحتفي بكل لحظة</span>
+          في تجربة تحتفي بكل لحظة
         </motion.h1>
 
         <motion.p

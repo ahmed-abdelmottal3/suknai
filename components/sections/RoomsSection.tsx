@@ -5,76 +5,9 @@ import Image from "next/image";
 import { Users, Maximize, Star } from "lucide-react";
 import { Brand } from "@/lib/constants";
 
-const ROYAL_ROOM_TYPES = [
-  {
-    nameAr: "قياسية بدون اطلالة",
-    nameEn: "Standard Room (No View)",
-    size: "24 م²",
-    capacity: "2 أشخاص",
-    features: ["سرير كينج", "مكيف", "واي فاي مجاني", "تلفزيون ذكي"],
-    image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80",
-  },
-  {
-    nameAr: "ديلوكس",
-    nameEn: "Deluxe Room",
-    size: "32 م²",
-    capacity: "2 أشخاص",
-    features: ["سرير كينج", "جلسة صغيرة", "مكتب عمل", "دش مطري"],
-    image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&q=80",
-  },
-  {
-    nameAr: "جناح قياسي",
-    nameEn: "Standard Suite",
-    size: "45 م²",
-    capacity: "3 أشخاص",
-    features: ["غرفة نوم وصالة", "ميني بار", "واي فاي مجاني", "تلفزيون ذكي"],
-    image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&q=80",
-  },
-  {
-    nameAr: "جناح ديلوكس",
-    nameEn: "Deluxe Suite",
-    size: "58 م²",
-    capacity: "3 أشخاص",
-    features: ["غرفة نوم وصالة واسعة", "إطلالة أفضل", "خدمة غرف", "آلة قهوة"],
-    image: "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?w=600&q=80",
-  },
-  {
-    nameAr: "جناح بغرفتين نوم",
-    nameEn: "Two-Bedroom Suite",
-    size: "78 م²",
-    capacity: "5 أشخاص",
-    features: ["غرفتا نوم", "صالة معيشة", "طاولة طعام", "حمامان"],
-    image: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&q=80",
-  },
-  {
-    nameAr: "جناح جونيور",
-    nameEn: "Junior Suite",
-    size: "50 م²",
-    capacity: "3 أشخاص",
-    features: ["تصميم مفتوح", "منطقة جلوس", "إضاءة هادئة", "خدمة ضيافة"],
-    image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80",
-  },
-  {
-    nameAr: "جناح تنفيذي",
-    nameEn: "Executive Suite",
-    size: "70 م²",
-    capacity: "4 أشخاص",
-    features: ["غرفة نوم رئيسية", "صالة تنفيذية", "مكتب عمل", "خدمة كونسيرج"],
-    image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&q=80",
-  },
-  {
-    nameAr: "جناح رويال",
-    nameEn: "Royal Suite",
-    size: "95 م²",
-    capacity: "5 أشخاص",
-    features: ["غرفتا نوم", "صالة استقبال", "جاكوزي", "خدمات خاصة"],
-    image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&q=80",
-  },
-];
-
 export default function RoomsSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
-  const rooms = brand.slug === "suknai-royal" ? ROYAL_ROOM_TYPES : brand.roomTypes;
+  const rooms = brand.roomTypes;
 
   return (
     <section ref={ref} className="section-padding bg-[#0d1b2a]">

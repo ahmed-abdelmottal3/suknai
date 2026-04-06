@@ -1,92 +1,60 @@
 "use client";
 import { useInView } from "react-intersection-observer";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { motion } from "framer-motion";
 import { Brand } from "@/lib/constants";
 import * as Icons from "lucide-react";
-import type { LucideIcon } from "lucide-react";
-import { ChevronDown } from "lucide-react";
 
 export default function MenuSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
-  const [open, setOpen] = useState<string | null>(brand.menuCategories[0]?.nameAr);
+
+  if (!brand.menuCategories || brand.menuCategories.length === 0) return null;
 
   return (
-    <section ref={ref} className="section-padding bg-[#f8f4ef]">
-      <div className="max-w-4xl mx-auto">
+    <section ref={ref} className="section-padding bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-14"
+          className="text-center mb-16"
         >
-          <span className="text-[#c8a951] text-sm font-semibold tracking-widest uppercase">
-            المطعم
-          </span>
-          <h2 className="text-4xl md:text-5xl font-black text-[#0d1b2a] mt-3 mb-2">
+          <span className="text-[#c8a951] text-sm font-semibold tracking-widest uppercase mb-2 block">
             قائمة الطعام
+          </span>
+          <h2 className="text-4xl md:text-5xl font-black text-[#0d1b2a] mb-4">
+            تذوق الفخامة
           </h2>
           <div className="divider-gold mx-auto" />
         </motion.div>
 
-        <div className="space-y-4">
-          {brand.menuCategories.map((cat, i) => (
-            <motion.div
-              key={cat.nameAr}
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm border border-[#ede8e1]"
-            >
-              <button
-                onClick={() => setOpen(open === cat.nameAr ? null : cat.nameAr)}
-                className="w-full flex items-center justify-between px-6 py-5 text-right"
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {brand.menuCategories.map((category, idx) => {
+            const IconComponent = (Icons as any)[category.icon] || Icons.Utensils;
+            return (
+              <motion.div
+                key={category.nameAr}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={inView ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className="bg-[#f8f4ef] rounded-3xl p-8 border border-[#ede8e1] hover:border-[#c8a951] transition-all"
               >
-                <div className="flex items-center gap-3">
-                  <span className="text-[#0d1b2a]">
-                    {(() => {
-                      const iconKey = cat.icon as keyof typeof Icons;
-                      const IconComp = (Icons[iconKey] as LucideIcon | undefined) ?? Icons.UtensilsCrossed;
-                      return <IconComp size={22} strokeWidth={1.5} />;
-                    })()}
-                  </span>
-                  <span className="text-[#0d1b2a] font-bold text-lg">{cat.nameAr}</span>
+                <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 text-[#c8a951] shadow-sm">
+                  <IconComponent size={28} />
                 </div>
-                <motion.div
-                  animate={{ rotate: open === cat.nameAr ? 180 : 0 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <ChevronDown size={20} className="text-[#c8a951]" />
-                </motion.div>
-              </button>
-
-              <AnimatePresence>
-                {open === cat.nameAr && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="overflow-hidden"
-                  >
-                    <div className="px-6 pb-5 border-t border-[#ede8e1]">
-                      <div className="grid grid-cols-2 gap-3 pt-4">
-                        {cat.items.map((item) => (
-                          <div key={item} className="flex items-center gap-2">
-                            <span
-                              className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-                              style={{ background: brand.color }}
-                            />
-                            <span className="text-[#4a4a4a] text-sm">{item}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.div>
-          ))}
+                <h3 className="text-2xl font-black text-[#0d1b2a] mb-6">{category.nameAr}</h3>
+                <ul className="space-y-4">
+                  {category.items.map((item) => (
+                    <li key={item} className="flex items-center justify-between group">
+                      <span className="text-[#4a4a4a] text-lg group-hover:text-[#c8a951] transition-colors">
+                        {item}
+                      </span>
+                      <span className="w-12 h-px bg-[#c8a951]/20 group-hover:w-16 transition-all" />
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

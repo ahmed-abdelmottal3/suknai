@@ -40,7 +40,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center group">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/Screenshot_2026-04-01_101437-removebg-preview.png"
+              src="/screenshot-2026-04-01-101437-removebg-preview.png"
               alt="شعار مجموعة سكناي"
               className="h-12 md:h-14 w-auto object-contain scale-[2] md:scale-[2.5] origin-right transition-transform duration-300 group-hover:scale-[2.1] md:group-hover:scale-[2.6] filter drop-shadow hover:drop-shadow-lg"
             />
@@ -73,15 +73,15 @@ export default function Navbar() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 15, scale: 0.95 }}
                     transition={{ duration: 0.2, ease: "easeOut" }}
-                    className="absolute top-full right-0 mt-4 w-[480px] rounded-3xl glass-dark overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 p-6"
+                    className="absolute top-full right-0 mt-4 w-[640px] rounded-3xl glass-dark overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 p-6"
                   >
-                    <div className="grid grid-cols-2 gap-8">
+                    <div className="grid grid-cols-3 gap-6">
                       <div>
                         <p className="text-[#c8a951] text-[10px] font-black uppercase tracking-[2px] mb-4 opacity-70 border-b border-white/10 pb-2">
                           فنادق سكناي
                         </p>
                         <div className="flex flex-col gap-1">
-                          {BRANDS.filter(b => !b.id.startsWith('aya')).map((brand) => (
+                          {BRANDS.filter(b => !b.id.startsWith('aya') && b.id !== 'ghadi').map((brand) => (
                             <Link
                               key={brand.id}
                               href={`/${brand.slug}`}
@@ -105,6 +105,29 @@ export default function Navbar() {
                         </p>
                         <div className="flex flex-col gap-1">
                           {BRANDS.filter(b => b.id.startsWith('aya')).map((brand) => (
+                            <Link
+                              key={brand.id}
+                              href={`/${brand.slug}`}
+                              className="group/item flex items-center justify-between p-2 rounded-xl hover:bg-white/5 transition-all duration-300"
+                            >
+                              <span className="text-white/80 group-hover/item:text-white text-sm font-medium transition-colors">
+                                {brand.nameAr}
+                              </span>
+                              <span
+                                className="w-1.5 h-1.5 rounded-full opacity-40 group-hover/item:opacity-100 transition-opacity shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+                                style={{ background: brand.color }}
+                              />
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div>
+                        <p className="text-[#c8a951] text-[10px] font-black uppercase tracking-[2px] mb-4 opacity-70 border-b border-white/10 pb-2">
+                          شقق غادي
+                        </p>
+                        <div className="flex flex-col gap-1">
+                          {BRANDS.filter(b => b.id === 'ghadi').map((brand) => (
                             <Link
                               key={brand.id}
                               href={`/${brand.slug}`}
@@ -201,53 +224,77 @@ export default function Navbar() {
                   الفنادق
                 </p>
                 <div className="flex flex-col gap-8">
-                  <div>
-                    <p className="text-white/40 text-[10px] font-bold uppercase tracking-wider mb-2 px-1 border-r-2 border-[#c8a951] pr-2">
-                      فنادق سكناي
-                    </p>
-                    <div className="flex flex-col gap-1">
-                      {BRANDS.filter(b => !b.id.startsWith('aya')).map((brand) => (
-                        <Link
-                          key={brand.id}
-                          href={`/${brand.slug}`}
-                          onClick={() => setMenuOpen(false)}
-                          className="flex items-center justify-between py-4 border-b border-white/5 px-2 hover:bg-white/5 rounded-xl transition-all"
-                        >
-                          <span className="text-white/90 text-lg font-medium">
-                            {brand.nameAr}
-                          </span>
-                          <span
-                            className="w-2 h-2 rounded-full"
-                            style={{ background: brand.color }}
-                          />
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
+                      <div>
+                        <p className="text-white/40 text-[10px] font-bold uppercase tracking-wider mb-2 px-1 border-r-2 border-[#c8a951] pr-2">
+                          فنادق سكناي
+                        </p>
+                        <div className="flex flex-col gap-1">
+                          {BRANDS.filter(b => !b.id.startsWith('aya') && b.id !== 'ghadi').map((brand) => (
+                            <Link
+                              key={brand.id}
+                              href={`/${brand.slug}`}
+                              onClick={() => setMenuOpen(false)}
+                              className="flex items-center justify-between py-4 border-b border-white/5 px-2 hover:bg-white/5 rounded-xl transition-all"
+                            >
+                              <span className="text-white/90 text-lg font-medium">
+                                {brand.nameAr}
+                              </span>
+                              <span
+                                className="w-2 h-2 rounded-full"
+                                style={{ background: brand.color }}
+                              />
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
 
-                  <div>
-                    <p className="text-white/40 text-[10px] font-bold uppercase tracking-wider mb-2 px-1 border-r-2 border-[#c8a951] pr-2">
-                      فنادق أياس
-                    </p>
-                    <div className="flex flex-col gap-1">
-                      {BRANDS.filter(b => b.id.startsWith('aya')).map((brand) => (
-                        <Link
-                          key={brand.id}
-                          href={`/${brand.slug}`}
-                          onClick={() => setMenuOpen(false)}
-                          className="flex items-center justify-between py-4 border-b border-white/5 px-2 hover:bg-white/5 rounded-xl transition-all"
-                        >
-                          <span className="text-white/90 text-lg font-medium">
-                            {brand.nameAr}
-                          </span>
-                          <span
-                            className="w-2 h-2 rounded-full"
-                            style={{ background: brand.color }}
-                          />
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
+                      <div>
+                        <p className="text-white/40 text-[10px] font-bold uppercase tracking-wider mb-2 px-1 border-r-2 border-[#c8a951] pr-2">
+                          فنادق أياس
+                        </p>
+                        <div className="flex flex-col gap-1">
+                          {BRANDS.filter(b => b.id.startsWith('aya')).map((brand) => (
+                            <Link
+                              key={brand.id}
+                              href={`/${brand.slug}`}
+                              onClick={() => setMenuOpen(false)}
+                              className="flex items-center justify-between py-4 border-b border-white/5 px-2 hover:bg-white/5 rounded-xl transition-all"
+                            >
+                              <span className="text-white/90 text-lg font-medium">
+                                {brand.nameAr}
+                              </span>
+                              <span
+                                className="w-2 h-2 rounded-full"
+                                style={{ background: brand.color }}
+                              />
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div>
+                        <p className="text-white/40 text-[10px] font-bold uppercase tracking-wider mb-2 px-1 border-r-2 border-[#c8a951] pr-2">
+                          شقق غادي
+                        </p>
+                        <div className="flex flex-col gap-1">
+                          {BRANDS.filter(b => b.id === 'ghadi').map((brand) => (
+                            <Link
+                              key={brand.id}
+                              href={`/${brand.slug}`}
+                              onClick={() => setMenuOpen(false)}
+                              className="flex items-center justify-between py-4 border-b border-white/5 px-2 hover:bg-white/5 rounded-xl transition-all"
+                            >
+                              <span className="text-white/90 text-lg font-medium">
+                                {brand.nameAr}
+                              </span>
+                              <span
+                                className="w-2 h-2 rounded-full"
+                                style={{ background: brand.color }}
+                              />
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
                 </div>
               </div>
 
