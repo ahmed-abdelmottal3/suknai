@@ -505,7 +505,7 @@ export const BRANDS: Brand[] = [
   {
     id: "resort",
     slug: "suknai-resort",
-    nameAr: "منتجع سكناي",
+    nameAr: "منتجع سكناي - الرياض",
     nameEn: "Suknai Resort",
     taglineAr: "اهرب إلى جنة الطبيعة",
     cityAr: "الرياض",
