@@ -33,7 +33,7 @@ export default function PressSection() {
             التغطية الإعلامية
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-[#0d1b2a] mb-4">
-            الصحافة بين يدك
+            الصحافية بين يدك
           </h2>
           <div className="divider-gold mx-auto" />
           <p className="mt-6 text-[#4a4a4a] text-lg max-w-2xl mx-auto">

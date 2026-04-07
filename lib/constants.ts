@@ -63,6 +63,12 @@ export interface Brand {
   mapUrl?: string;
   mapEmbedUrl?: string;
   menuCategories: MenuCategory[];
+  branches?: BranchInfo[];
+}
+
+export interface BranchInfo {
+  nameAr: string;
+  whatsapp: string;
 }
 
 export interface MenuCategory {
@@ -137,7 +143,7 @@ export const BRANDS: Brand[] = [
       twitter: "https://x.com/suknai_hotels",
       tiktok: "https://www.tiktok.com/@suknai_hotels",
     },
-    stars: 4,
+    stars: 0,
     color: "#c8a951",
     roomTypes: [
       {
@@ -232,7 +238,7 @@ export const BRANDS: Brand[] = [
 
       },
     ],
-    breakfastTimes: { weekday: "6:00 ص - 10:00 ص", weekend: "7:00 ص - 11:30 ص" },
+    breakfastTimes: { weekday: "6:30 ص - 10:30 ص", weekend: "6:30 ص - 10:30 ص" },
     importantNumbers: [
       { labelAr: "الاستقبال", number: "0", icon: "Phone" },
       { labelAr: "المطعم", number: "333", icon: "UtensilsCrossed" },
@@ -371,7 +377,7 @@ export const BRANDS: Brand[] = [
         location: "https://share.google/yei3sG9pBrJ98EZ5D"
       }
     ],
-    breakfastTimes: { weekday: "6:30 ص - 10:30 ص", weekend: "7:00 ص - 11:30 ص" },
+    breakfastTimes: { weekday: "6:30 ص - 10:30 ص", weekend: "6:30 ص - 10:30 ص" },
     importantNumbers: [
       { labelAr: "الاستقبال", number: "9", icon: "Phone" },
       { labelAr: "الكوفي شوب", number: "333", icon: "Coffee" },
@@ -505,7 +511,7 @@ export const BRANDS: Brand[] = [
         location: "https://maps.app.goo.gl/USR7BSh6mzoDmvd36"
       },
     ],
-    breakfastTimes: { weekday: "5:30 ص – 10:00 ص", weekend: "6:00 ص – 11:00 ص" },
+    breakfastTimes: { weekday: "6:30 ص - 10:30 ص", weekend: "6:30 ص - 10:30 ص" },
     importantNumbers: [
       { labelAr: "الاستقبال", number: "9", icon: "Phone" },
       { labelAr: "خدمة الغرف", number: "22", icon: "BellRing" },
@@ -641,7 +647,7 @@ export const BRANDS: Brand[] = [
         location: "https://maps.app.goo.gl/2ozLjf7LDTaXGxKP8"
       },
     ],
-    breakfastTimes: { weekday: "7:00 ص – 10:30 ص", weekend: "7:30 ص – 11:30 ص" },
+    breakfastTimes: { weekday: "6:30 ص - 10:30 ص", weekend: "6:30 ص - 10:30 ص" },
     importantNumbers: [
       { labelAr: "الاستقبال", number: "9", icon: "Phone" },
       { labelAr: "خدمة الفيلا", number: "11", icon: "BellRing" },
@@ -682,7 +688,7 @@ export const BRANDS: Brand[] = [
       twitter: "https://x.com/ayas_hotels",
       tiktok: "https://www.tiktok.com/",
     },
-    stars: 3,
+    stars: 0,
     color: "#2a6fa8",
     roomTypes: [
       {
@@ -795,7 +801,7 @@ export const BRANDS: Brand[] = [
         location: 'https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7'
       },
     ],
-    breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
+    breakfastTimes: { weekday: "6:30 ص - 10:30 ص", weekend: "6:30 ص - 10:30 ص" },
     importantNumbers: [
       { labelAr: "الاستقبال", number: "9", icon: "Phone" },
       { labelAr: "خدمة الغرف", number: "66", icon: "BellRing" },
@@ -838,7 +844,7 @@ export const BRANDS: Brand[] = [
       twitter: "https://x.com/ayas_hotels",
       tiktok: "https://www.tiktok.com/",
     },
-    stars: 3,
+    stars: 0,
     color: "#2a6fa8",
     roomTypes: [
       {
@@ -937,7 +943,7 @@ export const BRANDS: Brand[] = [
         location: "https://share.google/yei3sG9pBrJ98EZ5D"
       }
     ],
-    breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
+    breakfastTimes: { weekday: "6:30 ص - 10:30 ص", weekend: "6:30 ص - 10:30 ص" },
     importantNumbers: [
       { labelAr: "الاستقبال", number: "9", icon: "Phone" },
       { labelAr: "خدمة الغرف", number: "100", icon: "BellRing" }
@@ -974,7 +980,7 @@ export const BRANDS: Brand[] = [
       twitter: "https://x.com/ayas_hotels",
       tiktok: "https://www.tiktok.com/",
     },
-    stars: 3,
+    stars: 0,
     color: "#2a6fa8",
     roomTypes: [
       {
@@ -1073,7 +1079,7 @@ export const BRANDS: Brand[] = [
         location: "https://share.google/6JGmZlMZtuxAkWT9Z"
       },
     ],
-    breakfastTimes: { weekday: "6:00 ص – 10:00 ص", weekend: "7:00 ص – 11:00 ص" },
+    breakfastTimes: { weekday: "6:30 ص - 10:30 ص", weekend: "6:30 ص - 10:30 ص" },
     importantNumbers: [
       { labelAr: "الاستقبال", number: "9", icon: "Phone" }
     ],
@@ -1087,8 +1093,8 @@ export const BRANDS: Brand[] = [
     nameAr: "غادي للشقق المخدومة",
     nameEn: "Ghadi Serviced Apartments",
     taglineAr: "بيتك الثاني في كل مكان",
-    cityAr: "الرياض",
-    cityEn: "Riyadh",
+    cityAr: "حائل ",
+    cityEn: "Hail",
     descriptionAr:
       "غادي للشقق المخدومة توفر لك منزلاً بعيداً عن المنزل بمرافق كاملة وخدمات احترافية. مثالية للإقامات الطويلة والعائلات.",
     phone: "+966920031010",
@@ -1189,31 +1195,42 @@ export const BRANDS: Brand[] = [
     ],
     landmarks: [
       {
-        nameAr: "مركز الرياض مول",
+        nameAr: "جامع الراجحي",
+        type: "nearby",
+        distance: "3 كم",
+        image: "/rajhi.jpg",
+        location: "https://maps.app.goo.gl/Xw1z1va7tVQP9Zyr8"
+      },
+      {
+        nameAr: "قلعة أعيرف التاريخية",
+        type: "nearby",
+        distance: "2 كم",
+        image: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?w=400&q=80",
+        location: 'https://maps.app.goo.gl/3N6A6L2x6a3m6b8x7'
+      },
+      {
+        nameAr: "قلعة القشلة",
+        type: "city",
+        distance: "1.5 كم",
+        image: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=400&q=80",
+        location: 'https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7'
+      },
+      {
+        nameAr: "منتزه المغواة",
+        type: "city",
+        distance: "4 كم",
+        image: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=400&q=80",
+        location: 'https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7'
+      },
+      {
+        nameAr: "سوق المسوكف الشعبي",
         type: "nearby",
         distance: "1 كم",
-        image:
-          "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=400&q=80",
-        location: ''
-      },
-      {
-        nameAr: "حديقة السلام",
-        type: "nearby",
-        distance: "0.5 كم",
-        image:
-          "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&q=80",
-        location: ''
-      },
-      {
-        nameAr: "سوق منافسي",
-        type: "city",
-        distance: "2 كم",
-        image:
-          "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=400&q=80",
-        location: ''
+        image: "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=400&q=80",
+        location: 'https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7'
       },
     ],
-    breakfastTimes: { weekday: "7:00 ص – 10:00 ص", weekend: "7:30 ص – 11:00 ص" },
+    breakfastTimes: { weekday: "", weekend: "" },
     importantNumbers: [
       { labelAr: "الاستقبال", number: "9", icon: "Phone" },
       { labelAr: "الصيانة", number: "22", icon: "Wrench" },
@@ -1222,6 +1239,11 @@ export const BRANDS: Brand[] = [
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: [],
+    branches: [
+      { nameAr: "فرع الياسمين", whatsapp: "+966920031010" },
+      { nameAr: "فرع صلاح الدين", whatsapp: "+966920031010" },
+      { nameAr: "فرع أجا", whatsapp: "+966920031010" },
+    ],
   },
 
 ];

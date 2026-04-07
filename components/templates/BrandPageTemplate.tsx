@@ -26,12 +26,10 @@ export default function BrandPageTemplate({ brand }: { brand: Brand }) {
       <AboutSection brand={brand} />
       <LandmarksSection brand={brand} />
       <ReviewsSection brand={brand} />
-      <BreakfastSection brand={brand} />
-      <RoomsSection brand={brand} />
+      {brand.breakfastTimes.weekday !== "" && <BreakfastSection brand={brand} />}
       <RoyalServicesSection brand={brand} />
       <GallerySection brand={brand} />
       {brand.menuCategories.length > 0 && <MenuSection brand={brand} />}
-      <FacilitiesSection brand={brand} />
       <ImportantNumbers brand={brand} />
       <DutyManagerSection brand={brand} />
       <ContactSection brand={brand} />

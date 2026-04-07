@@ -39,28 +39,6 @@ export default function AboutSection({ brand }: { brand: Brand }) {
             {brand.descriptionAr}
           </p>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-4">
-            {[
-              { value: brand.stars, icon: Star, label: "تصنيف نجوم" },
-              { value: brand.roomTypes.length.toString(), label: "فئة غرف" },
-              { value: brand.facilities.length.toString(), label: "مرفق" },
-            ].map((stat) => (
-              <div
-                key={stat.label}
-                className="bg-white rounded-2xl p-4 text-center shadow-sm border border-[#ede8e1]"
-              >
-                <div
-                  className="flex items-center justify-center gap-1 text-2xl font-black mb-1"
-                  style={{ color: brand.color }}
-                >
-                  {stat.value}
-                  {stat.icon && <stat.icon size={20} fill="currentColor" />}
-                </div>
-                <p className="text-xs text-[#4a4a4a]">{stat.label}</p>
-              </div>
-            ))}
-          </div>
         </motion.div>
 
         {/* Image */}

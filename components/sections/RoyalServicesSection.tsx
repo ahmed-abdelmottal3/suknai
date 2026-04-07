@@ -24,8 +24,6 @@ const ROYAL_SERVICES = [
 export default function RoyalServicesSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.15, triggerOnce: true });
 
-  if (brand.slug !== "suknai-royal") return null;
-
   return (
     <section ref={ref} className="section-padding bg-[#0d1b2a]">
       <div className="max-w-6xl mx-auto">
@@ -36,7 +34,7 @@ export default function RoyalServicesSection({ brand }: { brand: Brand }) {
           className="text-center mb-10"
         >
           <span className="text-[#c8a951] text-sm font-semibold tracking-widest uppercase">
-            خدمات فندق سكناي رويال
+            خدمات {brand.nameAr}
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-white mt-3 mb-2">
             خدماتنا

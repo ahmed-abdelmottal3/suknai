@@ -4,32 +4,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   ArrowLeft,
-  Gem,
-  Compass,
   Sparkles,
-  Mail,
 } from "lucide-react";
-
-const quickLinks = [
-  {
-    href: "/about",
-    title: "عن سكناي",
-    description: "تعرف على رؤيتنا في الضيافة وعلى تنوع العلامات التابعة للمجموعة.",
-    icon: Gem,
-  },
-  {
-    href: "/brands",
-    title: "فنادقنا وعلاماتنا",
-    description: "استعرض جميع الوجهات الفندقية والمنتجعات والشقق التابعة لنا.",
-    icon: Compass,
-  },
-  {
-    href: "/contact",
-    title: "تواصل معنا",
-    description: "للاستفسارات العامة والتعاون التجاري عبر صفحة واضحة.",
-    icon: Mail,
-  },
-];
 
 const highlights = [
   "فنادق ومنتجعات وشقق مخدومة بهوية ضيافة موحدة.",
@@ -129,45 +105,6 @@ export default function GroupOverviewSection() {
             </div>
           </div>
         </motion.div>
-
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {quickLinks.map(({ href, title, description, icon: Icon }, index) => (
-            <motion.div
-              key={href}
-              initial={{ opacity: 0, y: 28 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-            >
-              <Link
-                href={href}
-                className="group relative flex flex-col items-center text-center h-full rounded-[2.5rem] border border-[#ede8e1] bg-white p-8 transition-all duration-500 hover:-translate-y-2 hover:border-[#c8a951]/50 hover:shadow-2xl overflow-hidden"
-              >
-                {/* Background glow effect on hover */}
-                <div className="absolute inset-0 bg-gradient-to-b from-[#c8a951]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-
-                <div className="relative mb-6 flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-3xl bg-[#f8f4ef] text-[#c8a951] group-hover:bg-[#c8a951] group-hover:text-white transition-colors duration-500 border border-[#ede8e1] group-hover:border-transparent group-hover:rotate-3">
-                  <Icon size={32} strokeWidth={1.5} className="transition-transform duration-500 group-hover:scale-110" />
-                </div>
-
-                <h3 className="text-2xl font-black text-[#0d1b2a] mb-3 relative z-10 transition-colors group-hover:text-[#c8a951]">
-                  {title}
-                </h3>
-
-                <p className="text-sm leading-relaxed text-[#4a4a4a] mb-8 relative z-10">
-                  {description}
-                </p>
-
-                <div className="mt-auto relative z-10">
-                  <span className="inline-flex items-center gap-2 text-sm font-bold text-[#c8a951] bg-[#c8a951]/10 px-6 py-2.5 rounded-full transition-all duration-300 group-hover:bg-[#0d1b2a] group-hover:text-white group-hover:shadow-lg">
-                    استكشف المزيد
-                    <ArrowLeft size={16} />
-                  </span>
-                </div>
-              </Link>
-            </motion.div>
-          ))}
-        </div>
       </div>
     </section>
   );

@@ -19,11 +19,8 @@ export default function RoomsSection({ brand }: { brand: Brand }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <span className="text-[#c8a951] text-sm font-semibold tracking-widest uppercase">
+          <h2 className="text-4xl md:text-5xl font-black text-white mt-3 mb-2 uppercase tracking-wide">
             أنواع الغرف
-          </span>
-          <h2 className="text-4xl md:text-5xl font-black text-white mt-3 mb-2">
-            اختر تجربتك
           </h2>
           <div className="divider-gold mx-auto" />
         </motion.div>

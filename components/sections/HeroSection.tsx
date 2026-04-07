@@ -48,19 +48,6 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
           <span className="w-8 h-px bg-[#c8a951]" />
         </motion.div>
 
-        {/* Stars */}
-        {!isGroup && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex items-center justify-center gap-1 mb-4"
-          >
-            {Array.from({ length: brand.stars }).map((_, i) => (
-              <Star key={i} size={18} fill="currentColor" className="text-[#c8a951]" />
-            ))}
-          </motion.div>
-        )}
 
         {/* Title */}
         <motion.h1
