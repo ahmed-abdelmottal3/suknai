@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 import { BRANDS, GROUP } from "@/lib/constants";
 import WhatsAppIcon from "../icons/WhatsAppIcon";
-import MediaMarquee from "./MediaMarquee";
 
 const BUSINESS_LINKS = [
   { label: "الفنادق", href: "/brands" },
@@ -56,7 +55,6 @@ export default function Footer() {
 
   return (
     <>
-      <MediaMarquee />
       <footer className="bg-[#0d1b2a] text-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
         <div>
