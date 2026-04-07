@@ -23,8 +23,8 @@ export default function BrandPageTemplate({ brand }: { brand: Brand }) {
       <Navbar />
       <HeroSection brand={brand} />
       <AboutSection brand={brand} />
-      <ImportantNumbers brand={brand} />
       <MediaMarquee />
+      <ImportantNumbers brand={brand} />
       <LandmarksSection brand={brand} />
       <ReviewsSection brand={brand} />
       {brand.breakfastTimes.weekday !== "" && <BreakfastSection brand={brand} />}
