@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -71,6 +71,24 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
         >
           {!isGroup ? (
             <>
+              {branches.length > 0 && (
+                <div className="w-full max-w-2xl rounded-2xl border border-white/15 bg-[#0d1b2a]/45 backdrop-blur-sm p-4 md:p-5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
+                    {branches.map((branch) => (
+                      <a
+                        key={branch.nameAr}
+                        href={`https://wa.me/${branch.whatsapp.replace("+", "")}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-3 py-2.5 text-sm font-bold text-white hover:border-[#25D366]/50 hover:bg-[#25D366]/15 transition-all duration-300"
+                      >
+                        <span>{branch.nameAr}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               <a
                 href={`https://wa.me/${brand.whatsapp.replace("+", "")}`}
                 target="_blank"
@@ -80,25 +98,6 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
                 <WhatsAppIcon size={24} />
                 تواصل عبر واتساب
               </a>
-
-              {branches.length > 0 && (
-                <div className="w-full max-w-2xl rounded-2xl border border-white/15 bg-[#0d1b2a]/45 backdrop-blur-sm p-4 md:p-5">
-                  <p className="text-xs md:text-sm text-white/70 mb-3">اختر الفرع للتواصل المباشر</p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
-                    {branches.map((branch) => (
-                      <a
-                        key={branch.nameAr}
-                        href={`https://wa.me/${branch.whatsapp.replace("+", "")}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-3 py-2.5 text-sm font-bold text-white hover:border-[#25D366]/50 hover:bg-[#25D366]/15 transition-all duration-300"
-                      >
-                        <span>{branch.nameAr}</span>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              )}
             </>
           ) : (
             <Link

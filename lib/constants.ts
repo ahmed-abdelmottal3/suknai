@@ -421,9 +421,9 @@ export const BRANDS: Brand[] = [
       "/aqeq/SK-24.jpg",
       "/aqeq/SK-25.jpg",
     ],
-    coordinates: { lat: 24.4712, lng: 39.6058 }, // Updated for Madinah
-    mapUrl: "https://maps.app.goo.gl/iU4JfQuBmVVP4n1V9",
-    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9012.23015245576!2d39.6105022!3d24.4726058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bdbfd70ecc73bd%3A0x4c65dce789386331!2z2YHZhtiv2YIg2KfZhNi52YLZitmC!5e1!3m2!1sar!2seg!4v1775461870110!5m2!1sar!2seg",
+    coordinates: { lat: 24.7136, lng: 46.6753 },
+    mapUrl: "https://www.google.com/maps?q=24.7136,46.6753",
+    mapEmbedUrl: "https://www.google.com/maps?q=24.7136,46.6753&z=14&output=embed",
     social: {
       instagram: "https://www.instagram.com/suknai_hotels",
       twitter: "https://x.com/suknai_hotels",
@@ -542,7 +542,7 @@ export const BRANDS: Brand[] = [
     nameEn: "Suknai Resort",
     taglineAr: "اهرب إلى جنة الطبيعة",
     cityAr: "الرياض",
-    cityEn: "Abha",
+    cityEn: "Riyadh",
     reviewUrl: "https://www.google.com/maps/place/منتجع+سكناي",
     descriptionAr: "منتجع سكناي في الرياض يقدم تجربة إقامة فاخرة تجمع بين الخصوصية والهدوء بأجواء عصرية راقية ،شاليهات فندقية واسعة بمسابح خاصة ، ومساحات مثالية للتجمعات ، تجربة متكاملة لمن يبحث عن الراحة بأسلوب مختلف.",
     phone: "+966501347000",
@@ -560,7 +560,7 @@ export const BRANDS: Brand[] = [
       "/montg3/resort-24.jpg",
       "/montg3/resort-36.jpg",
     ],
-    coordinates: { lat: 18.2435, lng: 42.4705 }, // Updated for Abha Resort
+    coordinates: { lat: 24.8650, lng: 46.8057 },
     mapUrl: "https://maps.app.goo.gl/N6AF9NvByWVariim8",
     mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4491.961979024178!2d46.8057218!3d24.865039399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2eff36598be137%3A0x1f1310e29fe4c45f!2z2YXZhtiq2KzYuSDYs9mD2YbYp9mK!5e1!3m2!1sar!2seg!4v1775460331934!5m2!1sar!2seg",
     social: {
@@ -1123,8 +1123,8 @@ export const BRANDS: Brand[] = [
     nameAr: "غادي للشقق المخدومة",
     nameEn: "Ghadi Serviced Apartments",
     taglineAr: "بيتك الثاني في كل مكان",
-    cityAr: "الرياض",
-    cityEn: "Riyadh",
+    cityAr: "حائل",
+    cityEn: "Hail",
     descriptionAr:
       "غادي للشقق المخدومة توفر لك منزلاً بعيداً عن المنزل بمرافق كاملة وخدمات احترافية. مثالية للإقامات الطويلة والعائلات.",
     phone: "+966920031010",
@@ -1141,7 +1141,7 @@ export const BRANDS: Brand[] = [
       "https://images.unsplash.com/photo-1556909114-44e3e70034e2?w=800&q=80",
       "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80",
     ],
-    coordinates: { lat: 24.7136, lng: 46.6753 },
+    coordinates: { lat: 27.5219, lng: 41.6961 },
     social: {
       instagram: "https://www.instagram.com/suknai_group",
       twitter: "https://x.com/suknai_group",
