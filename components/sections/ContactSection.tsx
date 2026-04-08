@@ -1,7 +1,7 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram, Youtube } from "lucide-react";
 import { Brand, GROUP } from "@/lib/constants";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
@@ -26,6 +26,12 @@ const SnapchatIcon = () => (
     loading="lazy"
     decoding="async"
   />
+);
+
+const TikTokIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.23 8.23 0 0 0 4.83 1.55V6.79a4.83 4.83 0 0 1-1.06-.1z" />
+  </svg>
 );
 
 export default function ContactSection({ brand }: { brand: Brand }) {
@@ -122,15 +128,39 @@ export default function ContactSection({ brand }: { brand: Brand }) {
                     <XIcon />
                   </a>
                 )}
-                <a
-                  href={GROUP.social.snapchat}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Snapchat"
-                  className="w-10 h-10 rounded-xl bg-white border border-[#ede8e1] flex items-center justify-center hover:bg-[#fff9ec] hover:border-[#c8a951]/30 transition-colors shadow-sm"
-                >
-                  <SnapchatIcon />
-                </a>
+                {brand.social.tiktok && (
+                  <a
+                    href={brand.social.tiktok}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok"
+                    className="w-10 h-10 rounded-xl bg-white border border-[#ede8e1] flex items-center justify-center hover:bg-[#fff9ec] hover:border-[#c8a951]/30 transition-colors shadow-sm"
+                  >
+                    <TikTokIcon />
+                  </a>
+                )}
+                {brand.social.youtube && (
+                  <a
+                    href={brand.social.youtube}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube"
+                    className="w-10 h-10 rounded-xl bg-white border border-[#ede8e1] flex items-center justify-center hover:bg-[#fff9ec] hover:border-[#c8a951]/30 transition-colors shadow-sm"
+                  >
+                    <Youtube size={18} />
+                  </a>
+                )}
+                {(brand.social.snapchat || GROUP.social.snapchat) && (
+                  <a
+                    href={brand.social.snapchat || GROUP.social.snapchat}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Snapchat"
+                    className="w-10 h-10 rounded-xl bg-white border border-[#ede8e1] flex items-center justify-center hover:bg-[#fff9ec] hover:border-[#c8a951]/30 transition-colors shadow-sm"
+                  >
+                    <SnapchatIcon />
+                  </a>
+                )}
               </div>
             </div>
           </motion.div>

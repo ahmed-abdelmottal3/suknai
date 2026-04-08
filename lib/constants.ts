@@ -50,6 +50,7 @@ export interface Brand {
     twitter?: string;
     snapchat?: string;
     tiktok?: string;
+    youtube?: string;
   };
   stars: number;
   color: string; // accent color per brand
@@ -137,11 +138,12 @@ export const BRANDS: Brand[] = [
       "/royal/dsc-2066-hdr.jpg",
       "/royal/dsc-2104-hdr.jpg",
     ],
-    coordinates: { lat: 24.6877, lng: 46.7219 },
+    coordinates: { lat: 27.5219, lng: 41.6961 },
     social: {
       instagram: "https://www.instagram.com/suknai_hotels",
       twitter: "https://x.com/suknai_hotels",
       tiktok: "https://www.tiktok.com/@suknai_hotels",
+      snapchat: "https://t.snapchat.com/vccErFdb",
     },
     stars: 0,
     color: "#c8a951",
@@ -276,7 +278,12 @@ export const BRANDS: Brand[] = [
       "/elgof/coffee-shop.png",
     ],
     coordinates: { lat: 29.9697, lng: 40.2000 },
-    social: {},
+    social: {
+      instagram: "https://www.instagram.com/suknai_hotels",
+      twitter: "https://x.com/suknai_hotels",
+      tiktok: "https://www.tiktok.com/@suknai_hotels",
+      snapchat: "https://t.snapchat.com/vccErFdb",
+    },
     stars: 4,
     color: "#c8a951",
     roomTypes: [
@@ -413,7 +420,6 @@ export const BRANDS: Brand[] = [
       "/aqeq/SK-23.jpg",
       "/aqeq/SK-24.jpg",
       "/aqeq/SK-25.jpg",
-      "/aqeq/sk-2-edit.jpg",
     ],
     coordinates: { lat: 24.4712, lng: 39.6058 }, // Updated for Madinah
     mapUrl: "https://maps.app.goo.gl/iU4JfQuBmVVP4n1V9",
@@ -422,6 +428,7 @@ export const BRANDS: Brand[] = [
       instagram: "https://www.instagram.com/suknai_hotels",
       twitter: "https://x.com/suknai_hotels",
       tiktok: "https://www.tiktok.com/@suknai_hotels",
+      snapchat: "https://t.snapchat.com/vccErFdb",
     },
     stars: 4,
     color: "#7c9885",
@@ -557,9 +564,10 @@ export const BRANDS: Brand[] = [
     mapUrl: "https://maps.app.goo.gl/N6AF9NvByWVariim8",
     mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4491.961979024178!2d46.8057218!3d24.865039399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2eff36598be137%3A0x1f1310e29fe4c45f!2z2YXZhtiq2KzYuSDYs9mD2YbYp9mK!5e1!3m2!1sar!2seg!4v1775460331934!5m2!1sar!2seg",
     social: {
-      instagram: "https://www.instagram.com/suknai_resorts",
-      twitter: "https://x.com/suknai_resorts",
-      tiktok: "https://www.tiktok.com/@suknai_resorts",
+      instagram: "https://www.instagram.com/suknai_hotels",
+      twitter: "https://x.com/suknai_hotels",
+      tiktok: "https://www.tiktok.com/@suknai_hotels",
+      snapchat: "https://t.snapchat.com/vccErFdb",
     },
     stars: 5,
     color: "#4a7c59",
@@ -694,7 +702,8 @@ export const BRANDS: Brand[] = [
     social: {
       instagram: "https://www.instagram.com/ayas_hotels/",
       twitter: "https://x.com/ayas_hotels",
-      tiktok: "https://www.tiktok.com/",
+      tiktok: "https://www.tiktok.com/@ayas_hotels",
+      snapchat: "https://t.snapchat.com/vccErFdb",
     },
     stars: 0,
     color: "#2a6fa8",
@@ -852,7 +861,8 @@ export const BRANDS: Brand[] = [
     social: {
       instagram: "https://www.instagram.com/ayas_hotels/",
       twitter: "https://x.com/ayas_hotels",
-      tiktok: "https://www.tiktok.com/",
+      tiktok: "https://www.tiktok.com/@ayas_hotels",
+      snapchat: "https://t.snapchat.com/vccErFdb",
     },
     stars: 0,
     color: "#2a6fa8",
@@ -992,7 +1002,8 @@ export const BRANDS: Brand[] = [
     social: {
       instagram: "https://www.instagram.com/ayas_hotels/",
       twitter: "https://x.com/ayas_hotels",
-      tiktok: "https://www.tiktok.com/",
+      tiktok: "https://www.tiktok.com/@ayas_hotels",
+      snapchat: "https://t.snapchat.com/vccErFdb",
     },
     stars: 0,
     color: "#2a6fa8",
@@ -1112,8 +1123,8 @@ export const BRANDS: Brand[] = [
     nameAr: "غادي للشقق المخدومة",
     nameEn: "Ghadi Serviced Apartments",
     taglineAr: "بيتك الثاني في كل مكان",
-    cityAr: "حائل ",
-    cityEn: "Hail",
+    cityAr: "الرياض",
+    cityEn: "Riyadh",
     descriptionAr:
       "غادي للشقق المخدومة توفر لك منزلاً بعيداً عن المنزل بمرافق كاملة وخدمات احترافية. مثالية للإقامات الطويلة والعائلات.",
     phone: "+966920031010",
@@ -1132,9 +1143,11 @@ export const BRANDS: Brand[] = [
     ],
     coordinates: { lat: 24.7136, lng: 46.6753 },
     social: {
-      instagram: "https://www.instagram.com/suknai_hotels",
-      twitter: "https://x.com/suknai_hotels",
-      tiktok: "https://www.tiktok.com/@suknai_hotels",
+      instagram: "https://www.instagram.com/suknai_group",
+      twitter: "https://x.com/suknai_group",
+      snapchat: "https://t.snapchat.com/vccErFdb",
+      tiktok: "https://www.tiktok.com/@suknai_group",
+      youtube: "https://youtube.com/@suknai_sa",
     },
     stars: 0,
     color: "#9b59b6",

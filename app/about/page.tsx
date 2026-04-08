@@ -42,8 +42,7 @@ export default function AboutPage() {
       <Navbar />
 
       <section className="relative overflow-hidden bg-[#0d1b2a] px-4 pb-24 pt-36 md:px-8">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(200,169,81,0.24),transparent_28%)]" />
-        <div className="absolute left-0 top-0 h-full w-full bg-[linear-gradient(135deg,transparent,rgba(255,255,255,0.03),transparent)]" />
+        <div className="absolute inset-0 bg-[#0d1b2a]/40" />
 
         <div className="relative mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
           <div>

@@ -21,7 +21,7 @@ const stats = [
 
 export default function GroupOverviewSection() {
   return (
-    <section className="section-padding bg-[linear-gradient(180deg,#f8f4ef_0%,#f2ede6_100%)]">
+    <section className="section-padding bg-[#f8f4ef]">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}

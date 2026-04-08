@@ -14,10 +14,10 @@ export default function MediaMarquee() {
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#c8a951]/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        
+
         {/* Simple & Elegant Header */}
         <div className="text-center mb-16">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#f8f4ef] rounded-full border border-[#c8a951]/20 mb-4"
@@ -26,7 +26,7 @@ export default function MediaMarquee() {
             <span className="text-[#c8a951] text-[10px] font-bold tracking-[0.2em] uppercase">الصحافة المحلية</span>
           </motion.div>
           <h2 className="text-3xl md:text-5xl font-black text-[#0d1b2a] mb-6">
-            الصحافية <span className="text-[#c8a951]">بين يدك</span>
+            الصحافة <span className="text-[#c8a951]">بين يدك</span>
           </h2>
           <div className="w-24 h-1 bg-[#c8a951] mx-auto rounded-full" />
           <p className="mt-8 text-[#4a4a4a] text-lg max-w-2xl mx-auto leading-relaxed">
@@ -44,12 +44,12 @@ export default function MediaMarquee() {
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ 
-                duration: 0.8, 
+              transition={{
+                duration: 0.8,
                 delay: idx * 0.1,
                 ease: [0.16, 1, 0.3, 1] // Custom smooth cubic-bezier
               }}
-              whileHover={{ 
+              whileHover={{
                 y: -12,
                 transition: { type: "spring", stiffness: 400, damping: 25 }
               }}
@@ -63,7 +63,7 @@ export default function MediaMarquee() {
                 <img
                   src={item.logo}
                   alt={item.name}
-                  className="w-full h-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 ease-in-out"
+                  className="w-full h-full object-contain transition-all duration-700 ease-in-out group-hover:scale-110"
                 />
               </div>
 
@@ -71,7 +71,7 @@ export default function MediaMarquee() {
                 {item.name}
               </h3>
               <p className="text-[#4a4a4a]/70 text-sm opacity-80 group-hover:opacity-100 transition-opacity duration-500">
-                 تصفح آخر أخبار {item.name}
+                تصفح آخر أخبار {item.name}
               </p>
             </motion.a>
           ))}

@@ -19,7 +19,7 @@ export default function DutyManagerSection({ brand }: { brand: Brand }) {
         >
           <div
             className="w-20 h-20 mx-auto rounded-full flex items-center justify-center text-4xl mb-5 shadow-lg"
-            style={{ background: `linear-gradient(135deg, ${brand.color}, ${brand.color}88)` }}
+            style={{ background: brand.color }}
           >
             <UserRound size={36} className="text-[#0d1b2a]" />
           </div>

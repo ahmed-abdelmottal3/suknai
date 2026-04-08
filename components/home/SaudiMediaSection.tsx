@@ -21,7 +21,7 @@ export default function SaudiMediaSection() {
           className="block relative overflow-hidden rounded-3xl bg-[#0d1b2a] p-10 mb-16 group hover:shadow-2xl transition-shadow"
         >
           <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity"
-            style={{ background: "linear-gradient(135deg, #c8a951, #e2c97e)" }}
+            style={{ background: "#c8a951" }}
           />
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>

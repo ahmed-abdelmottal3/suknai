@@ -32,7 +32,7 @@ export default function GallerySection({ brand }: { brand: Brand }) {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {brand.galleryImages.map((img, i) => (
               <motion.div
-                key={img}
+                key={`${img}-${i}`}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.5, delay: i * 0.1 }}

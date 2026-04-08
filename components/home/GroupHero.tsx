@@ -18,8 +18,7 @@ export default function GroupHero() {
         sizes="100vw"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0d1b2a]/80 via-transparent to-[#c8a951]/10" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a] via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-[#0d1b2a]/40" />
 
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-[#c8a951]/10 animate-spin-slow pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-[#c8a951]/5 pointer-events-none" />

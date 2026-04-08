@@ -67,7 +67,7 @@ export default function CorporateSection() {
                 >
                   <div
                     className="w-11 h-11 rounded-xl flex items-center justify-center mb-4"
-                    style={{ background: "linear-gradient(135deg, rgba(200,169,81,0.2), rgba(200,169,81,0.05))" }}
+                    style={{ background: "rgba(200,169,81,0.1)" }}
                   >
                     <b.Icon size={22} className="text-[#c8a951]" />
                   </div>

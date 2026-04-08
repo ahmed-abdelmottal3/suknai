@@ -91,7 +91,7 @@ export default function PartnershipsSection() {
               className="bg-[#c8a85131] border border-[#c8a951]/15 hover:border-[#c8a951]/40 rounded-2xl p-7 text-center transition-all group"
             >
               <div className="w-14 h-14 mx-auto rounded-2xl mb-4 flex items-center justify-center"
-                style={{ background: "linear-gradient(135deg, rgba(200,169,81,0.15), rgba(200,169,81,0.05))" }}
+                style={{ background: "rgba(200,169,81,0.1)" }}
               >
                 <item.Icon size={26} className="text-[#c8a951]" />
               </div>

@@ -72,10 +72,6 @@ export default function PressSection() {
                 تصفح أخبار {media.name}
               </p>
               
-              {/* Shine effect */}
-              <div className="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
-              </div>
             </motion.a>
           ))}
         </motion.div>

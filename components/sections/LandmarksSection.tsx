@@ -47,7 +47,7 @@ export default function LandmarksSection({ brand }: { brand: Brand }) {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/70 to-transparent" />
+                  <div className="absolute inset-0 bg-[#0d1b2a]/40" />
                 </Link>
               </div>
               <div className="p-5">

@@ -46,7 +46,7 @@ export default function RoomsSection({ brand }: { brand: Brand }) {
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/70 to-transparent" />
+                    <div className="absolute inset-0 bg-[#0d1b2a]/40" />
                   </>
                 ) : (
                   <div className="flex flex-col items-center gap-3 text-white/20">

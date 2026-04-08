@@ -55,7 +55,7 @@ export default function BrandsSection() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a]/90 via-[#0d1b2a]/20 to-transparent" />
+                <div className="absolute inset-0 bg-[#0d1b2a]/40" />
 
                 <div
                   className="absolute top-0 inset-x-0 h-1"

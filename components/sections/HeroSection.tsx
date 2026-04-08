@@ -26,8 +26,8 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
       />
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b2a] via-[#0d1b2a]/30 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0d1b2a]/40 via-transparent to-transparent" />
+      {/* Light overlay for readability */}
+      <div className="absolute inset-0 bg-[#0d1b2a]/40" />
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
