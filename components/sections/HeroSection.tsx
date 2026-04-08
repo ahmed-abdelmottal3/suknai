@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronDown, Star } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { Brand } from "@/lib/constants";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
@@ -12,9 +12,10 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({ brand, isGroup = false }: HeroSectionProps) {
+  const branches = brand.branches ?? [];
+
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
       <Image
         src={brand.heroImage}
         alt={brand.nameAr}
@@ -25,13 +26,9 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
         sizes="100vw"
       />
 
-      {/* Gradient overlay */}
-      {/* Light overlay for readability */}
       <div className="absolute inset-0 bg-[#0d1b2a]/40" />
 
-      {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        {/* Category label */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -48,8 +45,6 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
           <span className="w-8 h-px bg-[#c8a951]" />
         </motion.div>
 
-
-        {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -59,7 +54,6 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
           {brand.nameAr}
         </motion.h1>
 
-        {/* Tagline */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -69,12 +63,11 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
           {brand.taglineAr}
         </motion.p>
 
-        {/* CTAs */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col items-center justify-center gap-4"
         >
           {!isGroup ? (
             <>
@@ -87,6 +80,25 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
                 <WhatsAppIcon size={24} />
                 تواصل عبر واتساب
               </a>
+
+              {branches.length > 0 && (
+                <div className="w-full max-w-2xl rounded-2xl border border-white/15 bg-[#0d1b2a]/45 backdrop-blur-sm p-4 md:p-5">
+                  <p className="text-xs md:text-sm text-white/70 mb-3">اختر الفرع للتواصل المباشر</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
+                    {branches.map((branch) => (
+                      <a
+                        key={branch.nameAr}
+                        href={`https://wa.me/${branch.whatsapp.replace("+", "")}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-3 py-2.5 text-sm font-bold text-white hover:border-[#25D366]/50 hover:bg-[#25D366]/15 transition-all duration-300"
+                      >
+                        <span>{branch.nameAr}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
             </>
           ) : (
             <Link
@@ -99,7 +111,6 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
