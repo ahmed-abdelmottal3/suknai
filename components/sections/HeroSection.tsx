@@ -77,7 +77,7 @@ export default function HeroSection({ brand, isGroup = false }: HeroSectionProps
                     {branches.map((branch) => (
                       <a
                         key={branch.nameAr}
-                        href={`https://wa.me/${branch.whatsapp.replace("+", "")}`}
+                        href={branch.mapUrl || `https://wa.me/${branch.whatsapp.replace("+", "")}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-3 py-2.5 text-sm font-bold text-white hover:border-[#25D366]/50 hover:bg-[#25D366]/15 transition-all duration-300"

@@ -36,6 +36,9 @@ const TikTokIcon = () => (
 
 export default function ContactSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+  const fallbackMapUrl = `https://www.google.com/maps?q=${brand.coordinates.lat},${brand.coordinates.lng}`;
+  const mapUrl = brand.mapUrl || fallbackMapUrl;
+  const mapEmbedSrc = brand.mapEmbedUrl || `${fallbackMapUrl}&z=14&output=embed`;
 
   return (
     <section ref={ref} id="contact" className="section-padding bg-[#f8f4ef]">
@@ -66,7 +69,7 @@ export default function ContactSection({ brand }: { brand: Brand }) {
             {[
               { icon: Phone, label: "الهاتف", value: brand.phone, href: `tel:${brand.phone}`, dir: "ltr" },
               { icon: Mail, label: "البريد الإلكتروني", value: brand.email, href: `mailto:${brand.email}`, dir: "ltr" },
-              { icon: MapPin, label: "الموقع", value: brand.cityAr + "، المملكة العربية السعودية", href: brand.mapUrl, dir: "rtl" },
+              { icon: MapPin, label: "الموقع", value: brand.cityAr + "، المملكة العربية السعودية", href: mapUrl, dir: "rtl" },
             ].map(({ icon: Icon, label, value, href, dir }) => (
               <div key={label} className="flex items-start gap-4">
                 <div
@@ -173,7 +176,7 @@ export default function ContactSection({ brand }: { brand: Brand }) {
             className="rounded-3xl overflow-hidden shadow-lg border border-[#ede8e1] h-[400px]"
           >
             <iframe 
-              src={brand.mapEmbedUrl || "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4234.482339825847!2d41.6679273!3d27.5091242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x157641ee45099879%3A0x6df707496496b561!2sSuknai%20Hotel!5e1!3m2!1sen!2seg!4v1775342086526!5m2!1sen!2seg"} 
+              src={mapEmbedSrc} 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 

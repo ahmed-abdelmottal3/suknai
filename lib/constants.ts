@@ -70,6 +70,7 @@ export interface Brand {
 export interface BranchInfo {
   nameAr: string;
   whatsapp: string;
+  mapUrl?: string;
 }
 
 export interface MenuCategory {
@@ -1131,8 +1132,10 @@ export const BRANDS: Brand[] = [
     whatsapp: "+966920031010",
     email: "ghadi@suknai.com",
     website: "https://ghadi.suknai.com",
+    reviewUrl: "https://maps.app.goo.gl/Vcrgyx9fHUHfqKRz5",
+    mapUrl: "https://maps.app.goo.gl/Vcrgyx9fHUHfqKRz5",
     heroImage:
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1600&q=85",
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1600&q=85",
     galleryImages: [
       "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80",
@@ -1274,9 +1277,9 @@ export const BRANDS: Brand[] = [
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: [],
     branches: [
-      { nameAr: "فرع الياسمين", whatsapp: "+966920031010" },
-      { nameAr: "فرع صلاح الدين", whatsapp: "+966920031010" },
-      { nameAr: "فرع أجا", whatsapp: "+966920031010" },
+      { nameAr: "فرع الياسمين", whatsapp: "+966920031010", mapUrl: "https://maps.app.goo.gl/Vcrgyx9fHUHfqKRz5" },
+      { nameAr: "فرع صلاح الدين", whatsapp: "+966920031010", mapUrl: "https://maps.app.goo.gl/WN9FgdsWWuaeBWUk7" },
+      { nameAr: "فرع أجا", whatsapp: "+966920031010", mapUrl: "https://maps.app.goo.gl/4ehfPEFJ9eNpwQ289" },
     ],
   },
 

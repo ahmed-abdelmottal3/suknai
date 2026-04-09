@@ -1,14 +1,46 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { useState } from "react";
 import Image from "next/image";
-import { MapPin } from "lucide-react";
 import { Brand } from "@/lib/constants";
 import Link from "next/link";
 
+const HAIL_LANDMARKS = [
+  {
+    nameAr: "جامع الراجحي",
+    type: "nearby" as const,
+    image: "/rajhi.jpg",
+    location: "https://maps.app.goo.gl/Xw1z1va7tVQP9Zyr8",
+  },
+  {
+    nameAr: "قلعة أعيرف التاريخية",
+    type: "nearby" as const,
+    image: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?w=400&q=80",
+    location: "https://maps.app.goo.gl/3N6A6L2x6a3m6b8x7",
+  },
+  {
+    nameAr: "قلعة القشلة",
+    type: "city" as const,
+    image: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=400&q=80",
+    location: "https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7",
+  },
+  {
+    nameAr: "منتزه المغواة",
+    type: "city" as const,
+    image: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=400&q=80",
+    location: "https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7",
+  },
+  {
+    nameAr: "سوق المسوكف الشعبي",
+    type: "nearby" as const,
+    image: "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=400&q=80",
+    location: "https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7",
+  },
+];
+
 export default function LandmarksSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+  const visibleLandmarks = brand.cityAr === "حائل" ? HAIL_LANDMARKS : brand.landmarks;
 
   return (
     <section ref={ref} className="section-padding bg-[#0d1b2a]">
@@ -29,7 +61,7 @@ export default function LandmarksSection({ brand }: { brand: Brand }) {
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {brand.landmarks.map((landmark, i) => (
+          {visibleLandmarks.map((landmark, i) => (
             <motion.div
               key={landmark.nameAr}
               initial={{ opacity: 0, y: 30 }}
@@ -53,18 +85,12 @@ export default function LandmarksSection({ brand }: { brand: Brand }) {
               <div className="p-5">
                 <div className="flex items-center justify-between">
                   <h3 className="text-white font-bold">{landmark.nameAr}</h3>
-                  {landmark.distance && (
-                    <div className="flex items-center gap-1 text-[#c8a951] text-xs">
-                      <MapPin size={12} />
-                      {landmark.distance}
-                    </div>
-                  )}
                 </div>
                 <p className="text-white/50 text-sm mt-1">{brand.cityAr}</p>
               </div>
             </motion.div>
           ))}
-          {brand.landmarks.length === 0 && (
+          {visibleLandmarks.length === 0 && (
             <div className="col-span-full text-center text-white/40 py-10">
               لا توجد معالم مسجلة بعد
             </div>

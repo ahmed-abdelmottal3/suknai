@@ -12,7 +12,7 @@ const ROYAL_SERVICES = [
   { ar: "حامل الحقائب", en: "BELL MAN", icon: "Luggage" },
   { ar: "استقبال", en: "RECEPTION", icon: "BellRing" },
   { ar: "كاوي ملابس", en: "CLOTH IRON", icon: "Shirt" },
-  { ar: "غسالة ملابس", en: "WASHING MACHINE", icon: "WashingMachine" },
+  { ar: "خدمة غسيل", en: "LAUNDRY SERVICE", icon: "WashingMachine" },
   { ar: "الكافيه", en: "CAFE", icon: "Coffee" },
   { ar: "خدمة الغرف", en: "ROOM SERVICE", icon: "HandPlatter" },
   { ar: "القنوات الفضائية", en: "SATELLITY TV", icon: "Tv" },

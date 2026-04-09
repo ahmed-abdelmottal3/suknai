@@ -14,6 +14,7 @@ const REVIEWS = [
 export default function ReviewsSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
   const avgRating = (REVIEWS.reduce((s, r) => s + r.rating, 0) / REVIEWS.length).toFixed(1);
+  const fallbackReviewUrl = brand.mapUrl || `https://www.google.com/maps?q=${brand.coordinates.lat},${brand.coordinates.lng}`;
 
   return (
     <section ref={ref} className="section-padding bg-[#f8f4ef]">
@@ -52,7 +53,7 @@ export default function ReviewsSection({ brand }: { brand: Brand }) {
             </div>
 
             <a
-              href={brand.reviewUrl || "https://search.google.com/local/writereview?placeid=PLACEHOLDER_ID"}
+              href={brand.reviewUrl || fallbackReviewUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#0d1b2a] text-[#c8a951] font-bold px-8 py-4 rounded-full hover-lift shadow-lg group transition-all"
