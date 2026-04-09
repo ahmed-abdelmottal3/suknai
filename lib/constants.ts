@@ -130,7 +130,7 @@ export const BRANDS: Brand[] = [
     heroImage:
       "/royal.jpg",
     galleryImages: [
-      "/royal/dsc-1844-hdr.jpg",
+      "/royal/dsc-2026-hdr.jpg",
       "/royal/dsc-2004-hdr.jpg",
       "/royal/dsc-2011-hdr.jpg",
       "/royal/dsc-2026-hdr.jpg",
@@ -270,7 +270,7 @@ export const BRANDS: Brand[] = [
     website: "https://suknai-jouf.suknai.com",
     heroImage: "/elgof/f62a70c5-8a21-46c8-b047-44339c1de059.jpg",
     galleryImages: [
-      "/elgof/reception-1.png",
+      "/elgof/room-1.jpg.jpeg",
       "/elgof/reception-2.png",
       "/elgof/reception-3.jpg.jpeg",
       "/elgof/corridor-1.jpg.jpeg",
@@ -414,7 +414,7 @@ export const BRANDS: Brand[] = [
     website: "https://aqiq.suknai.com",
     heroImage: "/aqeq/aqeq.jpg",
     galleryImages: [
-      "/aqeq/sk-2-edit.jpg",
+      "/aqeq/sk-56.jpg",
       "/aqeq/SK-116.jpg",
       "/aqeq/SK-122.jpg",
       "/aqeq/SK-136.jpg",
@@ -552,7 +552,7 @@ export const BRANDS: Brand[] = [
     website: "https://resort.suknai.com",
     heroImage: "/montg3/copy-of-resort-1.jpg",
     galleryImages: [
-      "/montg3/copy-of-resort-2.jpg",
+      "/montg3/copy-of-resort-19.jpg",
       "/montg3/copy-of-resort-10.jpg",
       "/montg3/copy-of-resort-12.jpg",
       "/montg3/copy-of-resort-13.jpg",
@@ -847,7 +847,7 @@ export const BRANDS: Brand[] = [
     website: "https://aya-jouf.suknai.com",
     heroImage: "/ayasgof/gof.jpg",
     galleryImages: [
-      "/ayasgof/image-100.jpg.jpeg",
+      "/ayasgof/image-96.jpg.jpeg",
       "/ayasgof/image-101.jpg.jpeg",
       "/ayasgof/image-91.jpg.jpeg",
       "/ayasgof/image-92.jpg.jpeg",
