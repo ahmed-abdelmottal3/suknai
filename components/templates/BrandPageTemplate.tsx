@@ -5,7 +5,8 @@ import SalemAI from "@/components/widgets/SalemAI";
 import WhatsAppButton from "@/components/widgets/WhatsAppButton";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
-import LandmarksSection from "@/components/sections/LandmarksSection";
+import SurroundingsSection from "@/components/sections/SurroundingsSection";
+
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import BreakfastSection from "@/components/sections/BreakfastSection";
 import RoyalServicesSection from "@/components/sections/RoyalServicesSection";
@@ -25,7 +26,7 @@ export default function BrandPageTemplate({ brand }: { brand: Brand }) {
       <AboutSection brand={brand} />
       <MediaMarquee />
       <ImportantNumbers brand={brand} />
-      <LandmarksSection brand={brand} />
+      <SurroundingsSection brand={brand} />
       <ReviewsSection brand={brand} />
       {brand.breakfastTimes.weekday !== "" && <BreakfastSection brand={brand} />}
       <RoyalServicesSection brand={brand} />

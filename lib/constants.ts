@@ -65,6 +65,7 @@ export interface Brand {
   mapEmbedUrl?: string;
   menuCategories: MenuCategory[];
   branches?: BranchInfo[];
+  nearbyServices?: NearbyService[];
 }
 
 export interface BranchInfo {
@@ -106,6 +107,41 @@ export interface ImportantNumber {
   number: string;
   icon: string;
 }
+
+export interface NearbyService {
+  nameAr: string;
+  icon: string;
+  image?: string;
+  mapUrl: string;
+}
+
+export const HAIL_SERVICES: NearbyService[] = [
+  { nameAr: "حائل زون", image: "/haelzon.jpg", icon: "Sparkles", mapUrl: "https://maps.app.goo.gl/RDfnqjXhQM6EhfQo8" },
+  { nameAr: "العثيم مول", image: "/WhatsApp Image 2026-04-14 at 1.51.04 AM.jpeg", icon: "ShoppingBag", mapUrl: "https://maps.app.goo.gl/td29mCGv5nwhfetz8" },
+  { nameAr: "مطعم حاتم الطائي", image: "/Hatem.jpg", icon: "Mountain", mapUrl: "https://maps.app.goo.gl/3KqhXk388Xp9CRGL8" },
+  { nameAr: "الروشن للمعارض والمؤتمرات", image: "/roshn.jpg", icon: "Building2", mapUrl: "https://maps.app.goo.gl/DT1tvZU3WhC8Swxq7" },
+];
+
+export const RIYADH_SERVICES: NearbyService[] = [
+  { nameAr: "مركز الملك عبدالله المالي", image: "/KAFD.jpg", icon: "Landmark", mapUrl: "https://maps.app.goo.gl/QyBM3MD7VHt8G74E7" },
+  { nameAr: "سوليتير", image: "/Solitaire.jpg", icon: "ShoppingBag", mapUrl: "https://maps.app.goo.gl/WBavW93EPWmazFCs8" },
+  { nameAr: "بارك افينيو", image: "/Park Avenue Mall.jpg", icon: "ShoppingBag", mapUrl: "https://maps.app.goo.gl/fbGzoqQjTM2RJxyn6" },
+  { nameAr: "الدانوب", image: "/Danube.jpg", icon: "ShoppingBag", mapUrl: "https://maps.app.goo.gl/yx7tVB6GpDHHFdqh7" },
+  { nameAr: "مستشفى المملكة", image: "/Kingdom Hospital.png", icon: "Hospital", mapUrl: "https://maps.app.goo.gl/cvjoaPfFfUFqh55N9" },
+];
+
+export const JOUF_SERVICES: NearbyService[] = [
+  { nameAr: "الجوف بلازا", image: "/الجوف بلازا.jpg", icon: "ShoppingBag", mapUrl: "https://maps.app.goo.gl/oofXkNUAgXeDPfYc8" },
+  { nameAr: "أسواق العثيم", image: "/اسواق العثيم.jpg", icon: "ShoppingBag", mapUrl: "https://maps.app.goo.gl/FUWsNraCQf7hCTrb6" },
+  { nameAr: "مستشفى الأمير متعب بن عبدالعزيز", image: "/Prince Metaab Bin AbdelAziz Hospital.jpg", icon: "Hospital", mapUrl: "https://maps.app.goo.gl/zfxHtusxLouiQd5d6" },
+];
+
+export const UNAIZAH_SERVICES: NearbyService[] = [
+  { nameAr: "عنيزة بوليفارد", image: "/The Boulevard Unayzah.jpg", icon: "Sparkles", mapUrl: "https://maps.app.goo.gl/eyRUXCE1V5pAATkn6" },
+  { nameAr: "جادة النخيل", image: "/جادة النخيل.jpg", icon: "Mountain", mapUrl: "https://maps.app.goo.gl/NuneGNus6Tnj2AWE9" },
+  { nameAr: "مستشفى الملك سعود", image: "/King Saud Hospital Unaiza.jpg", icon: "Hospital", mapUrl: "https://maps.app.goo.gl/aUxZ2Z7KdGcPCHd86" },
+  { nameAr: "عنيزة مول", image: "/Onaizah Mall.jpg", icon: "ShoppingBag", mapUrl: "https://maps.app.goo.gl/YxE62UUX6ffjSAJc6" },
+];
 
 // ============================================================
 // Brand Data
@@ -253,6 +289,7 @@ export const BRANDS: Brand[] = [
     dutyManager: { nameAr: "المدير المناوب", phone: "+966535118000" },
     menuCategories: [
     ],
+    nearbyServices: HAIL_SERVICES,
   },
 
   {
@@ -396,6 +433,7 @@ export const BRANDS: Brand[] = [
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: [],
+    nearbyServices: JOUF_SERVICES,
   },
 
   {
@@ -534,6 +572,7 @@ export const BRANDS: Brand[] = [
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: [],
+    nearbyServices: RIYADH_SERVICES,
   },
 
   {
@@ -673,6 +712,7 @@ export const BRANDS: Brand[] = [
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966501347000" },
     menuCategories: [],
+    nearbyServices: RIYADH_SERVICES,
   },
 
 
@@ -830,6 +870,7 @@ export const BRANDS: Brand[] = [
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966575091111" },
     menuCategories: [],
+    nearbyServices: HAIL_SERVICES,
   },
 
   {
@@ -975,6 +1016,7 @@ export const BRANDS: Brand[] = [
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: [],
+    nearbyServices: JOUF_SERVICES,
   },
 
   {
@@ -1116,6 +1158,7 @@ export const BRANDS: Brand[] = [
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: [],
+    nearbyServices: UNAIZAH_SERVICES,
   },
 
   {
@@ -1276,6 +1319,7 @@ export const BRANDS: Brand[] = [
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: [],
+    nearbyServices: HAIL_SERVICES,
     branches: [
       { nameAr: "فرع الياسمين", whatsapp: "+966920031010", mapUrl: "https://maps.app.goo.gl/Vcrgyx9fHUHfqKRz5" },
       { nameAr: "فرع صلاح الدين", whatsapp: "+966920031010", mapUrl: "https://maps.app.goo.gl/WN9FgdsWWuaeBWUk7" },
