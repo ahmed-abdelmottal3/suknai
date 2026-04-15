@@ -122,6 +122,24 @@ export const HAIL_SERVICES: NearbyService[] = [
   { nameAr: "الروشن للمعارض والمؤتمرات", image: "/roshn.jpg", icon: "Building2", mapUrl: "https://maps.app.goo.gl/DT1tvZU3WhC8Swxq7" },
 ];
 
+export const ROYAL_AYA_HAIL_SERVICES: NearbyService[] = [
+  ...HAIL_SERVICES,
+  { nameAr: "ببلز بيتزا", image: "/Bubbels Pizza.jpg", icon: "UtensilsCrossed", mapUrl: "https://maps.app.goo.gl/bfGHpnmE8y3sC6jq5?g_st=ic" },
+  { nameAr: "روقو روكو", image: "/RUGA ROKO.jpg", icon: "UtensilsCrossed", mapUrl: "https://maps.app.goo.gl/MH73q1RfvmtHj1p29?g_st=ic" },
+  { nameAr: "فلوكس", image: "/فلوكس.jpg", icon: "UtensilsCrossed", mapUrl: "https://maps.app.goo.gl/JgLrCrSybV6bqB6j8?g_st=ic" },
+  { nameAr: "كرمنا", image: "/مطعم كرمنا.jpg", icon: "UtensilsCrossed", mapUrl: "https://maps.app.goo.gl/nBEcq71QafCgwMkq9" },
+  { nameAr: "صيدلية النهدي", image: "/Nahdi pharmacy.jpg", icon: "Pill", mapUrl: "https://maps.app.goo.gl/SazniokJ2fNJM87B6?g_st=ic" },
+  { nameAr: "الدانوب", image: "/Danube.jpg", icon: "ShoppingCart", mapUrl: "https://maps.app.goo.gl/Eo65694oqss5kCbw5?g_st=ic" },
+];
+
+export const GHADI_HAIL_SERVICES: NearbyService[] = [
+  ...HAIL_SERVICES,
+  { nameAr: "مطعم القلعة القديمة", image: "/مطعم القلعة القديمة.jpg", icon: "UtensilsCrossed", mapUrl: "https://maps.app.goo.gl/XSSVAaJs3UgPQqDt7?g_st=ic" },
+  { nameAr: "مطعم نكهة ديرتنا", image: "/Deertna Restaurant.jpg", icon: "UtensilsCrossed", mapUrl: "https://maps.app.goo.gl/RRVbWfxPri2AECUN6?g_st=ic" },
+  { nameAr: "صيدلية الدواء", image: "/Alzahra Pharmacy.jpg", icon: "Pill", mapUrl: "https://maps.app.goo.gl/r8XxM1N9zcgpKcnE6?g_st=ic" },
+  { nameAr: "الجزاع هايبر ماركت", image: "/الجزاع هايبرماركت.jpg", icon: "ShoppingCart", mapUrl: "https://maps.app.goo.gl/PoWSZM4RqFEs1MNB7?g_st=ic" },
+];
+
 export const RIYADH_SERVICES: NearbyService[] = [
   { nameAr: "مركز الملك عبدالله المالي", image: "/KAFD.jpg", icon: "Landmark", mapUrl: "https://maps.app.goo.gl/QyBM3MD7VHt8G74E7" },
   { nameAr: "سوليتير", image: "/Solitaire.jpg", icon: "ShoppingBag", mapUrl: "https://maps.app.goo.gl/WBavW93EPWmazFCs8" },
@@ -134,6 +152,7 @@ export const JOUF_SERVICES: NearbyService[] = [
   { nameAr: "الجوف بلازا", image: "/الجوف بلازا.jpg", icon: "ShoppingBag", mapUrl: "https://maps.app.goo.gl/oofXkNUAgXeDPfYc8" },
   { nameAr: "أسواق العثيم", image: "/اسواق العثيم.jpg", icon: "ShoppingBag", mapUrl: "https://maps.app.goo.gl/FUWsNraCQf7hCTrb6" },
   { nameAr: "مستشفى الأمير متعب بن عبدالعزيز", image: "/Prince Metaab Bin AbdelAziz Hospital.jpg", icon: "Hospital", mapUrl: "https://maps.app.goo.gl/zfxHtusxLouiQd5d6" },
+  { nameAr: "صيدلية الدواء", image: "/صيدلية الدواء.jpg", icon: "Pill", mapUrl: "https://maps.app.goo.gl/p9ADnHGE3xwcLnGV8" },
 ];
 
 export const UNAIZAH_SERVICES: NearbyService[] = [
@@ -289,7 +308,7 @@ export const BRANDS: Brand[] = [
     dutyManager: { nameAr: "المدير المناوب", phone: "+966535118000" },
     menuCategories: [
     ],
-    nearbyServices: HAIL_SERVICES,
+    nearbyServices: ROYAL_AYA_HAIL_SERVICES,
   },
 
   {
@@ -870,7 +889,7 @@ export const BRANDS: Brand[] = [
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966575091111" },
     menuCategories: [],
-    nearbyServices: HAIL_SERVICES,
+    nearbyServices: ROYAL_AYA_HAIL_SERVICES,
   },
 
   {
@@ -1319,7 +1338,7 @@ export const BRANDS: Brand[] = [
     ],
     dutyManager: { nameAr: "المدير المناوب", phone: "+966920031010" },
     menuCategories: [],
-    nearbyServices: HAIL_SERVICES,
+    nearbyServices: GHADI_HAIL_SERVICES,
     branches: [
       { nameAr: "فرع الياسمين", whatsapp: "+966920031010", mapUrl: "https://maps.app.goo.gl/Vcrgyx9fHUHfqKRz5" },
       { nameAr: "فرع صلاح الدين", whatsapp: "+966920031010", mapUrl: "https://maps.app.goo.gl/WN9FgdsWWuaeBWUk7" },
