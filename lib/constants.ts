@@ -118,7 +118,7 @@ export interface NearbyService {
 export const HAIL_SERVICES: NearbyService[] = [
   { nameAr: "حائل زون", image: "/haelzon.jpg", icon: "Sparkles", mapUrl: "https://maps.app.goo.gl/RDfnqjXhQM6EhfQo8" },
   { nameAr: "العثيم مول", image: "/WhatsApp Image 2026-04-14 at 1.51.04 AM.jpeg", icon: "ShoppingBag", mapUrl: "https://maps.app.goo.gl/td29mCGv5nwhfetz8" },
-  { nameAr: "مطعم حاتم الطائي", image: "/Hatem.jpg", icon: "Mountain", mapUrl: "https://maps.app.goo.gl/3KqhXk388Xp9CRGL8" },
+  { nameAr: "مطل حاتم الطائي", image: "/Hatem.jpg", icon: "Mountain", mapUrl: "https://maps.app.goo.gl/3KqhXk388Xp9CRGL8" },
   { nameAr: "الروشن للمعارض والمؤتمرات", image: "/roshn.jpg", icon: "Building2", mapUrl: "https://maps.app.goo.gl/DT1tvZU3WhC8Swxq7" },
 ];
 
@@ -849,34 +849,7 @@ export const BRANDS: Brand[] = [
         image: "/rajhi.jpg",
         location: "https://maps.app.goo.gl/Xw1z1va7tVQP9Zyr8"
       },
-      {
-        nameAr: "قلعة أعيرف التاريخية",
-        type: "nearby",
-        distance: "2 كم",
-        image: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?w=400&q=80",
-        location: 'https://maps.app.goo.gl/3N6A6L2x6a3m6b8x7'
-      },
-      {
-        nameAr: "قلعة القشلة",
-        type: "city",
-        distance: "1.5 كم",
-        image: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=400&q=80",
-        location: 'https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7'
-      },
-      {
-        nameAr: "منتزه المغواة",
-        type: "city",
-        distance: "4 كم",
-        image: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=400&q=80",
-        location: 'https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7'
-      },
-      {
-        nameAr: "سوق المسوكف الشعبي",
-        type: "nearby",
-        distance: "1 كم",
-        image: "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=400&q=80",
-        location: 'https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7'
-      },
+
     ],
     breakfastTimes: { weekday: "6:30 ص - 10:30 ص", weekend: "6:30 ص - 10:30 ص" },
     importantNumbers: [
@@ -1144,13 +1117,7 @@ export const BRANDS: Brand[] = [
       { nameAr: "واي فاي مجاني", icon: "Wifi" },
     ],
     landmarks: [
-      {
-        nameAr: "سوق المسوكف الشعبي",
-        type: "nearby",
-        distance: "3 كم",
-        image: "/musokaf_market.png",
-        location: "https://share.google/a0MDlswdAIpYCxPOL"
-      },
+
       {
         nameAr: "مسجد الجوز التاريخي",
         type: "nearby",
@@ -1298,34 +1265,7 @@ export const BRANDS: Brand[] = [
         image: "/rajhi.jpg",
         location: "https://maps.app.goo.gl/Xw1z1va7tVQP9Zyr8"
       },
-      {
-        nameAr: "قلعة أعيرف التاريخية",
-        type: "nearby",
-        distance: "2 كم",
-        image: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?w=400&q=80",
-        location: 'https://maps.app.goo.gl/3N6A6L2x6a3m6b8x7'
-      },
-      {
-        nameAr: "قلعة القشلة",
-        type: "city",
-        distance: "1.5 كم",
-        image: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=400&q=80",
-        location: 'https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7'
-      },
-      {
-        nameAr: "منتزه المغواة",
-        type: "city",
-        distance: "4 كم",
-        image: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=400&q=80",
-        location: 'https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7'
-      },
-      {
-        nameAr: "سوق المسوكف الشعبي",
-        type: "nearby",
-        distance: "1 كم",
-        image: "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=400&q=80",
-        location: 'https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7'
-      },
+
     ],
     breakfastTimes: { weekday: "", weekend: "" },
     importantNumbers: [

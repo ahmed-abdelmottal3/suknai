@@ -42,7 +42,7 @@ export default function WeatherWidget({ compact = false }: { compact?: boolean }
           city,
         });
       } catch {
-        setWeather({ temperature: 28, weatherCode: 0, city: "الرياض" });
+        setWeather({ temperature: 28, weatherCode: 0, city: "حائل" });
       } finally {
         setLoading(false);
       }
@@ -70,11 +70,11 @@ export default function WeatherWidget({ compact = false }: { compact?: boolean }
         },
         () => {
           // Default to Riyadh
-          fetchWeather(24.7136, 46.6753, "الرياض");
+          fetchWeather(27.5219, 41.6961, "حائل");
         }
       );
     } else {
-      fetchWeather(24.7136, 46.6753, "الرياض");
+      fetchWeather(27.5219, 41.6961, "حائل");
     }
   }, []);
 

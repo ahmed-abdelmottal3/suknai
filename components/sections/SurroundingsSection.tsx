@@ -9,44 +9,11 @@ import * as Icons from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { ExternalLink } from "lucide-react";
 
-const HAIL_LANDMARKS = [
-  {
-    nameAr: "جامع الراجحي",
-    type: "nearby" as const,
-    image: "/rajhi.jpg",
-    location: "https://maps.app.goo.gl/Xw1z1va7tVQP9Zyr8",
-  },
-  {
-    nameAr: "قلعة أعيرف التاريخية",
-    type: "nearby" as const,
-    image: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?w=400&q=80",
-    location: "https://maps.app.goo.gl/3N6A6L2x6a3m6b8x7",
-  },
-  {
-    nameAr: "قلعة القشلة",
-    type: "city" as const,
-    image: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=400&q=80",
-    location: "https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7",
-  },
-  {
-    nameAr: "منتزه المغواة",
-    type: "city" as const,
-    image: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=400&q=80",
-    location: "https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7",
-  },
-  {
-    nameAr: "سوق المسوكف الشعبي",
-    type: "nearby" as const,
-    image: "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=400&q=80",
-    location: "https://maps.app.goo.gl/hG5a6L2x6a3m6b8x7",
-  },
-];
-
 export default function SurroundingsSection({ brand }: { brand: Brand }) {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
   const [activeTab, setActiveTab] = useState<"landmarks" | "services">("landmarks");
 
-  const visibleLandmarks = brand.cityAr === "حائل" ? HAIL_LANDMARKS : brand.landmarks;
+  const visibleLandmarks = brand.landmarks || [];
   const services = brand.nearbyServices || [];
 
   return (
