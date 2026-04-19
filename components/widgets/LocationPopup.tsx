@@ -140,11 +140,7 @@ export default function LocationPopup() {
                       <p className="text-white font-bold">{nearest.nameAr}</p>
                     </div>
                     <p className="text-white/60 text-sm">{nearest.cityAr}</p>
-                    {distance && (
-                      <p className="text-xs mt-1" style={{ color: nearest.color }}>
-                        على بُعد ~{distance.toLocaleString("ar-SA")} كم
-                      </p>
-                    )}
+
                   </div>
 
                   <div className="flex gap-3">

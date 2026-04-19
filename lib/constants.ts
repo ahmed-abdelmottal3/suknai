@@ -281,19 +281,44 @@ export const BRANDS: Brand[] = [
       {
         nameAr: "مسجد الراجحي",
         type: "nearby",
-        distance: "2 كم",
-        image:
-          "/rajhi.jpg",
+        image: "/rajhi.jpg",
         location: "https://maps.app.goo.gl/YWNeFZ6rCDtm77vd6",
       },
       {
-        nameAr: "مركز الامير سلطان الاجتماعي",
+        nameAr: "قلعة أعيرف",
         type: "nearby",
-        distance: "1 كم",
-        image:
-          "/sultan.jpg",
-        location: 'https://maps.app.goo.gl/rJonrnPfda6qwWUd6'
-
+        image: "/قلعة أعيرف.jpg",
+        location: "https://maps.app.goo.gl/n4xFwu3rJvk6U5ta8",
+      },
+      {
+        nameAr: "قصر القشلة",
+        type: "nearby",
+        image: "/Qishlah.jpg",
+        location: "https://maps.app.goo.gl/xYeqNXyx4aYvUPny9",
+      },
+      {
+        nameAr: "قصر برزان",
+        type: "nearby",
+        image: "/Barzan Castle.jpg",
+        location: "https://maps.app.goo.gl/JcgydtKxMgb6v4HV6",
+      },
+      {
+        nameAr: "جبة الأثرية",
+        type: "nearby",
+        image: "/Jubbah.jpg",
+        location: "https://maps.app.goo.gl/GNEvUzYBUhiFbVmr8",
+      },
+      {
+        nameAr: "متحف فيد",
+        type: "nearby",
+        image: "/متحف فيد الجديد.jpg",
+        location: "https://maps.app.goo.gl/nDFpgaMv1PXgvEZS7",
+      },
+      {
+        nameAr: "قصر توارن",
+        type: "nearby",
+        image: "/قصر توارن.jpg",
+        location: "https://maps.app.goo.gl/Czuqt2qh2mTRdw5n8",
       },
     ],
     breakfastTimes: { weekday: "6:30 ص - 10:30 ص", weekend: "6:30 ص - 10:30 ص" },
@@ -422,21 +447,18 @@ export const BRANDS: Brand[] = [
       {
         nameAr: "قلعة مارد الأثرية",
         type: "nearby",
-        distance: "4 كم",
         image: "/marid_castle.png",
         location: "https://share.google/jBU6AcyO6Sc6Cryjm"
       },
       {
         nameAr: "قلعة زعبل",
         type: "city",
-        distance: "6 كم",
         image: "/zaabal_castle.png",
         location: "https://share.google/TWCNBzxt0IDjuoh5D"
       },
       {
         nameAr: "دومة الجندل",
         type: "nearby",
-        distance: "12 كم",
         image: "/dumat_aljandal.png",
         location: "https://share.google/yei3sG9pBrJ98EZ5D"
       }
@@ -568,14 +590,12 @@ export const BRANDS: Brand[] = [
       {
         nameAr: "مركز الملك عبدالله المالي",
         type: "nearby",
-        distance: "1.5 كم",
         image: "/kafd.png",
         location: "https://maps.app.goo.gl/3ejsbqnawaLj9CeWA"
       },
       {
         nameAr: "بوليفارد سيتي",
         type: "nearby",
-        distance: "6 كم",
         image: "/boulevard.png",
         location: "https://maps.app.goo.gl/USR7BSh6mzoDmvd36"
       },
@@ -708,14 +728,12 @@ export const BRANDS: Brand[] = [
       {
         nameAr: "مطار الملك خالد الدولي",
         type: "nearby",
-        distance: "12 كم",
         image: "/kkia.png",
         location: "https://maps.app.goo.gl/diQs3ycqHB6yKpbH8"
       },
       {
         nameAr: "واجهة روشن",
         type: "nearby",
-        distance: "18 كم",
         image: "/roshn_front.png",
         location: "https://maps.app.goo.gl/2ozLjf7LDTaXGxKP8"
       },
@@ -845,11 +863,45 @@ export const BRANDS: Brand[] = [
       {
         nameAr: "جامع الراجحي",
         type: "nearby",
-        distance: "3 كم",
         image: "/rajhi.jpg",
-        location: "https://maps.app.goo.gl/Xw1z1va7tVQP9Zyr8"
+        location: "https://maps.app.goo.gl/Xw1z1va7tVQP9Zyr8",
       },
-
+      {
+        nameAr: "قلعة أعيرف",
+        type: "nearby",
+        image: "/قلعة أعيرف.jpg",
+        location: "https://maps.app.goo.gl/n4xFwu3rJvk6U5ta8",
+      },
+      {
+        nameAr: "قصر القشلة",
+        type: "nearby",
+        image: "/Qishlah.jpg",
+        location: "https://maps.app.goo.gl/xYeqNXyx4aYvUPny9",
+      },
+      {
+        nameAr: "قصر برزان",
+        type: "nearby",
+        image: "/Barzan Castle.jpg",
+        location: "https://maps.app.goo.gl/JcgydtKxMgb6v4HV6",
+      },
+      {
+        nameAr: "جبة الأثرية",
+        type: "nearby",
+        image: "/Jubbah.jpg",
+        location: "https://maps.app.goo.gl/GNEvUzYBUhiFbVmr8",
+      },
+      {
+        nameAr: "متحف فيد",
+        type: "nearby",
+        image: "/متحف فيد الجديد.jpg",
+        location: "https://maps.app.goo.gl/nDFpgaMv1PXgvEZS7",
+      },
+      {
+        nameAr: "قصر توارن",
+        type: "nearby",
+        image: "/قصر توارن.jpg",
+        location: "https://maps.app.goo.gl/Czuqt2qh2mTRdw5n8",
+      },
     ],
     breakfastTimes: { weekday: "6:30 ص - 10:30 ص", weekend: "6:30 ص - 10:30 ص" },
     importantNumbers: [
@@ -978,21 +1030,18 @@ export const BRANDS: Brand[] = [
       {
         nameAr: "قلعة مارد الأثرية",
         type: "nearby",
-        distance: "4 كم",
         image: "/marid_castle.png",
         location: "https://share.google/jBU6AcyO6Sc6Cryjm"
       },
       {
         nameAr: "قلعة زعبل",
         type: "city",
-        distance: "6 كم",
         image: "/zaabal_castle.png",
         location: "https://share.google/TWCNBzxt0IDjuoh5D"
       },
       {
         nameAr: "دومة الجندل",
         type: "nearby",
-        distance: "12 كم",
         image: "/dumat_aljandal.png",
         location: "https://share.google/yei3sG9pBrJ98EZ5D"
       }
@@ -1121,14 +1170,12 @@ export const BRANDS: Brand[] = [
       {
         nameAr: "مسجد الجوز التاريخي",
         type: "nearby",
-        distance: "5 كم",
         image: "/aljouz_mosque.png",
         location: "https://share.google/c1TnrKSBRYZRfMvLF"
       },
       {
         nameAr: "منتزهات الحاجب",
         type: "city",
-        distance: "8 كم",
         image: "/alhajeb_parks.png",
         location: "https://share.google/6JGmZlMZtuxAkWT9Z"
       },
@@ -1263,9 +1310,44 @@ export const BRANDS: Brand[] = [
         type: "nearby",
         distance: "3 كم",
         image: "/rajhi.jpg",
-        location: "https://maps.app.goo.gl/Xw1z1va7tVQP9Zyr8"
+        location: "https://maps.app.goo.gl/Xw1z1va7tVQP9Zyr8",
       },
-
+      {
+        nameAr: "قلعة أعيرف",
+        type: "nearby",
+        image: "/قلعة أعيرف.jpg",
+        location: "https://maps.app.goo.gl/n4xFwu3rJvk6U5ta8",
+      },
+      {
+        nameAr: "قصر القشلة",
+        type: "nearby",
+        image: "/Qishlah.jpg",
+        location: "https://maps.app.goo.gl/xYeqNXyx4aYvUPny9",
+      },
+      {
+        nameAr: "قصر برزان",
+        type: "nearby",
+        image: "/Barzan Castle.jpg",
+        location: "https://maps.app.goo.gl/JcgydtKxMgb6v4HV6",
+      },
+      {
+        nameAr: "جبة الأثرية",
+        type: "nearby",
+        image: "/Jubbah.jpg",
+        location: "https://maps.app.goo.gl/GNEvUzYBUhiFbVmr8",
+      },
+      {
+        nameAr: "متحف فيد",
+        type: "nearby",
+        image: "/متحف فيد الجديد.jpg",
+        location: "https://maps.app.goo.gl/nDFpgaMv1PXgvEZS7",
+      },
+      {
+        nameAr: "قصر توارن",
+        type: "nearby",
+        image: "/قصر توارن.jpg",
+        location: "https://maps.app.goo.gl/Czuqt2qh2mTRdw5n8",
+      },
     ],
     breakfastTimes: { weekday: "", weekend: "" },
     importantNumbers: [
